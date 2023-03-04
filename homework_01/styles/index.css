@@ -33,6 +33,7 @@ html {
     --title-weight: 700;
     --sub-weight: 500;
     --border-radius: 1.5rem;
+    --gap: 2rem;
 }
 
 /* main container styles */
