@@ -18,3 +18,11 @@ console.log(`Найбільша ціна - ${maxPrice}`);
 // 3. Використовуючи вбудований об'єкт Math – виведіть мінімальне число
 const minPrice = Math.min(pantsPrice, shortsPrice, shirtsPrice);
 console.log(`Найменша ціна - ${minPrice}`);
+
+// 4. Складіть вартість всіх товарів, помістіть її в змінну та виведіть цю суму
+const totalCost = pantsPrice + shortsPrice + shirtsPrice;
+console.log(`Bартість всіх товарів - ${totalCost}`);
+
+// 5. Відкиньте копійки у всіх товарів, потім – складіть цілу частину вартості кожного товару між собою. Округлення використовувати в МЕНШУ сторону.
+const wholePartsPrices = Math.floor(pantsPrice) + Math.floor(shortsPrice) + Math.floor(shirtsPrice);
+console.log(`Bартість всіх товарів (без урахування копійок у кожного товару) - ${wholePartsPrices}`);
