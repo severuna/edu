@@ -88,3 +88,12 @@ html {
     border-radius: var(--border-radius);
     width: 100%;
 }
+
+/* item styles */
+.item {
+    background-color: var(--back-light);
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    width: 35rem;
+    height: 20rem;
+}
