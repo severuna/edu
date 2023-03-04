@@ -39,4 +39,6 @@ html {
 .main {
     margin: var(--main-margin);
     padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--back-black);
 }
