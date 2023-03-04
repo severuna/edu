@@ -114,3 +114,8 @@ html {
 .task b {
     color: aquamarine;
 }
+
+/* advanced styles */
+.advanced {
+    width: 100%;
+}
