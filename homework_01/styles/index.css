@@ -52,4 +52,16 @@ html {
     font-size: var(--title-size);
     color: var(--color-light);
     font-weight: var(--title-weight);
+    text-decoration: underline;
+}
+
+/* container styles */
+.container {
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    border-radius: var(--border-radius);
+    background-color: var(--back-light);
+    padding: var(--container-padding);
+    width: 100%;
 }
