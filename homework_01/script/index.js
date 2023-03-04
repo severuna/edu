@@ -45,4 +45,8 @@ console.log(`Cереднє значення цін, округлене до др
 
 // 10. Створіть змінну, в якої збережіть випадкову знижку (використовуйте функцію Math.random).
 const discount = Math.floor(Math.random() * 101); // знижка від 0 до 100
-console.log(`Випадкова знижка - ${discount} %`)
+console.log(`Випадкова знижка - ${discount} %`);
+
+// 11. Зробіть клієнту випадкову знижку та виведіть суму до оплати округлену до 2 знаків після коми.
+const userDiscount = (totalCost - ( totalCost * discount ) / 100).toFixed(2);
+console.log(`Сума до сплати з урахуванням знижки (${discount} %), округлена до 2 знаків після коми - ${userDiscount} %`);
