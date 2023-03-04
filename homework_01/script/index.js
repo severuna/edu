@@ -42,3 +42,7 @@ console.log(`Сума решти, якщо клієнт платить 500 - ${u
 // 9. Виведіть середнє значення цін, округлене до другого знаку після коми
 const arifPrice = ( ( pantsPrice + shortsPrice + shirtsPrice ) / 3).toFixed(2);
 console.log(`Cереднє значення цін, округлене до другого знаку після коми - ${arifPrice}`);
+
+// 10. Створіть змінну, в якої збережіть випадкову знижку (використовуйте функцію Math.random).
+const discount = Math.floor(Math.random() * 101); // знижка від 0 до 100
+console.log(`Випадкова знижка - ${discount} %`)
