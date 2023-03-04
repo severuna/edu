@@ -41,4 +41,6 @@ html {
     padding: var(--container-padding);
     border-radius: var(--border-radius);
     background-color: var(--back-black);
+    justify-content: space-between;
+    align-items: center;
 }
