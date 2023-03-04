@@ -10,3 +10,7 @@ const shirtsPrice = 90.2345;
 console.log(`Ціна першого товару - ${pantsPrice}`);
 console.log(`Ціна другого товару - ${shortsPrice}`);
 console.log(`Ціна третього товару - ${shirtsPrice}`);
+
+// 2. Використовуючи вбудований об'єкт Math – виведіть максимальне число
+const maxPrice = Math.max(pantsPrice, shortsPrice, shirtsPrice);
+console.log(`Найбільша ціна - ${maxPrice}`);
