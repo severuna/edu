@@ -109,3 +109,8 @@ html {
     border-radius: var(--border-radius);
     height: 15rem;
 }
+
+/* task b styles */ 
+.task b {
+    color: aquamarine;
+}
