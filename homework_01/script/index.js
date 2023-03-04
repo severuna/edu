@@ -26,3 +26,7 @@ console.log(`Bартість всіх товарів - ${totalCost}`);
 // 5. Відкиньте копійки у всіх товарів, потім – складіть цілу частину вартості кожного товару між собою. Округлення використовувати в МЕНШУ сторону.
 const wholePartsPrices = Math.floor(pantsPrice) + Math.floor(shortsPrice) + Math.floor(shirtsPrice);
 console.log(`Bартість всіх товарів (без урахування копійок у кожного товару) - ${wholePartsPrices}`);
+
+// 6. Виведіть суму товарів округлену до сотень. (Наприклад якщо вийшло 260, то виведіть 300)
+const costToHundr = Math.ceil(totalCost / 100) * 100;
+console.log(`Bартість всіх товарів (округлену до сотень) - ${costToHundr}`);
