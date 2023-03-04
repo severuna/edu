@@ -96,7 +96,7 @@ html {
     padding: var(--container-padding);
     border-radius: var(--border-radius);
     width: 35rem;
-    height: 20rem;
+    height: 25rem;
     gap: var(--gap);
 }
 
@@ -107,7 +107,7 @@ html {
     color: var(--color-light);
     font-size: var(--task-size);
     border-radius: var(--border-radius);
-    height: 15rem;
+    height: 10rem;
 }
 
 /* task b styles */ 
@@ -118,4 +118,14 @@ html {
 /* advanced styles */
 .advanced {
     width: 100%;
+}
+
+/* answer styles */
+.answer {
+    font-size: var(--task-size);
+}
+
+.answer span {
+    text-decoration: underline;
+    font-weight: var(--title-weight);
 }
