@@ -44,4 +44,12 @@ html {
     background-color: var(--back-black);
     justify-content: space-between;
     align-items: center;
+    gap: var(--gap);
+}
+
+/* main title styles */
+.title {
+    font-size: var(--title-size);
+    color: var(--color-light);
+    font-weight: var(--title-weight);
 }
