@@ -34,6 +34,7 @@ html {
     --sub-weight: 500;
     --border-radius: 1.5rem;
     --gap: 2rem;
+    --title-padding: 1rem 2rem;
 }
 
 /* main container styles */
@@ -64,4 +65,14 @@ html {
     background-color: var(--back-light);
     padding: var(--container-padding);
     width: 100%;
+}
+
+/* subtitle styles */
+.subtitle {
+    font-size: var(--subtitle-size);
+    font-weight: var(--title-weight);
+    padding: var(--title-padding);
+    background-color: var(--back-black);
+    border-radius: var(--border-radius);
+    color: var(--color-light);
 }
