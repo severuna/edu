@@ -28,6 +28,7 @@ html {
     --color-black: var(--back-black);
     --color-light: var(--back-light);
     --title-size: 3.5rem;
+    --task-size: 1.4rem;
     --subtitle-size: 2.8rem;
     --desc-size: 2.4rem;
     --title-weight: 700;
@@ -96,4 +97,15 @@ html {
     border-radius: var(--border-radius);
     width: 35rem;
     height: 20rem;
+    gap: var(--gap);
+}
+
+/* task styles */
+.task {
+    padding: var(--title-padding);
+    background-color: var(--back-black);
+    color: var(--color-light);
+    font-size: var(--task-size);
+    border-radius: var(--border-radius);
+    height: 15rem;
 }
