@@ -83,3 +83,12 @@ b {
     padding: var(--container-padding);
     border-radius: var(--border-radius);
 }
+
+/* answer styles */
+.answer {
+    font-size: var(--subtitle-size);
+    font-weight: var(--subtile-weight);
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--back-black);
+}
