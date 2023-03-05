@@ -27,4 +27,15 @@ html {
     --subtitle-size: 2rem;
     --subtile-weight: 500;
     --gap: 3rem;
+    --border-radius: 1.5rem;
+}
+
+/* main container styles */
+.main {
+    margin: var(--main-margin);
+    padding: var(--container-padding);
+    background-color: var(--back-black);
+    border-radius: var(--border-radius);
+    gap: var(--gap);
+    align-items: center;
 }
