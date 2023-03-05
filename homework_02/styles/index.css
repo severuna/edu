@@ -28,6 +28,7 @@ html {
     --subtile-weight: 500;
     --gap: 3rem;
     --border-radius: 1.5rem;
+    --b-color: aqua;
 }
 
 /* main container styles */
