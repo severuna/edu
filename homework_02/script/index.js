@@ -5,11 +5,14 @@
 // Пам'ятайте, ЧИСЛО, не РЯДОК!
 const N = +prompt('Введіть перше число, будь ласка');
 console.log(`Перше число, введене користувачем, - ${N}`);
+document.querySelector('#first').textContent = N;
 
 // Перевірте, чи є передане значення N ЦІЛИМ числом.
 // (Підказка: якщо при конвертації в ціле число ми отримали NaN – це
 //  число нам не підходить)
-Number.isInteger(N) ? console.log(`Перше число нам підходить.`) : console.log(`Перше число нам не підходить.`);
+const firstCheck = Number.isInteger(N) ?`Перше число нам підходить.` : `Перше число нам не підходить.`;
+console.log(firstCheck);
+document.querySelector("#second").textContent = firstCheck;
 
 // Отримайте у користувача число(M) до якого ми будемо складати
 // (включно).
@@ -17,16 +20,21 @@ Number.isInteger(N) ? console.log(`Перше число нам підходит
 // Пам'ятайте, ЧИСЛО, не РЯДОК!
 const M = +prompt('Введіть друге число, будь ласка (більше за перше!)');
 console.log(`Друге число, введене користувачем, - ${M}`);
+document.querySelector("#third").textContent = M;
 
 // Перевірте, чи є передане значення M ЦІЛИМ числом.
 // (Підказка: якщо при конвертації в ціле число ми отримали NaN – це число нам не підходит)
-Number.isInteger(M) ? console.log(`Друге число нам підходить.`) : console.log(`Друге число нам не підходить.`);
+const secondCheck = Number.isInteger(M) ? `Друге число нам підходить.` : `Друге число нам не підходить.`;
+console.log(secondCheck);
+document.querySelector("#four").textContent = secondCheck;
 
 // Отримайте у користувача булевий параметр(true/false), який
 // підкаже нам чи потрібно пропускати парні числа. TRUE – потрібно,
 // FALSE – не потрібно. Використовуйте функцію confirm
 const evenCheck = confirm("Чи не потрібно враховувати парні? OK - не потрібно, Cancel - потрібно.");
-console.log(evenCheck ? `Ви обрали не враховувати парні числа` : `Ви обрали враховувати парні числа`);
+const checkRew = evenCheck ? `Ви обрали не враховувати парні числа` : `Ви обрали враховувати парні числа`;
+console.log(checkRew);
+document.querySelector("#five").textContent = checkRew;
 
 // Напишіть цикл, який буде складати числа від раніше отриманих
 // N та M
@@ -50,5 +58,7 @@ if (evenCheck) {
     }
 }
 
-console.log(sum)
+document.querySelector("#six").textContent = sum;
+
+console.log(`Сума обраних чисел ${sum}`);
 // Виведіть результат
