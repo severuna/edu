@@ -47,3 +47,13 @@ html {
     color: var(--color-light);
     text-decoration: underline;
 }
+
+/* task container styles */
+.task {
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--back-light);
+    width: 100%;
+    font-size: var(--subtitle-size);
+    font-weight: var(--subtile-weight);
+}
