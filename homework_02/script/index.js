@@ -43,6 +43,11 @@ if (evenCheck) {
             console.log(sum, i)
         }
     }
+} else {
+    for (let i = N; i <= M; i++) {
+            sum += i;
+            console.log(sum, i);
+    }
 }
 
 console.log(sum)
