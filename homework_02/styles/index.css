@@ -73,3 +73,13 @@ b {
     border-radius: var(--border-radius);
     gap: var(--gap);
 }
+
+/* subtitle styles */
+.subtitle {
+    font-size: var(--subtitle-size);
+    font-weight: var(--subtile-weight);
+    color: var(--color-light);
+    background-color: var(--back-black);
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+}
