@@ -64,3 +64,12 @@ b {
     color: var(--b-color);
     background-color: var(--back-black);
 }
+
+/* item container styles */
+.item {
+    padding: var(--container-padding);
+    width: 100%;
+    background-color: var(--back-light);
+    border-radius: var(--border-radius);
+    gap: var(--gap);
+}
