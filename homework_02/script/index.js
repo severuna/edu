@@ -4,8 +4,6 @@
 // Отримати число можна за допомогою prompt.
 // Пам'ятайте, ЧИСЛО, не РЯДОК!
 let N = +prompt('Введіть перше число, будь ласка. Воно повинно дорівнювати або бути більше 0.');
-console.log(`Перше число, введене користувачем, - ${N}`);
-document.querySelector('#first').textContent = N;
 
 // Перевірте, чи є передане значення N ЦІЛИМ числом.
 // (Підказка: якщо при конвертації в ціле число ми отримали NaN – це
@@ -13,6 +11,8 @@ document.querySelector('#first').textContent = N;
 const firstCheck = Number.isInteger(N) ?`Перше число нам підходить.` : `Перше число нам не підходить.`;
 console.log(firstCheck);
 document.querySelector("#second").textContent = firstCheck;
+console.log(`Перше число, введене користувачем, - ${N}`);
+document.querySelector('#first').textContent = N;
 
 // Отримайте у користувача число(M) до якого ми будемо складати
 // (включно).
