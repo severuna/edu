@@ -50,3 +50,6 @@ document.querySelector("#third").textContent = M;
 
 console.log(numCheckMessage);
 document.querySelector("#four").textContent = numCheckMessage;
+
+const evenNumCheck = confirm('Чи враховувати парні числа? ОК - так, Cancel - ні.');
+
