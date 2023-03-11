@@ -53,3 +53,7 @@ document.querySelector("#four").textContent = numCheckMessage;
 
 const evenNumCheck = confirm('Чи враховувати парні числа? ОК - так, Cancel - ні.');
 
+const evemNumMessage = `Ви обрали - ${evenNumCheck}, тому числа ${ evenNumCheck ? ' будуть ' : ' не будуть' } враховані.`;
+
+document.querySelector("#five").textContent = evemNumMessage;
+console.log(evemNumMessage);
