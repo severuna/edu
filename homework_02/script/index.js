@@ -38,3 +38,9 @@ const numCheckMessage = `Число нам підходить.`;
 
 console.log(numCheckMessage);
 document.querySelector("#second").textContent = numCheckMessage;
+
+let M;
+
+do {
+    M = +prompt(`Введіть друге число, будь ласка. Воно повинно бути більше першого числа (перше число, що ви ввели, - ${N}).`);
+} while ( M < N );
