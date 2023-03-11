@@ -43,7 +43,7 @@ let M;
 
 do {
     M = +prompt(`Введіть друге число, будь ласка. Воно повинно бути більше першого числа (перше число, що ви ввели, - ${N}).`);
-} while ( M < N );
+} while ( M < N || !Number.isInteger(M) );
 
 console.log(`Друге число, що введене користвачем, - ${M}.`);
 document.querySelector("#third").textContent = M;
