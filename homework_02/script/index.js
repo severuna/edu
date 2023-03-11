@@ -70,4 +70,5 @@ for (let i = N ; i <= M ; i ++) {
     }
 }
 
-console.log ( sum )
+document.querySelector("#six").textContent = sum;
+console.log (`Сума обраних чисел  ${ sum }`);
