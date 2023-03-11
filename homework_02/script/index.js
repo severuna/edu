@@ -48,3 +48,5 @@ do {
 console.log(`Друге число, що введене користвачем, - ${M}.`);
 document.querySelector("#third").textContent = M;
 
+console.log(numCheckMessage);
+document.querySelector("#four").textContent = numCheckMessage;
