@@ -33,3 +33,5 @@ do {
 console.log(`Перше число, що введене користвачем, - ${N}.`);
 document.querySelector("#first").textContent = N;
 
+
+const numCheckMessage = `Число нам підходить.`;
