@@ -59,3 +59,15 @@ document.querySelector("#five").textContent = evemNumMessage;
 console.log(evemNumMessage);
 
 let sum = 0;
+
+for (let i = N ; i <= M ; i ++) {
+    if (evenNumCheck) {
+        sum += i;
+    } else {
+        if ( i % 2 != 0) {
+            sum += i;
+        }
+    }
+}
+
+console.log ( sum )
