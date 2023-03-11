@@ -57,3 +57,5 @@ const evemNumMessage = `Ви обрали - ${evenNumCheck}, тому числа
 
 document.querySelector("#five").textContent = evemNumMessage;
 console.log(evemNumMessage);
+
+let sum = 0;
