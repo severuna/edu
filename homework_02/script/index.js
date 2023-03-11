@@ -35,3 +35,5 @@ document.querySelector("#first").textContent = N;
 
 
 const numCheckMessage = `Число нам підходить.`;
+
+document.querySelector("#second").textContent = numCheckMessage;
