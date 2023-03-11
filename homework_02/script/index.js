@@ -28,4 +28,8 @@ let N;
 do {
     N = +prompt('Введіть перше число, будь ласка. Воно повинно дорівнювати або бути більше 0.');
 } while (N < 0 || !Number.isInteger(N));
-console.log(Number.isInteger(N))
+
+
+console.log(`Перше число, що введене користвачем, - ${N}.`);
+document.querySelector("#first").textContent = N;
+
