@@ -37,4 +37,6 @@ html {
     padding: var(--container-padding);
     border-radius: var(--border-radius);
     background-color: var(--back-black);
+    gap: var(--gap);
+    align-items: center;
 }
