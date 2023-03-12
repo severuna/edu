@@ -29,4 +29,12 @@ html {
     --color-black: var(--back-black);
     --color-light: var(--back-light);
     --border-radius: 1.5rem;
+    --gap: 2.5rem;
+}
+
+.main {
+    margin: var(--main-margin);
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--back-black);
 }
