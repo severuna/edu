@@ -28,4 +28,5 @@ html {
     --back-light: rgb(117, 216, 216);
     --color-black: var(--back-black);
     --color-light: var(--back-light);
+    --border-radius: 1.5rem;
 }
