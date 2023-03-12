@@ -100,3 +100,17 @@ input {
     height: var(--input-height);
     padding: var(--input-padding);
 }
+
+.output {
+    gap: var(--gap);
+    align-items: center;
+    min-height: 5rem;
+}
+
+.res {
+    padding: var(--input-padding);
+    background-color: var(--back-black);
+    color: var(--light-color);
+    min-height: 5rem;
+    min-width: 5rem;
+}
