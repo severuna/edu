@@ -19,3 +19,13 @@ html {
     display: flex;
     flex-direction: column;
 }
+
+
+:root {
+    --container-padding: 2rem 3rem;
+    --main-margin: var(--container-padding);
+    --back-black: rgba(0, 0, 0, 0.85);
+    --back-light: rgb(117, 216, 216);
+    --color-black: var(--back-black);
+    --color-light: var(--back-light);
+}
