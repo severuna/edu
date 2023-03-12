@@ -49,3 +49,10 @@ html {
     font-weight: var(--title-weight);
     text-decoration: underline;
 }
+
+.container {
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--back-light);
+    gap: var(--gap);
+}
