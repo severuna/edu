@@ -34,6 +34,8 @@ html {
     --title-weight: 900;
     --task-size: 2.5rem;
     --light-color: azure;
+    --input-height: 3rem;
+    --input-padding: 1rem 2rem;
 }
 
 .main {
@@ -84,4 +86,17 @@ span, i {
     padding: var(--container-padding);
     background-color: var(--light-color);
     border-radius: var(--border-radius);
+    gap: var(--gap);
+    font-size: var(--task-size);
+}
+
+.field {
+    gap: var(--gap);
+    align-items: center;
+}
+
+input {
+    border-radius: var(--border-radius);
+    height: var(--input-height);
+    padding: var(--input-padding);
 }
