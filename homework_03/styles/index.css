@@ -30,6 +30,8 @@ html {
     --color-light: var(--back-light);
     --border-radius: 1.5rem;
     --gap: 2.5rem;
+    --title-size: 4rem;
+    --title-weight: 900;
 }
 
 .main {
@@ -39,4 +41,11 @@ html {
     background-color: var(--back-black);
     gap: var(--gap);
     align-items: center;
+}
+
+.title {
+    color: var(--color-light);
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
+    text-decoration: underline;
 }
