@@ -11,5 +11,6 @@ const firstOutput = document.querySelector('#firstOutput');
 
 firstInput.addEventListener("input", (e) => {
     e.preventDefault();
-    console.log(e.target.value)
+    console.log(`1. Результат роботи першої функції -  ${firstOutput.textContent}`);
+    firstOutput.textContent = getMaxDigit(e.target.value);
 });
