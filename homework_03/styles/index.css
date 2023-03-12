@@ -33,6 +33,7 @@ html {
     --title-size: 4rem;
     --title-weight: 900;
     --task-size: 2.5rem;
+    --light-color: azure;
 }
 
 .main {
@@ -75,6 +76,12 @@ html {
 span, i {
     background-color: var(--back-black);
     color: var(--color-light);
-    color: azure;
+    color: var(--light-color);
     padding: .5rem 1rem;
+}
+
+.answer {
+    padding: var(--container-padding);
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
 }
