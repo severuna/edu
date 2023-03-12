@@ -32,6 +32,7 @@ html {
     --gap: 2.5rem;
     --title-size: 4rem;
     --title-weight: 900;
+    --task-size: 2.5rem;
 }
 
 .main {
@@ -62,4 +63,18 @@ html {
     gap: var(--gap);
     border-radius: var(--border-radius);
     background-color: var(--back-black);
+}
+
+.task {
+    background-color: var(--back-light);
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    font-size: var(--task-size);
+}
+
+span, i {
+    background-color: var(--back-black);
+    color: var(--color-light);
+    color: azure;
+    padding: .5rem 1rem;
 }
