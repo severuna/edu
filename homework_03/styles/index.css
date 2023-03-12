@@ -56,3 +56,10 @@ html {
     background-color: var(--back-light);
     gap: var(--gap);
 }
+
+.item {
+    padding: var(--container-padding);
+    gap: var(--gap);
+    border-radius: var(--border-radius);
+    background-color: var(--back-black);
+}
