@@ -7,6 +7,8 @@ const getMaxDigit = (number) => {
 }
 
 const firstInput = document.querySelector('#firstInput');
+const firstOutput = document.querySelector('#firstOutput');
+
 firstInput.addEventListener("input", (e) => {
     e.preventDefault();
     console.log(e.target.value)
