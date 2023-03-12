@@ -2,6 +2,7 @@
 // число та виводить найбільшу цифру в цьому числі.
 
 const getMaxDigit = (number) => {
-    const splitNum = String(number).split('').sort()[0];
-    return splitNum;
+    const splitNumArr = String(number).split('');
+    return splitNumArr.sort()[splitNumArr.length - 1];
 }
+
