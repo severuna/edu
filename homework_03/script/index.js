@@ -6,3 +6,8 @@ const getMaxDigit = (number) => {
     return splitNumArr.sort()[splitNumArr.length - 1];
 }
 
+const firstInput = document.querySelector('#firstInput');
+firstInput.addEventListener("input", (e) => {
+    e.preventDefault();
+    console.log(e.target.value)
+});
