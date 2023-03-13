@@ -14,3 +14,6 @@ firstInput.addEventListener("input", (e) => {
     console.log(`1. Результат роботи першої функції -  ${firstOutput.textContent}`);
     firstOutput.textContent = getMaxDigit(e.target.value);
 });
+
+// Створити функцію, яка форматує ім'я, роблячи першу букву
+// великою
