@@ -15,5 +15,10 @@ firstInput.addEventListener("input", (e) => {
     firstOutput.textContent = getMaxDigit(e.target.value);
 });
 
-// Створити функцію, яка форматує ім'я, роблячи першу букву
+// 2. Створити функцію, яка форматує ім'я, роблячи першу букву
 // великою
+
+const getCorrectName = (name) => {
+    const correctName = name[0].toUpperCase() + name.slice(1).toLowerCase();
+    return correctName;
+}
