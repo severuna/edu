@@ -34,3 +34,8 @@ secondInput.addEventListener("input", (e) => {
 
 // 3. Створити функцію, яка повертає випадкове ціле число в
 // діапазоні від N до M.
+
+const getRandomNumber = (firstNum, secondNum) => {
+    const randomNumber = Math.floor(Math.random() * (secondNum - firstNum) + firstNum);
+    return randomNumber;
+}
