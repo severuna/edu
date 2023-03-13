@@ -26,3 +26,8 @@ const getCorrectName = (name) => {
 const secondInput = document.querySelector('#secondInput');
 const secondOutput = document.querySelector('#secondOutput');
 
+secondInput.addEventListener("input", (e) => {
+    e.preventDefault();
+    secondOutput.textContent = getCorrectName(e.target.value);
+    console.log(`2. Результат роботи другої функції -  ${secondOutput.textContent}`);
+});
