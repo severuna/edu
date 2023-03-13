@@ -31,3 +31,6 @@ secondInput.addEventListener("input", (e) => {
     secondOutput.textContent = getCorrectName(e.target.value);
     console.log(`2. Результат роботи другої функції -  ${secondOutput.textContent}`);
 });
+
+// 3. Створити функцію, яка повертає випадкове ціле число в
+// діапазоні від N до M.
