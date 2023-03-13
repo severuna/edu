@@ -11,8 +11,8 @@ const firstOutput = document.querySelector('#firstOutput');
 
 firstInput.addEventListener("input", (e) => {
     e.preventDefault();
-    console.log(`1. Результат роботи першої функції -  ${firstOutput.textContent}`);
     firstOutput.textContent = getMaxDigit(e.target.value);
+    console.log(`1. Результат роботи першої функції -  ${firstOutput.textContent}`);
 });
 
 // 2. Створити функцію, яка форматує ім'я, роблячи першу букву
