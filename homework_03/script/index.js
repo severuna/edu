@@ -22,3 +22,7 @@ const getCorrectName = (name) => {
     const correctName = name[0].toUpperCase() + name.slice(1).toLowerCase();
     return correctName;
 }
+
+const secondInput = document.querySelector('#secondInput');
+const secondOutput = document.querySelector('#secondOutput');
+
