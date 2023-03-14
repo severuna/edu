@@ -50,7 +50,7 @@ randomForm.addEventListener("submit", ( e ) => {
     if (first < second) {
         randomForm[1].style.backgroundColor = '';
         thirdOutput.textContent = getRandomNumber(first, second);
-        console.log(`3. Результат роботи третьої функції -  ${thirdOutput.textContent}`)ж
+        console.log(`3. Результат роботи третьої функції -  ${thirdOutput.textContent}`);
     } else {
         randomForm[1].style.backgroundColor = 'red';
     }
