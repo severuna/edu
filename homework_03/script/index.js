@@ -40,8 +40,6 @@ const getRandomNumber = (firstNum, secondNum) => {
     return randomNumber;
 }
 
-const thirdOneInput = document.querySelector("#thirdOneInput");
-const thirdTwoInput = document.querySelector("#thirdTwoInput");
 const thirdOutput = document.querySelector("#thirdOutput");
 const randomForm = document.forms.randomNum;
 
