@@ -94,3 +94,5 @@ fiveInput.addEventListener("input", ( e ) => {
     fiveOutput.textContent = getRandomPassword(e.target.value);
     console.log(`5. Результат роботи п"ятої функції -  ${fiveOutput.textContent}`);
 });
+
+// 6. Створіть функцію, яка видаляє всі букви з речення.
