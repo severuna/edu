@@ -38,17 +38,22 @@
                 </div>
             </div>
             <div class="item flex-column">
-                <h2 class="task"><span>3.</span> Створити функцію, яка повертає випадкове ціле число в
-                    діапазоні від <i>N</i> до <i>M</i>.</h2>
+                <h2 class="task"><span>3.</span> Створити функцію, яка повертає випадкове ціле число в  діапазоні від <i>N</i> до <i>M</i>.</h2>
                 <div class="answer flex-column">
-                    <div class="field flex-row">
-                        <label for="thirdOneInput">Введіть 1-е число: </label>
-                        <input type="number" id="thirdOneInput" min="0">
-                    </div>
-                    <div class="field flex-row">
-                        <label for="thirdTwoInput">Введіть 2-е число: </label>
-                        <input type="number" id="thirdTwoInput">
-                    </div>
+                    <form class="answer flex-column" id="randomNum">
+                        <div class="field flex-row">
+                            <label for="thirdOneInput">Введіть 1-е число: </label>
+                            <input type="number" id="thirdOneInput">
+                        </div>
+                        <div class="field flex-row">
+                            <label for="thirdTwoInput">Введіть 2-е число: </label>
+                            <input type="number" id="thirdTwoInput">
+                        </div>
+                        <div class="field flex-row">
+                            <button type="submit" class="btn">Submit</button>
+                            <button type="reset" class="btn">Reset</button>
+                        </div>
+                    </form>
                     <div class="output flex-row">
                         <p>Результат: </p>
                         <p class="res" id="thirdOutput"></p>
