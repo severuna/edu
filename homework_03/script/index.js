@@ -44,3 +44,7 @@ const thirdOneInput = document.querySelector("#thirdOneInput");
 const thirdTwoInput = document.querySelector("#thirdTwoInput");
 const thirdOutput = document.querySelector("#thirdOutput");
 const randomForm = document.forms.randomNum;
+
+randomForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+});
