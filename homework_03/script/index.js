@@ -66,3 +66,9 @@ const getSalary = (salary) => {
 
 const fourInput = document.querySelector("#fourInput");
 const fourOutput = document.querySelector("#fourOutput");
+
+fourInput.addEventListener("input", ( e ) => {
+    e.preventDefault();
+    fourOutput.textContent = getSalary(e.target.value).toFixed(2);
+    console.log(`4. Результат роботи четвертої функції -  ${fourOutput.textContent}`);
+});
