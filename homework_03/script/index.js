@@ -58,3 +58,8 @@ randomForm.addEventListener("submit", ( e ) => {
 
 
 // 4. Створити функцію, яка вираховує суму, що залишається після оплати податку  від зарабітньої плати.
+
+const getSalary = (salary) => {
+    const tax = (18 + 1.5) / 100;
+    return salary - salary * tax;
+}
