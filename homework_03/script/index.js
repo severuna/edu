@@ -63,3 +63,6 @@ const getSalary = (salary) => {
     const tax = (18 + 1.5) / 100;
     return salary - salary * tax;
 }
+
+const fourInput = document.querySelector("#fourInput");
+const fourOutput = document.querySelector("#fourOutput");
