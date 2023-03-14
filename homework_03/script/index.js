@@ -72,3 +72,5 @@ fourInput.addEventListener("input", ( e ) => {
     fourOutput.textContent = getSalary(e.target.value).toFixed(2);
     console.log(`4. Результат роботи четвертої функції -  ${fourOutput.textContent}`);
 });
+
+// 5. Створіть функцію генерації випадкового паролю (тільки числа), довжина встановлюється користувачем або по замовчуванню = 8 символам.
