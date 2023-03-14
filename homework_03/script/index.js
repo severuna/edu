@@ -96,3 +96,14 @@ fiveInput.addEventListener("input", ( e ) => {
 });
 
 // 6. Створіть функцію, яка видаляє всі букви з речення.
+
+const deleteLetters = (letter, sentence) => {
+    const splitSentence = sentence.split('');
+    let correctSentence = '';
+    for (let i = 0 ; i < splitSentence.length; i++) {
+        if (splitSentence[i] != letter) {
+            correctSentence += splitSentence[i];
+        }
+    };
+    return correctSentence;
+}
