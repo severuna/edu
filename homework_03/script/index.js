@@ -77,4 +77,12 @@ fourInput.addEventListener("input", ( e ) => {
 
 const  getRandomPassword = (amount) => {
     amount = !amount ? 8 : amount;
+    const numArr = [ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' ];
+    let password = '';
+    for ( let i = 0; i < amount; i++ ) {
+        const numArrRand = Math.floor( Math.random() * numArr.length );
+        password += numArr[numArrRand];
+    }
+    return password;
 }
+
