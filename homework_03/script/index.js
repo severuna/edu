@@ -39,3 +39,8 @@ const getRandomNumber = (firstNum, secondNum) => {
     const randomNumber = Math.floor(Math.random() * (secondNum - firstNum) + firstNum);
     return randomNumber;
 }
+
+const thirdOneInput = document.querySelector("#thirdOneInput");
+const thirdTwoInput = document.querySelector("#thirdTwoInput");
+const thirdOutput = document.querySelector("#thirdOutput");
+
