@@ -55,3 +55,6 @@ randomForm.addEventListener("submit", ( e ) => {
         randomForm[1].style.backgroundColor = 'red';
     }
 });
+
+
+// 4. Створити функцію, яка вираховує суму, що залишається після оплати податку  від зарабітньої плати.
