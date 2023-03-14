@@ -107,3 +107,14 @@ const deleteLetters = (letter, sentence) => {
     };
     return correctSentence;
 }
+
+const deleteLettersForm = document.forms.deleteLettersForm;
+const sixOutput = document.querySelector("#sixOutput");
+
+deleteLettersForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const userSentence = deleteLettersForm[0].value;
+    const userLetter = deleteLettersForm[1].value;
+    sixOutput.textContent = deleteLetters(userLetter, userSentence);
+    console.log(`6. Результат роботи шостої функції -  ${sixOutput.textContent}`);
+});
