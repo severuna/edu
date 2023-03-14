@@ -88,7 +88,26 @@
             </div>
             <div class="item flex-column">
                 <h2 class="task"><span>6.</span> Створіть функцію, яка видаляє всі букви з речення.</h2>
-                <div class="answer flex-column"></div>
+                <div class="answer flex-column">
+                    <form class="answer flex-column" id="deleteLettersForm">
+                        <div class="field flex-row">
+                            <label for="sentence">Введіть речення: </label>
+                            <input type="text" id="sentence">
+                        </div>
+                        <div class="field flex-row">
+                            <label for="letter">Введіть букву: </label>
+                            <input type="text" id="letter">
+                        </div>
+                        <div class="field flex-row">
+                            <button type="submit" class="btn">Submit</button>
+                            <button type="reset" class="btn">Reset</button>
+                        </div>
+                    </form>
+                    <div class="output flex-row">
+                        <p>Результат: </p>
+                        <p class="res" id="sixOutput"></p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
