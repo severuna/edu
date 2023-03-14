@@ -114,3 +114,11 @@ input {
     min-height: 5rem;
     min-width: 5rem;
 }
+
+.btn {
+    background-color: var(--back-black);
+    color: var(--light-color);
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    font-size: var(--task-size);
+}
