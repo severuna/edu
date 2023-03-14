@@ -86,3 +86,11 @@ const  getRandomPassword = (amount) => {
     return password;
 }
 
+const fiveInput = document.querySelector("#fiveInput");
+const fiveOutput = document.querySelector("#fiveOutput");
+
+fiveInput.addEventListener("input", ( e ) => {
+    e.preventDefault();
+    fiveOutput.textContent = getRandomPassword(e.target.value);
+    console.log(`5. Результат роботи п"ятої функції -  ${fiveOutput.textContent}`);
+});
