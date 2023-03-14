@@ -45,4 +45,6 @@ const randomForm = document.forms.randomNum;
 
 randomForm.addEventListener("submit", ( e ) => {
     e.preventDefault();
+    const first = Number(randomForm[0].value);
+    const second = Number(randomForm[1].value);
 });
