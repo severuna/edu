@@ -74,3 +74,7 @@ fourInput.addEventListener("input", ( e ) => {
 });
 
 // 5. Створіть функцію генерації випадкового паролю (тільки числа), довжина встановлюється користувачем або по замовчуванню = 8 символам.
+
+const  getRandomPassword = (amount) => {
+    amount = !amount ? 8 : amount;
+}
