@@ -50,3 +50,11 @@ html {
     color: var(--color-light);
     text-decoration: underline;
 }
+
+.container {
+    width: 100%;
+    gap: var(--gap);
+    background-color: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: var(--container-padding);
+}
