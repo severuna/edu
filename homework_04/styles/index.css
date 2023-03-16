@@ -43,3 +43,10 @@ html {
     align-items: center;
     gap: var(--gap);
 }
+
+.title {
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
+    color: var(--color-light);
+    text-decoration: underline;
+}
