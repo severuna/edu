@@ -34,7 +34,7 @@ html {
     --font-padding: .8rem 1rem;
     --border-radius: 1rem;
     --gap: 3rem;
-    --subtitle-size: 1.5rem;
+    --subtitle-size: 1.8rem;
 }
 
 .main {
@@ -100,4 +100,5 @@ i {
     font-size: var(--subtitle-size);
     font-weight: var(--task-weight);
     color: var(--color-blue);
+    word-spacing: .5rem;
 }
