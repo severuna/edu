@@ -19,3 +19,17 @@ html {
     display: flex;
     flex-direction: row;
 }
+
+:root {
+    --container-padding: 3rem;
+    --main-margin: var(--container-padding);
+    --title-size: 3.2rem;
+    --title-weight: 900;
+    --task-size: 2.3rem;
+    --task-weight: 500;
+    --color-black: rgba(0, 0, 0, .85);
+    --color-light: azure;
+    --color-crimson: crimson;
+    --font-padding: .8rem 1rem;
+    --border-radius: 1rem;
+}
