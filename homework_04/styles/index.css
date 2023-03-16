@@ -27,7 +27,8 @@ html {
     --title-weight: 900;
     --task-size: 2rem;
     --task-weight: 500;
-    --color-black: rgba(0, 0, 0, .85);
+    --color-black: black;
+    --color-blue: aqua;
     --color-light: azure;
     --color-crimson: crimson;
     --font-padding: .8rem 1rem;
@@ -91,9 +92,11 @@ i {
 
 .answer {
     width: 60%;
-    background-color: var(--color-light);
+    background-color: var(--color-black);
+    border: 3px solid var(--color-blue);
     border-radius: var(--border-radius);
     padding: var(--container-padding);
     font-size: var(--task-size);
     font-weight: var(--task-weight);
+    color: var(--color-blue);
 }
