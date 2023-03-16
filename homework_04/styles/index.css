@@ -74,3 +74,17 @@ html {
     font-size: var(--task-size);
     font-weight: var(--task-weight);
 }
+
+span {
+    background-color: var(--color-black);
+    padding: var(--font-padding);
+    border-radius: var(--border-radius);
+    color: var(--color-crimson);
+}
+
+i {
+    padding: var(--font-padding);
+    border-radius: var(--border-radius);
+    color: var(--color-crimson);
+    text-decoration: underline;
+}
