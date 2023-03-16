@@ -88,3 +88,12 @@ i {
     color: var(--color-crimson);
     text-decoration: underline;
 }
+
+.answer {
+    width: 60%;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: var(--container-padding);
+    font-size: var(--task-size);
+    font-weight: var(--task-weight);
+}
