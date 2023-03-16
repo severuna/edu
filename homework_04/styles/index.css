@@ -58,3 +58,10 @@ html {
     border-radius: var(--border-radius);
     padding: var(--container-padding);
 }
+
+.item {
+    gap: var(--gap);
+    background-color: var(--color-black);
+    border-radius: var(--border-radius);
+    padding: var(--container-padding);
+}
