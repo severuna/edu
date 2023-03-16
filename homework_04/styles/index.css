@@ -25,7 +25,7 @@ html {
     --main-margin: var(--container-padding);
     --title-size: 3.2rem;
     --title-weight: 900;
-    --task-size: 2.3rem;
+    --task-size: 2rem;
     --task-weight: 500;
     --color-black: rgba(0, 0, 0, .85);
     --color-light: azure;
@@ -64,4 +64,13 @@ html {
     background-color: var(--color-black);
     border-radius: var(--border-radius);
     padding: var(--container-padding);
+}
+
+.task {
+    width: 40%;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: var(--container-padding);
+    font-size: var(--task-size);
+    font-weight: var(--task-weight);
 }
