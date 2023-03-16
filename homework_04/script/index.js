@@ -12,6 +12,10 @@ const showArr = (arr, arrName) => {
     return arrStr
 }
 
-arrsOutput.append(showArr(students, 'students'))
-arrsOutput.append(showArr(themes, 'themes'))
-arrsOutput.append(showArr(marks, 'marks'))
+arrsOutput.append(showArr(students, 'students'));
+arrsOutput.append(showArr(themes, 'themes'));
+arrsOutput.append(showArr(marks, 'marks'));
+
+console.log(`students - ${students}`);
+console.log(`themes - ${themes}`);
+console.log(`marks - ${marks}`);
