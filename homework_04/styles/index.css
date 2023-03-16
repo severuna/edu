@@ -34,6 +34,7 @@ html {
     --font-padding: .8rem 1rem;
     --border-radius: 1rem;
     --gap: 3rem;
+    --subtitle-size: 1.5rem;
 }
 
 .main {
@@ -96,7 +97,7 @@ i {
     border: 3px solid var(--color-blue);
     border-radius: var(--border-radius);
     padding: var(--container-padding);
-    font-size: var(--task-size);
+    font-size: var(--subtitle-size);
     font-weight: var(--task-weight);
     color: var(--color-blue);
 }
