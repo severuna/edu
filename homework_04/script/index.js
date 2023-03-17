@@ -73,3 +73,5 @@ const project = setProject(pairs, themes);
 const projectOutput =  document.querySelector("#projectOutput");
 projectOutput.append(showNestArr(project, 'project'));
 console.log(`project - ${project}`);
+
+// Зіставте пари з попереднього завдання та теми проєктів, над якими студенти будуть працювати
