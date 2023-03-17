@@ -110,3 +110,6 @@ const group = setRandomMark(project);
 
 const groupOutput = document.querySelector("#groupOutput");
 
+groupOutput.append(showNestArr(group, 'group'));
+console.log(`group - ${group}`);
+
