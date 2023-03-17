@@ -68,3 +68,4 @@ const setProject = (arr, project) => {
 const project = setProject(pairs, themes);
 
 const projectOutput =  document.querySelector("#projectOutput");
+projectOutput.append(showNestArr(project, 'project'));
