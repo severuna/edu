@@ -22,3 +22,20 @@ console.log(`marks - ${marks}`);
 
 // Розділіть студентів на пари(хлопець + дівчина) для работи над
 // проєктом.
+
+const getPairs = (arr) => {
+    const women = [];
+    const men = [];
+    arr.forEach(element => {
+        element.endsWith("а") ? women.push(element) : men.push(element)
+    });
+    const sortArr = women.reduce((acc, el, i) => {
+        acc.push([el, men[i]]);
+        return acc;
+      }, []);
+    return sortArr
+}
+
+const pairs = getPairs(students);
+
+console.log(pairs);
