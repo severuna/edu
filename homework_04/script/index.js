@@ -108,3 +108,5 @@ const setRandomMark = (arr) => {
 
 const group = setRandomMark(project);
 
+const groupOutput = document.querySelector("#groupOutput");
+
