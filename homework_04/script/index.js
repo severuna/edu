@@ -105,3 +105,6 @@ const setRandomMark = (arr) => {
     });
     return markArr
 }
+
+const group = setRandomMark(project);
+
