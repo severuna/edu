@@ -84,3 +84,6 @@ const setMark = (student, mark) => {
 }
 
 const test = setMark(students, marks);
+
+const testOutput = document.querySelector("#testOutput");
+
