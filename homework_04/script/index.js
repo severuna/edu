@@ -93,3 +93,7 @@ console.log(`test - ${test}`);
 // Поставте кожній парі випадкову оцінку(від 1 до 5) за проєкт
 // (тут функція буде не чистою, але не повинна мутувати массив):
 
+const randomMark = () => {
+    let rand = 1  + Math.random() * (5 - 1)
+    return Math.round(rand);
+}
