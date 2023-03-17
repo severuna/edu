@@ -39,4 +39,15 @@ const getPairs = (arr) => {
 const pairs = getPairs(students);
 const pairOutput = document.querySelector("#pairOutput");
 
+const showNestArr = (arr, arrName) => {
+    const arrMain = document.createElement('p');
+    arrMain.textContent = `const ${arrName} = [ `;
+    arr.forEach(el => {
+        arrMain.textContent += ` [ ${el} ], `
+    });
+    arrMain.textContent += ` ]`;
+    return arrMain
+}
+
+pairOutput.append(showNestArr(pairs, 'pairs'))
 console.log(pairs);
