@@ -51,3 +51,6 @@ const showNestArr = (arr, arrName) => {
 
 pairOutput.append(showNestArr(pairs, 'pairs'))
 console.log(`pairs - ${pairs}`);
+
+// Зіставте пари з попереднього завдання та теми проєктів, над
+// якими студенти будуть працювати.
