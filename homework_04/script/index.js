@@ -66,3 +66,5 @@ const setProject = (arr, project) => {
 }
 
 const project = setProject(pairs, themes);
+
+const projectOutput =  document.querySelector("#projectOutput");
