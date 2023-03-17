@@ -87,3 +87,5 @@ const test = setMark(students, marks);
 
 const testOutput = document.querySelector("#testOutput");
 
+testOutput.append(showNestArr(test, 'test'));
+console.log(`test - ${test}`);
