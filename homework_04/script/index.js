@@ -54,3 +54,13 @@ console.log(`pairs - ${pairs}`);
 
 // Зіставте пари з попереднього завдання та теми проєктів, над
 // якими студенти будуть працювати.
+
+const setProject = (arr, project) => {
+    let projectArr = arr;
+    let i = 0;
+    projectArr.forEach( el => {
+        el.push(project[i]);
+        i++;
+    });
+    return projectArr
+}
