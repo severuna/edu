@@ -37,5 +37,6 @@ const getPairs = (arr) => {
 }
 
 const pairs = getPairs(students);
+const pairOutput = document.querySelector("#pairOutput");
 
 console.log(pairs);
