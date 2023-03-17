@@ -83,3 +83,4 @@ const setMark = (student, mark) => {
     return marks;
 }
 
+const test = setMark(students, marks);
