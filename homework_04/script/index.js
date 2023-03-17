@@ -89,3 +89,7 @@ const testOutput = document.querySelector("#testOutput");
 
 testOutput.append(showNestArr(test, 'test'));
 console.log(`test - ${test}`);
+
+// Поставте кожній парі випадкову оцінку(від 1 до 5) за проєкт
+// (тут функція буде не чистою, але не повинна мутувати массив):
+
