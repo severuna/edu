@@ -19,3 +19,6 @@ arrsOutput.append(showArr(marks, 'marks'));
 console.log(`students - ${students}`);
 console.log(`themes - ${themes}`);
 console.log(`marks - ${marks}`);
+
+// Розділіть студентів на пари(хлопець + дівчина) для работи над
+// проєктом.
