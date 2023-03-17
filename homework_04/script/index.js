@@ -64,3 +64,5 @@ const setProject = (arr, project) => {
     });
     return projectArr
 }
+
+const project = setProject(pairs, themes);
