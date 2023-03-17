@@ -59,6 +59,8 @@ const setProject = (arr, project) => {
     let projectArr = arr;
     let i = 0;
     projectArr.forEach( el => {
+        el[0] = el[0] + ' i ' + el[1];
+        el.splice(1, 1);
         el.push(project[i]);
         i++;
     });
