@@ -50,4 +50,4 @@ const showNestArr = (arr, arrName) => {
 }
 
 pairOutput.append(showNestArr(pairs, 'pairs'))
-console.log(pairs);
+console.log(`pairs - ${pairs}`);
