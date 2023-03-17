@@ -62,7 +62,6 @@ const setProject = (arr, project) => {
         el[0] = el[0] + ' i ' + el[1];
         el.splice(1, 1);
         el.push(project[i]);
-        el.join();
         i++;
     });
     return projectArr
@@ -96,4 +95,13 @@ console.log(`test - ${test}`);
 const randomMark = () => {
     let rand = 1  + Math.random() * (5 - 1)
     return Math.round(rand);
+}
+
+const setRandomMark = (arr) => {
+    const markArr = [];
+    arr.forEach(element => {
+        element.push(randomMark())
+        markArr.push(element)
+    });
+    return markArr
 }
