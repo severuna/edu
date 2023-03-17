@@ -62,6 +62,7 @@ const setProject = (arr, project) => {
         el[0] = el[0] + ' i ' + el[1];
         el.splice(1, 1);
         el.push(project[i]);
+        el.join();
         i++;
     });
     return projectArr
