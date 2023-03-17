@@ -75,3 +75,11 @@ projectOutput.append(showNestArr(project, 'project'));
 console.log(`project - ${project}`);
 
 // Зіставте пари з попереднього завдання та теми проєктів, над якими студенти будуть працювати
+const setMark = (student, mark) => {
+    const marks = student.reduce((acc, el, i) => {
+        acc.push([el, mark[i]]);
+        return acc;
+    }, []);
+    return marks;
+}
+
