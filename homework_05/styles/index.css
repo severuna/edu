@@ -93,3 +93,8 @@ span {
 .form {
     gap: var(--gap);
 }
+
+.field {
+    gap: var(--gap);
+    align-items: center;
+}
