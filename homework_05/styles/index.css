@@ -30,6 +30,8 @@ html {
     --margin-container: var(--padding-container);
     --title-size: 3rem;
     --title-weight: 900;
+    --desc-size: 1.8rem;
+    --desc-weight: 400;
     --border-radius: 1rem;
     --task-size: 2rem;
     --task-weight: 600;
