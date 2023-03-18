@@ -36,6 +36,7 @@ html {
     --task-size: 2rem;
     --task-weight: 600;
     --gap: 3rem;
+    --input-height: 2.5rem;
 }
 
 .main {
@@ -100,4 +101,10 @@ span {
 .field {
     gap: var(--gap);
     align-items: center;
+}
+
+input {
+    border-radius: var(--border-radius);
+    height: var(--input-height);
+    font-size: var(--desc-size);
 }
