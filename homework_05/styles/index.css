@@ -27,4 +27,13 @@ html {
     --margin-container: var(--padding-container);
     --title-size: 3rem;
     --title-weight: 900;
+    --border-radius: 1rem;
+}
+
+.main {
+    align-items: center;
+    padding: var(--padding-container);
+    margin: var(--margin-container);
+    background-color: var(--color-black);
+    border-radius: var(--border-radius);
 }
