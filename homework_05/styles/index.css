@@ -22,8 +22,10 @@ html {
 
 :root {
     --color-black: black;
-    --color-light: palegreen;
+    --color-green: palegreen;
+    --color-light: bisque;
     --padding-container: 2.5rem;
+    --title-padding: .5rem 1rem;
     --margin-container: var(--padding-container);
     --title-size: 3rem;
     --title-weight: 900;
@@ -36,4 +38,13 @@ html {
     margin: var(--margin-container);
     background-color: var(--color-black);
     border-radius: var(--border-radius);
+}
+
+.title {
+    color: var(--color-green);
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-green);
+    padding: var(--title-padding);
 }
