@@ -30,6 +30,7 @@ html {
     --title-size: 3rem;
     --title-weight: 900;
     --border-radius: 1rem;
+    --gap: 3rem;
 }
 
 .main {
