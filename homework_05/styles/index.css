@@ -50,3 +50,8 @@ html {
     border: 1px solid var(--color-green);
     padding: var(--title-padding);
 }
+
+.container {
+    padding: var(--padding-container);
+    gap: var(--gap);
+}
