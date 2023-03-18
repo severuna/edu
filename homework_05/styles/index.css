@@ -24,6 +24,7 @@ html {
     --color-black: black;
     --color-green: palegreen;
     --color-light: azure;
+    --color-span: fuchsia;
     --padding-container: 2.5rem;
     --title-padding: .5rem 1rem;
     --margin-container: var(--padding-container);
@@ -73,4 +74,9 @@ html {
     color: var(--color-light);
     font-size: var(--task-size);
     font-weight: var(--task-weight);
+}
+
+span {
+    text-decoration: underline;
+    color: var(--color-span);
 }
