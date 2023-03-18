@@ -89,3 +89,7 @@ span {
     gap: var(--gap);
     background-color: var(--color-black);
 }
+
+.form {
+    gap: var(--gap);
+}
