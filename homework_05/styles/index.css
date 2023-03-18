@@ -20,3 +20,11 @@ html {
     flex-direction: column;
 }
 
+:root {
+    --color-black: black;
+    --color-light: palegreen;
+    --padding-container: 2.5rem;
+    --margin-container: var(--padding-container);
+    --title-size: 3rem;
+    --title-weight: 900;
+}
