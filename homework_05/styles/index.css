@@ -88,6 +88,7 @@ span {
     border-radius: var(--border-radius);
     gap: var(--gap);
     background-color: var(--color-black);
+    color: var(--color-light);
 }
 
 .form {
