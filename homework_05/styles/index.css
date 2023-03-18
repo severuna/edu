@@ -30,6 +30,8 @@ html {
     --title-size: 3rem;
     --title-weight: 900;
     --border-radius: 1rem;
+    --task-size: 2rem;
+    --task-weight: 600;
     --gap: 3rem;
 }
 
@@ -63,3 +65,11 @@ html {
     gap: var(--gap);
 }
 
+.task {
+    background-color: var(--color-black);
+    padding: var(--padding-container);
+    border-radius: var(--border-radius);
+    color: var(--color-light);
+    font-size: var(--task-size);
+    font-weight: var(--task-weight);
+}
