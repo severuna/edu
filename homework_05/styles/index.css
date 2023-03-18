@@ -108,3 +108,12 @@ input {
     height: var(--input-height);
     font-size: var(--desc-size);
 }
+
+.btn {
+    border-radius: var(--border-radius);
+    border: 2px solid var(--color-green);
+    background-color: var(--color-black);
+    color: var(--color-green);
+    font-size: var(--desc-size);
+    padding: var(--title-padding);
+}
