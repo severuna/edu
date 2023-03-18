@@ -55,3 +55,11 @@ html {
     padding: var(--padding-container);
     gap: var(--gap);
 }
+
+.item {
+    border-radius: var(--border-radius);
+    background-color: var(--color-green);
+    padding: var(--padding-container);
+    gap: var(--gap);
+}
+
