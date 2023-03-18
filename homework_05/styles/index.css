@@ -39,6 +39,7 @@ html {
     margin: var(--margin-container);
     background-color: var(--color-black);
     border-radius: var(--border-radius);
+    gap: var(--gap);
 }
 
 .title {
