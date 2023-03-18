@@ -23,7 +23,7 @@ html {
 :root {
     --color-black: black;
     --color-green: palegreen;
-    --color-light: bisque;
+    --color-light: azure;
     --padding-container: 2.5rem;
     --title-padding: .5rem 1rem;
     --margin-container: var(--padding-container);
