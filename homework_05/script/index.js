@@ -10,4 +10,5 @@ const filterEvenForm = document.forms.filterEvenForm;
 
 filterEvenForm.addEventListener("submit", ( e ) => {
     e.preventDefault();
+    const filterInput = filterEvenForm[0].value;
 });
