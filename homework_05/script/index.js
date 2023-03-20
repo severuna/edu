@@ -23,3 +23,13 @@ filterEvenForm.addEventListener("submit", ( e ) => {
 
 // 2. Створіть функцію getAverage(...numbers) – яка рахує середнє арифметичне всіх переданих в неї аргументів
 
+const getAverage = (...numbers) => {
+    const numbersLength = numbers.length;
+    let sum = 0;
+    numbers.forEach(el => {
+        sum += el;
+    });
+    return sum / numbersLength
+}
+
+
