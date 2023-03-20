@@ -29,7 +29,19 @@
             </div>
             <div class="item flex-column">
                 <h2 class="task"><span>2.</span> Створіть функцію <span>getAverage(...numbers)</span> – яка рахує середнє арифметичне всіх переданих в неї аргументів</h2>
-                <div class="answer flex-column"></div>
+                <div class="answer flex-column">
+                    <form class="form flex-column" id="getAverageForm">
+                        <div class="field flex-row">
+                            <label for="averageInput">Введіть числа (через кому або пробіл):</label>
+                            <input type="text" id="averageInput">
+                        </div>
+                        <div class="field flex-row">
+                            <button class="btn" type="submit">Підтвердити</button>
+                            <button class="btn" type="reset">Скинути</button>
+                        </div>
+                    </form>
+                    <div class="output" id="averageOutput"></div>
+                </div>
             </div>
             <div class="item flex-column">
                 <h2 class="task"></h2>
