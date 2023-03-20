@@ -42,3 +42,11 @@ const getAverageForm = document.forms.getAverageForm;
 const averageOutput = document.querySelector("#averageOutput");
 
 
+getAverageForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const averageInput = getAverageForm[0].value.split(', ');
+    const averageInputArr = setNumberType(averageInput);
+    const averageResult = getAverage(...averageInputArr);
+    console.log(`1. Результат роботи - ${averageResult}`);
+    averageOutput.textContent = `Результат роботи - ${averageResult}`;
+});
