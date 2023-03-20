@@ -7,6 +7,7 @@ const filterEvenNumbers = (...numbers) => {
 }
 
 const filterEvenForm = document.forms.filterEvenForm;
+const filterOutput = document.querySelector("#filterOutput");
 
 filterEvenForm.addEventListener("submit", ( e ) => {
     e.preventDefault();
