@@ -18,5 +18,6 @@ filterEvenForm.addEventListener("submit", ( e ) => {
     });
     const filterResult = filterEvenNumbers(...filterInputArr);
     console.log(`1. Результат роботи - ${filterResult}`);
+    filterOutput.textContent = `Результат роботи - ${filterResult}`;
 });
 
