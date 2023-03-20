@@ -21,3 +21,5 @@ filterEvenForm.addEventListener("submit", ( e ) => {
     filterOutput.textContent = `Результат роботи - ${filterResult}`;
 });
 
+// 2. Створіть функцію getAverage(...numbers) – яка рахує середнє арифметичне всіх переданих в неї аргументів
+
