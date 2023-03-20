@@ -34,7 +34,7 @@ const getAverage = (...numbers) => {
     numbers.forEach(el => {
         sum += el;
     });
-    return sum / numbersLength
+    return (sum / numbersLength).toFixed(2);
 }
 
 
