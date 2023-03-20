@@ -1,3 +1,11 @@
+const setNumberType = (arr) => {
+    const numberTypeArr = [];
+    arr.forEach(el => {
+        numberTypeArr.push(Number(el))
+    });
+    return numberTypeArr
+}
+
 // 1. Створіть функцію filterEvenNumbers(...numbers) – яка фільтрує парні числа
 // передані як аргументи функції.
 
