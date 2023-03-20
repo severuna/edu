@@ -33,3 +33,5 @@ const getAverage = (...numbers) => {
 }
 
 
+const getAverageForm = document.forms.getAverageForm;
+
