@@ -94,3 +94,4 @@ positiveNumbersForm.addEventListener("submit", ( e ) => {
 // склади по 3 букви. Якщо букв менше трьох – не розбиває. Пробіли завжди
 // видаляються. Рядок приводится до нижнього регістру
 
+const byThreeForm = document.forms.byThreeForm;
