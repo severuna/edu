@@ -77,7 +77,19 @@
             </div>
             <div class="item flex-column">
                 <h2 class="task"><span>5.</span> Створіть функцію <span>divideByThree(word)</span>, яка розбиває кожне слово на умовні склади по 3 букви. Якщо букв менше трьох – не розбиває. Пробіли завжди видаляються. Рядок приводится до нижнього регістру</h2>
-                <div class="answer flex-column"></div>
+                <div class="answer flex-column">
+                    <form class="form flex-column" id="byThreeForm">
+                        <div class="field flex-row">
+                            <label for="byThreeInput">Введіть слово/слова (через кому або пробіл):</label>
+                            <input type="text" id="byThreeInput">
+                        </div>
+                        <div class="field flex-row">
+                            <button class="btn" type="submit">Підтвердити</button>
+                            <button class="btn" type="reset">Скинути</button>
+                        </div>
+                    </form>
+                    <div class="output" id="byThreeOutput"></div>
+                </div>
             </div>
             <div class="item flex-column">
                 <h2 class="task"></h2>
