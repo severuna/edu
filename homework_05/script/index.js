@@ -118,3 +118,12 @@ byThreeForm.addEventListener("submit", ( e ) => {
 // повертає масив випадкових цілих чисел. У функції є параметри: length -
 // довжина масиву, min – мінімальне значення цілого числа, max – максимальне
 // значення цілого числа.
+
+const getRandomArray = (length, min, max) => {
+    const randomArray = [];
+    for (let i = 0; i < length; i++) {
+        randomArray.push(Math.floor( Math.random() * ( max - min ) + min ));
+    }
+    return randomArray
+}
+
