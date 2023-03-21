@@ -127,3 +127,4 @@ const getRandomArray = (length, min, max) => {
     return randomArray
 }
 
+const randomArrayForm = document.forms.randomArrayForm;
