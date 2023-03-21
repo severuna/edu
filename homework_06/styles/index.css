@@ -27,3 +27,9 @@ html {
     --main-margin: var(--container-padding);
     --border-radius: 1.5rem;
 }
+
+.main {
+    margin: var(--main-margin);
+    border-radius: var(--border-radius);
+    background-color: var(--color-black);
+}
