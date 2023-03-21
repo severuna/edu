@@ -70,3 +70,6 @@ dividedByFiveForm.addEventListener("submit", ( e ) => {
     console.log(`3. Результат роботи - ${dividedResult}`);
     dividedOutput.textContent = `Результат роботи - ${dividedResult}`;
 });
+
+// 4. Створіть функцію countPositiveNumbers(...numbers) – яка порахує кількість
+// чисел більших
