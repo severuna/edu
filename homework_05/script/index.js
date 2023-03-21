@@ -81,3 +81,12 @@ const countPositiveNumbers = (...numbers) => {
 const positiveNumbersForm = document.forms.positiveNumbersForm;
 const positiveOutput = document.querySelector("#positiveOutput");
 
+positiveNumbersForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const positiveInput = positiveNumbersForm[0].value.split(', ');
+    const positiveInputArr = setNumberType(positiveInput);
+    const positiveResult = countPositiveNumbers(...positiveInputArr);
+    console.log(`4. Результат роботи - ${positiveResult}`);
+    positiveOutput.textContent = `Результат роботи - ${positiveResult}`;
+});
+
