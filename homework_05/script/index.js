@@ -60,3 +60,5 @@ const getDividedByFive = (...numbers) => {
 }
 
 const dividedByFiveForm = document.forms.dividedByFiveForm;
+const dividedOutput = document.querySelector("#dividedOutput");
+
