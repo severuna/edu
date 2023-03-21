@@ -73,3 +73,8 @@ dividedByFiveForm.addEventListener("submit", ( e ) => {
 
 // 4. Створіть функцію countPositiveNumbers(...numbers) – яка порахує кількість
 // чисел більших
+
+const countPositiveNumbers = (...numbers) => {
+    return numbers.filter( el => el > 0 )
+}
+
