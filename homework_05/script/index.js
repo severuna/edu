@@ -79,3 +79,5 @@ const countPositiveNumbers = (...numbers) => {
 }
 
 const positiveNumbersForm = document.forms.positiveNumbersForm;
+const positiveOutput = document.querySelector("#positiveOutput");
+
