@@ -19,3 +19,11 @@ html {
     display: flex;
     flex-direction: column;
 }
+
+:root {
+    --color-black: black;
+    --color-light: azure;
+    --container-padding: 2.5rem;
+    --main-margin: var(--container-padding);
+    --border-radius: 1.5rem;
+}
