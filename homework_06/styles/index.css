@@ -34,6 +34,10 @@ html {
     --title-weight: 900;
     --text-decor: underline;
     --container-width: 100%;
+    --task-size: 2rem;
+    --task-weight: 700;
+    --answer-fs: 1.8re,;
+    --answer-fw: 400;
 }
 
 .main {
