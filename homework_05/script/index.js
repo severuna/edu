@@ -113,3 +113,8 @@ byThreeForm.addEventListener("submit", ( e ) => {
     console.log(`5. Результат роботи - ${byThreeResult}`);
     byThreeOutput.textContent = `Результат роботи - ${byThreeResult}`;
 });
+
+// 6. Створіть функцію getRandomArray(length, min, max) – яка
+// повертає масив випадкових цілих чисел. У функції є параметри: length -
+// довжина масиву, min – мінімальне значення цілого числа, max – максимальне
+// значення цілого числа.
