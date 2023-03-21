@@ -90,3 +90,7 @@ positiveNumbersForm.addEventListener("submit", ( e ) => {
     positiveOutput.textContent = `Результат роботи - ${positiveResult}`;
 });
 
+// 5. Створіть функцію divideByThree(word), яка розбиває кожне слово на умовні
+// склади по 3 букви. Якщо букв менше трьох – не розбиває. Пробіли завжди
+// видаляються. Рядок приводится до нижнього регістру
+
