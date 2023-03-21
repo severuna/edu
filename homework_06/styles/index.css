@@ -34,4 +34,6 @@ html {
     margin: var(--main-margin);
     border-radius: var(--border-radius);
     background-color: var(--color-black);
+    gap: var(--gap);
+    align-items: var(--align-center);
 }
