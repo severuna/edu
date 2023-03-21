@@ -45,7 +45,19 @@
             </div>
             <div class="item flex-column">
                 <h2 class="task"><span>3.</span> Створіть функцію <span>getDividedByFive(...numbers)</span> – яка відфільтрує усі елементи в масиві та залишить тільки ті, які діляться на ціло на 5</h2>
-                <div class="answer flex-column"></div>
+                <div class="answer flex-column">
+                    <form class="form flex-column" id="dividedByFiveForm">
+                        <div class="field flex-row">
+                            <label for="dividedInput">Введіть числа (через кому або пробіл):</label>
+                            <input type="text" id="dividedInput">
+                        </div>
+                        <div class="field flex-row">
+                            <button class="btn" type="submit">Підтвердити</button>
+                            <button class="btn" type="reset">Скинути</button>
+                        </div>
+                    </form>
+                    <div class="output" id="dividedOutput"></div>
+                </div>
             </div>
             <div class="item flex-column">
                 <h2 class="task"></h2>
