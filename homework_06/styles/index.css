@@ -38,6 +38,8 @@ html {
     --task-weight: 700;
     --answer-fs: 1.8re,;
     --answer-fw: 400;
+    --span-padding: .5rem 1rem;
+    --span-border: .6rem;
 }
 
 .main {
@@ -77,4 +79,12 @@ html {
     border: 5px dotted var(--color-black);
     font-size: var(--task-size);
     font-weight: var(--task-weight);
+}
+
+span {
+    text-decoration: var(--text-decor);
+    background-color: var(--color-black);
+    color: var(--color-gold);
+    padding: var(--span-padding);
+    border-radius: var(--span-border);
 }
