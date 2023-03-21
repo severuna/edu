@@ -117,3 +117,7 @@ input {
     font-size: var(--desc-size);
     padding: var(--title-padding);
 }
+
+.output {
+    word-break: break-all;
+}
