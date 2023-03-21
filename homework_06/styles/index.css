@@ -26,6 +26,8 @@ html {
     --container-padding: 2.5rem;
     --main-margin: var(--container-padding);
     --border-radius: 1.5rem;
+    --gap: 3rem;
+    --align-center: center;
 }
 
 .main {
