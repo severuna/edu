@@ -50,3 +50,7 @@ getAverageForm.addEventListener("submit", ( e ) => {
     console.log(`2. Результат роботи - ${averageResult}`);
     averageOutput.textContent = `Результат роботи - ${averageResult}`;
 });
+
+
+// 3. . Створіть функцію getDividedByFive(...numbers) – яка відфільтрує усі елементи
+// в масиві та залишить тільки ті, які діляться на ціло на 5
