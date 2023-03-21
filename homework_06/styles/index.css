@@ -70,3 +70,11 @@ html {
     padding: var(--container-padding);
     gap: var(--gap);
 }
+
+.task {
+    border-radius: var(--border-radius);
+    padding: var(--container-padding);
+    border: 5px dotted var(--color-black);
+    font-size: var(--task-size);
+    font-weight: var(--task-weight);
+}
