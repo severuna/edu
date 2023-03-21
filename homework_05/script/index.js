@@ -78,3 +78,4 @@ const countPositiveNumbers = (...numbers) => {
     return numbers.filter( el => el > 0 )
 }
 
+const positiveNumbersForm = document.forms.positiveNumbersForm;
