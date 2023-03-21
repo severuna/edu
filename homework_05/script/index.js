@@ -95,7 +95,7 @@ positiveNumbersForm.addEventListener("submit", ( e ) => {
 // видаляються. Рядок приводится до нижнього регістру
 
 const divideByThree = (word) => {
-    const splitStr = word.split(' ').join('');
+    const splitStr = word.join('');
     const dividedStr = [];
     for( let i = 0; i < splitStr.length; i += 3) {
         dividedStr.push(splitStr.slice(i, i + 3))
@@ -105,3 +105,11 @@ const divideByThree = (word) => {
 
 const byThreeForm = document.forms.byThreeForm;
 const byThreeOutput = document.querySelector("#byThreeOutput");
+
+byThreeForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const byThreeInput = byThreeForm[0].value.split(' ');
+    const byThreeResult = divideByThree(byThreeInput);
+    console.log(`5. Результат роботи - ${byThreeResult}`);
+    byThreeOutput.textContent = `Результат роботи - ${byThreeResult}`;
+});
