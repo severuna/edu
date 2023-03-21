@@ -95,3 +95,4 @@ positiveNumbersForm.addEventListener("submit", ( e ) => {
 // видаляються. Рядок приводится до нижнього регістру
 
 const byThreeForm = document.forms.byThreeForm;
+const byThreeOutput = document.querySelector("#byThreeOutput");
