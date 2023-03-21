@@ -23,11 +23,16 @@ html {
 :root {
     --color-black: black;
     --color-light: azure;
+    --color-gold: yellow;
     --container-padding: 2.5rem;
     --main-margin: var(--container-padding);
     --border-radius: 1.5rem;
     --gap: 3rem;
     --align-center: center;
+    --title-color: var(--color-gold);
+    --title-size: 3rem;
+    --title-weight: 900;
+    --text-decor: underline;
 }
 
 .main {
@@ -36,4 +41,11 @@ html {
     background-color: var(--color-black);
     gap: var(--gap);
     align-items: var(--align-center);
+}
+
+.title {
+    color:var(--title-color);
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
+    text-decoration: var(--text-decor);
 }
