@@ -130,3 +130,12 @@ const getRandomArray = (length, min, max) => {
 const randomArrayForm = document.forms.randomArrayForm;
 const randomArrayOutput = document.querySelector("#randomArrayOutput");
 
+randomArrayForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const lengthArr = Number(randomArrayForm['length'].value);
+    const minArr = Number(randomArrayForm['min'].value);
+    const maxArr = Number(randomArrayForm['max'].value);
+    const randomArrayResult = getRandomArray(lengthArr, minArr, maxArr);
+    console.log(`6. Результат роботи - ${randomArrayResult}`);
+    randomArrayOutput.textContent = `Результат роботи - ${randomArrayResult}`
+});
