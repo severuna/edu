@@ -94,5 +94,14 @@ positiveNumbersForm.addEventListener("submit", ( e ) => {
 // склади по 3 букви. Якщо букв менше трьох – не розбиває. Пробіли завжди
 // видаляються. Рядок приводится до нижнього регістру
 
+const divideByThree = (word) => {
+    const splitStr = word.split(' ').join('');
+    const dividedStr = [];
+    for( let i = 0; i < splitStr.length; i += 3) {
+        dividedStr.push(splitStr.slice(i, i + 3))
+    }
+    return dividedStr
+}
+
 const byThreeForm = document.forms.byThreeForm;
 const byThreeOutput = document.querySelector("#byThreeOutput");
