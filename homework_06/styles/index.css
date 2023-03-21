@@ -33,6 +33,7 @@ html {
     --title-size: 3rem;
     --title-weight: 900;
     --text-decor: underline;
+    --container-width: 100%;
 }
 
 .main {
@@ -49,4 +50,12 @@ html {
     font-size: var(--title-size);
     font-weight: var(--title-weight);
     text-decoration: var(--text-decor);
+}
+
+.container {
+    gap: var(--gap);
+    border-radius: var(--border-radius);
+    padding: var(--container-padding);
+    width: var(--container-width);
+    border: 1px solid var(--color-gold);
 }
