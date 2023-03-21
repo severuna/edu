@@ -62,3 +62,11 @@ const getDividedByFive = (...numbers) => {
 const dividedByFiveForm = document.forms.dividedByFiveForm;
 const dividedOutput = document.querySelector("#dividedOutput");
 
+dividedByFiveForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const dividedInput = dividedByFiveForm[0].value.split(', ');
+    const dividedInputArr = setNumberType(dividedInput);
+    const dividedResult = getDividedByFive(...dividedInputArr);
+    console.log(`3. Результат роботи - ${dividedResult}`);
+    dividedOutput.textContent = `Результат роботи - ${dividedResult}`;
+});
