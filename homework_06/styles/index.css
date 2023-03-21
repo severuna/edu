@@ -37,6 +37,7 @@ html {
 
 .main {
     margin: var(--main-margin);
+    padding: var(--container-padding);
     border-radius: var(--border-radius);
     background-color: var(--color-black);
     gap: var(--gap);
