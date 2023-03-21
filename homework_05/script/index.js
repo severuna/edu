@@ -54,3 +54,8 @@ getAverageForm.addEventListener("submit", ( e ) => {
 
 // 3. . Створіть функцію getDividedByFive(...numbers) – яка відфільтрує усі елементи
 // в масиві та залишить тільки ті, які діляться на ціло на 5
+
+const getDividedByFive = (...numbers) => {
+    return numbers.filter( el => el % 5 == 0 )
+}
+
