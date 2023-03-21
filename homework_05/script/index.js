@@ -59,3 +59,4 @@ const getDividedByFive = (...numbers) => {
     return numbers.filter( el => el % 5 == 0 )
 }
 
+const dividedByFiveForm = document.forms.dividedByFiveForm;
