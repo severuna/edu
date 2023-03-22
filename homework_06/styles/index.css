@@ -103,5 +103,12 @@ span {
 
 .form {
     gap: var(--gap);
-    width: 60vw;
+    width: 40vw;
 }
+
+.field {
+    align-items: var(--align-center);
+    width: 100%;
+    gap: var(--gap);
+}
+
