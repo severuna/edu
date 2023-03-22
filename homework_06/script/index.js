@@ -87,4 +87,7 @@ const showDataArr = ( arr , container) => {
     return container
 }
 
-showDataArr(students, dataArr)
+showDataArr(students, dataArr);
+
+// 2. Створіть функцію getSubjects(students[0] --> ["Math", "Algorithms", "Data science"] - яка повертає список предметів для конкретного студента
+
