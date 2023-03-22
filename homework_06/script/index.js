@@ -91,7 +91,17 @@ showDataArr(students, dataArr);
 
 // 2. Створіть функцію getSubjects(students[0] --> ["Math", "Algorithms", "Data science"] - яка повертає список предметів для конкретного студента
 
-
+const getSubjects = ( student, arr ) => {
+    let returnArr = []
+    arr.forEach( el => {
+        if (el.name == student) {
+            for ( const elem in el.subjects ) {
+                returnArr.push(elem)
+            }
+        }
+    });
+    return returnArr
+}
 
 const subjectsForm = document.forms.subjectsForm;
 const subjectsOutput = document.querySelector("#subjectsOutput");
@@ -100,3 +110,5 @@ subjectsForm.addEventListener("submit", ( e ) => {
     e.preventDefault();
     const selectStudent = subjectsForm[0].value;
 });
+
+console.log(getSubjects('Tanya', students))
