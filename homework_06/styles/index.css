@@ -40,6 +40,7 @@ html {
     --answer-fw: 400;
     --span-padding: .5rem 1rem;
     --span-border: .6rem;
+    --btn-br: 1rem;
 }
 
 .main {
@@ -112,3 +113,9 @@ span {
     gap: var(--gap);
 }
 
+.btn {
+    border-radius: var(--btn-br);
+    padding: var(--span-padding);
+    background-color: var(--color-black);
+    color: var(--color-gold);
+}
