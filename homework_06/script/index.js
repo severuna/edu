@@ -31,3 +31,4 @@ const students = [
     }
 ];
 
+const dataArr = document.querySelector("#dataArr");
