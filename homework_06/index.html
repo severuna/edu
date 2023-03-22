@@ -17,7 +17,23 @@
             </div>
             <div class="item flex-column">
                 <h2 class="task"><span>2.</span> Створіть функцію <span>getSubjects(students[0]) => ["Math", "Algorithms", "Data  science"]</span> - яка повертає список предметів для конкретного студента. </h2>
-                <div class="answer flex-column"></div>
+                <div class="answer flex-column">
+                    <form class="form flex-column" id="subjects">
+                        <div class="filed flex-row">
+                            <p>Оберіть студента зі списку: </p>
+                            <select name="subjects" id="subjects">
+                                <option value="Tanya">Tanya</option>
+                                <option value="Victor" selected>Victor</option>
+                                <option value="Anton">Anton</option>
+                            </select>
+                        </div>
+                        <div class="filed flex-row">
+                            <button type="submit">Підтвердити</button>
+                            <button type="reset">Скасувати</button>
+                        </div>
+                    </form>
+                    <div class="output" id="subjectsOutput"></div>
+                </div>
             </div>
             <div class="item flex-column">
                 <h2 class="task"></h2>
