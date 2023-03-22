@@ -94,6 +94,7 @@ span {
     border-radius: var(--border-radius);
     border: 2px solid var(--color-black);
     gap: var(--gap);
+    font-size: var(--task-size);
 }
 
 #dataArr {
