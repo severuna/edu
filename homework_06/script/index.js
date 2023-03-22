@@ -52,6 +52,7 @@ const showSub = ( subName, sub ) => {
     subTitle.textContent = `${subName} : `;
     subContainer.append(subTitle);
     subContainer.className = "flex-column";
+    subTitle.style.marginLeft += '10px';
     subContainer.append(addBracket(' { ', '30px'));
     for ( const subName in sub ) {
         subContainer.append(showProp(subName, sub[subName], '30px'));
@@ -64,16 +65,16 @@ const showSub = ( subName, sub ) => {
 const showDataElem = ( dataElem ) => {
     const dataElemContainer = document.createElement("div");
     dataElemContainer.classList = "flex-column";
-    dataElemContainer.append(addBracket(' { ', 0));
+    dataElemContainer.append(addBracket(' { ', '10px'));
     for ( const prop in dataElem ) {
         if (prop != 'subjects') {
-            dataElemContainer.append(showProp(prop, dataElem[prop], 0));
+            dataElemContainer.append(showProp(prop, dataElem[prop], '10px'));
         }
         if (prop === 'subjects') {
             dataElemContainer.append(showSub(prop, dataElem[prop]));
         }
     }
-    dataElemContainer.append(addBracket('}, ', 0));
+    dataElemContainer.append(addBracket('}, ', '10px'));
     return dataElemContainer
 }
 
