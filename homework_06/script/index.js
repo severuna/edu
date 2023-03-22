@@ -95,3 +95,8 @@ showDataArr(students, dataArr);
 
 const subjectsForm = document.forms.subjectsForm;
 const subjectsOutput = document.querySelector("#subjectsOutput");
+
+subjectsForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const selectStudent = subjectsForm[0].value;
+});
