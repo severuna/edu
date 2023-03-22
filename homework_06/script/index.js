@@ -32,3 +32,44 @@ const students = [
 ];
 
 const dataArr = document.querySelector("#dataArr");
+
+const showProp = ( propName, prop ) => {
+    const propItem = document.createElement("p");
+    propItem.textContent = `${ propName } : ${ prop }`;
+    return propItem
+}
+const showSub = ( subName, sub ) => {
+    const subContainer = document.createElement("div");
+    const subTitle = document.createElement("p");
+    subTitle.textContent = subName;
+    subContainer.append(subTitle);
+    subContainer.className = "flex-column";
+    for ( const subName in sub ) {
+        subContainer.append(showProp(subName, sub[subName]));
+    }
+    return subContainer
+}
+
+
+const showDataElem = ( dataElem ) => {
+    const dataElemContainer = document.createElement("div");
+    dataElemContainer.classList = "flex-column";
+    for ( const prop in dataElem ) {
+        if (prop != 'subjects') {
+            dataElemContainer.append(showProp(prop, dataElem[prop]));
+        }
+        if (prop === 'subjects') {
+            dataElemContainer.append(showSub(prop, dataElem[prop]));
+        }
+    }
+    return dataElemContainer
+}
+
+const showDataArr = ( arr , container) => {
+    arr.forEach(element => {
+        container.append(showDataElem(element))
+    });
+    return container
+}
+
+showDataArr(students, dataArr)
