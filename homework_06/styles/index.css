@@ -95,3 +95,7 @@ span {
     border: 2px solid var(--color-black);
     gap: var(--gap);
 }
+
+#dataArr {
+    gap: 0;
+}
