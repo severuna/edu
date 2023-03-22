@@ -33,20 +33,30 @@ const students = [
 
 const dataArr = document.querySelector("#dataArr");
 
-const showProp = ( propName, prop ) => {
+const addBracket = ( brack, marginLeft ) => {
+    const bracket = document.createElement("p");
+    bracket.textContent = brack;
+    bracket.style.marginLeft += marginLeft;
+    return bracket
+}
+
+const showProp = ( propName, prop, marginLeft ) => {
     const propItem = document.createElement("p");
-    propItem.textContent = `${ propName } : ${ prop }`;
+    propItem.style.marginLeft += marginLeft;
+    propItem.textContent = `${ propName } : ${ prop } ,`;
     return propItem
 }
 const showSub = ( subName, sub ) => {
     const subContainer = document.createElement("div");
     const subTitle = document.createElement("p");
-    subTitle.textContent = subName;
+    subTitle.textContent = `${subName} : `;
     subContainer.append(subTitle);
     subContainer.className = "flex-column";
+    subContainer.append(addBracket(' { ', '30px'));
     for ( const subName in sub ) {
-        subContainer.append(showProp(subName, sub[subName]));
+        subContainer.append(showProp(subName, sub[subName], '30px'));
     }
+    subContainer.append(addBracket('}, ', '30px'));
     return subContainer
 }
 
@@ -54,21 +64,25 @@ const showSub = ( subName, sub ) => {
 const showDataElem = ( dataElem ) => {
     const dataElemContainer = document.createElement("div");
     dataElemContainer.classList = "flex-column";
+    dataElemContainer.append(addBracket(' { ', 0));
     for ( const prop in dataElem ) {
         if (prop != 'subjects') {
-            dataElemContainer.append(showProp(prop, dataElem[prop]));
+            dataElemContainer.append(showProp(prop, dataElem[prop], 0));
         }
         if (prop === 'subjects') {
             dataElemContainer.append(showSub(prop, dataElem[prop]));
         }
     }
+    dataElemContainer.append(addBracket('}, ', 0));
     return dataElemContainer
 }
 
 const showDataArr = ( arr , container) => {
+    container.append(addBracket('const students = [ ', 0));
     arr.forEach(element => {
         container.append(showDataElem(element))
     });
+    container.append(addBracket(' ]', 0));
     return container
 }
 
