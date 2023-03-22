@@ -88,3 +88,10 @@ span {
     padding: var(--span-padding);
     border-radius: var(--span-border);
 }
+
+.answer {
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    border: 2px solid var(--color-black);
+    gap: var(--gap);
+}
