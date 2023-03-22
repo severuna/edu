@@ -100,3 +100,8 @@ span {
 #dataArr {
     gap: 0;
 }
+
+.form {
+    gap: var(--gap);
+    width: 60vw;
+}
