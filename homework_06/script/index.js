@@ -94,3 +94,4 @@ showDataArr(students, dataArr);
 
 
 const subjectsForm = document.forms.subjectsForm;
+const subjectsOutput = document.querySelector("#subjectsOutput");
