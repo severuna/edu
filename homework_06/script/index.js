@@ -183,3 +183,5 @@ const getStudentsNames = ( arr ) => {
 const getNamesOutput = document.querySelector("#getNamesOutput");
 getNamesOutput.textContent = `Імена стужентів у алфавітному порядку - ${ getStudentsNames( students ) }`;
 
+// 6. Створіть функцію getBestStudent(students) => "Anton" – яка повертає кращого студента зі списку по показнику середньої оцінки.
+
