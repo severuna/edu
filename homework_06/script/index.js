@@ -145,5 +145,17 @@ markForm.addEventListener("submit", ( e ) => {
 
 // 4. Створіть функцію getStudentInfo(students[0]) => { "course": 3, "name": "Tanya", "averageMark": 3.79} – яка повертає інформацію загального виду по переданому студенту (вам знадобиться функція з попереднього завдання). Повинна бути виведена інформація: курс, ім'я, середня оцінка.
 
+const getStudentInfo = ( student, arr ) => {
+    const studentInfo = {};
+    arr.forEach( el =>{
+        if (el.name == student) {
+            studentInfo.course = el.course
+        }
+    });
+    studentInfo.name = student;
+    studentInfo.averageMark = getAverageMark(student, arr)
+    return studentInfo
+}
+
 const infoForm = document.forms.infoForm;
 const infoOutput = document.querySelector("#infoOutput");
