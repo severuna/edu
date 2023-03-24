@@ -114,7 +114,7 @@ subjectsForm.addEventListener("submit", ( e ) => {
     console.log(`Список придметів студента ${ selectStudent } - [ ${ getSubjects(selectStudent, students) }]`);
 });
 
-// Створіть функцію getAverageMark(students[0]) --> 3.79 – яка поверне середню оцінку по усім предметам для переданого студента НЕ МАСИВА СТУДЕНТІВ.
+// 3. Створіть функцію getAverageMark(students[0]) --> 3.79 – яка поверне середню оцінку по усім предметам для переданого студента НЕ МАСИВА СТУДЕНТІВ.
 
 const getAverageMark = ( student, arr ) => {
     let sumMark = 0;
@@ -142,3 +142,6 @@ markForm.addEventListener("submit", ( e ) => {
     markOutput.textContent = `Середня оцінка по усім предметам студента ${ selectStudent } - ${ getAverageMark(selectStudent, students) }`;
     console.log(`Середня оцінка по усім предметам студента ${ selectStudent } - ${ getAverageMark(selectStudent, students) }`);
 });
+
+// 4. Створіть функцію getAverageMark(students[0]) => 3.79 – яка поверне середню оцінку по усім предметам для переданого студента НЕ МАСИВА СТУДЕНТІВ.
+
