@@ -119,3 +119,7 @@ subjectsForm.addEventListener("submit", ( e ) => {
 
 const markForm = document.forms.markForm;
 const markOutput = document.querySelector("#markOutput");
+
+markForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+});
