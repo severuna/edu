@@ -143,7 +143,7 @@ markForm.addEventListener("submit", ( e ) => {
     console.log(`Середня оцінка по усім предметам студента ${ selectStudent } - ${ getAverageMark(selectStudent, students) }`);
 });
 
-// 4. Створіть функцію getAverageMark(students[0]) => 3.79 – яка поверне середню оцінку по усім предметам для переданого студента НЕ МАСИВА СТУДЕНТІВ.
+// 4. Створіть функцію getStudentInfo(students[0]) => { "course": 3, "name": "Tanya", "averageMark": 3.79} – яка повертає інформацію загального виду по переданому студенту (вам знадобиться функція з попереднього завдання). Повинна бути виведена інформація: курс, ім'я, середня оцінка.
 
 const infoForm = document.forms.infoForm;
 const infoOutput = document.querySelector("#infoOutput");
