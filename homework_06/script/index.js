@@ -171,4 +171,13 @@ infoForm.addEventListener("submit", ( e ) => {
 
 // 5. Ствроіть функцію getStudentsNames(students) => ["Anton", "Tanya, "Victor"] – яка повертає імена студентів у алфавітному порядку
 
+const getStudentsNames = ( arr ) => {
+    const studentsNamesArr = [];
+    arr.forEach( el => {
+        studentsNamesArr.push(el.name)
+    });
+    studentsNamesArr.sort();
+    return studentsNamesArr
+}
+
 const getNamesOutput = document.querySelector("#getNamesOutput");
