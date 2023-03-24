@@ -96,7 +96,9 @@ const getSubjects = ( student, arr ) => {
     arr.forEach( el => {
         if (el.name == student) {
             for ( const elem in el.subjects ) {
-                returnArr.push(elem)
+                let str = elem.split('_').join(" ");
+                // returnArr.push(String(elem)[0].toUpperCase() + String(elem).slice(1));
+                returnArr.push(str[0].toUpperCase() + str.slice(1));
             }
         }
     });
