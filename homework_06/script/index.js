@@ -138,4 +138,7 @@ const markOutput = document.querySelector("#markOutput");
 
 markForm.addEventListener("submit", ( e ) => {
     e.preventDefault();
+    const selectStudent = markForm[0].value;
+    markOutput.textContent = `Середня оцінка по усім предметам студента ${ selectStudent } - ${ getAverageMark(selectStudent, students) }`;
+    console.log(`Середня оцінка по усім предметам студента ${ selectStudent } - ${ getAverageMark(selectStudent, students) }`);
 });
