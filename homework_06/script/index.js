@@ -202,5 +202,15 @@ bestOutput.textContent = `Кращий студент зі списку - ${ get
 
 // 7. Створіть функцію calculateWordLetters("тест") => { "т": 2, "е": 1, "с": 1 } – яка повертає обє'кт, в якому ключі це букви у слові, а значення – кількість їх повторень.
 
+const calculateWordLetters = ( word ) => {
+    const symbols = new Map();
+    for (const w of word) {
+        const currCount = symbols.get(w) || 0;
+        symbols.set(w, currCount + 1);
+    }
+    const calculateObj = Object.fromEntries(symbols);
+    return calculateObj
+}
+
 const wordForm = document.forms.wordForm;
 const wordOutput = document.querySelector("#wordOutput");
