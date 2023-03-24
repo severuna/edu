@@ -159,3 +159,12 @@ const getStudentInfo = ( student, arr ) => {
 
 const infoForm = document.forms.infoForm;
 const infoOutput = document.querySelector("#infoOutput");
+
+infoForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const selectStudent = infoForm[0].value;
+    const studentInfo = getStudentInfo(selectStudent, students);
+    infoOutput.textContent = ''
+    infoOutput.append(showDataElem(studentInfo));
+    console.log(`Інформація про студента ${ selectStudent }`, studentInfo);
+});
