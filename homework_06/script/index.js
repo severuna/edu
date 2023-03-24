@@ -198,3 +198,4 @@ const getBestStudent = ( arr ) => {
 }
 
 const bestOutput = document.querySelector("#bestOutput");
+bestOutput.textContent = `Кращий студент зі списку - ${ getBestStudent( students )}`;
