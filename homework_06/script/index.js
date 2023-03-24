@@ -181,3 +181,5 @@ const getStudentsNames = ( arr ) => {
 }
 
 const getNamesOutput = document.querySelector("#getNamesOutput");
+getNamesOutput.textContent = `Імена стужентів у алфавітному порядку - ${ getStudentsNames( students ) }`;
+
