@@ -96,8 +96,7 @@ const getSubjects = ( student, arr ) => {
     arr.forEach( el => {
         if (el.name == student) {
             for ( const elem in el.subjects ) {
-                let str = elem.split('_').join(" ");
-                // returnArr.push(String(elem)[0].toUpperCase() + String(elem).slice(1));
+                let str = elem.split('_').join(" ")
                 returnArr.push(str[0].toUpperCase() + str.slice(1));
             }
         }
@@ -111,6 +110,7 @@ const subjectsOutput = document.querySelector("#subjectsOutput");
 subjectsForm.addEventListener("submit", ( e ) => {
     e.preventDefault();
     const selectStudent = subjectsForm[0].value;
+    subjectsOutput.textContent = `Список придметів студента ${ selectStudent } - [ ${ getSubjects(selectStudent, students) }]`;
+    console.log(`Список придметів студента ${ selectStudent } - [ ${ getSubjects(selectStudent, students) }]`);
 });
 
-console.log(getSubjects('Tanya', students))
