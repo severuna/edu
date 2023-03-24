@@ -145,3 +145,4 @@ markForm.addEventListener("submit", ( e ) => {
 
 // 4. Створіть функцію getAverageMark(students[0]) => 3.79 – яка поверне середню оцінку по усім предметам для переданого студента НЕ МАСИВА СТУДЕНТІВ.
 
+const infoForm = document.forms.infoForm;
