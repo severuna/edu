@@ -214,3 +214,9 @@ const calculateWordLetters = ( word ) => {
 
 const wordForm = document.forms.wordForm;
 const wordOutput = document.querySelector("#wordOutput");
+
+wordForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const wordInput = wordForm[0].value;
+    wordOutput.append(showDataElem(calculateWordLetters(wordInput)));
+});
