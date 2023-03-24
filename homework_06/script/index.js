@@ -168,3 +168,5 @@ infoForm.addEventListener("submit", ( e ) => {
     infoOutput.append(showDataElem(studentInfo));
     console.log(`Інформація про студента ${ selectStudent }`, studentInfo);
 });
+
+// 5. Ствроіть функцію getStudentsNames(students) => ["Anton", "Tanya, "Victor"] – яка повертає імена студентів у алфавітному порядку
