@@ -199,3 +199,6 @@ const getBestStudent = ( arr ) => {
 
 const bestOutput = document.querySelector("#bestOutput");
 bestOutput.textContent = `Кращий студент зі списку - ${ getBestStudent( students )}`;
+
+// 7. Створіть функцію calculateWordLetters("тест") => { "т": 2, "е": 1, "с": 1 } – яка повертає обє'кт, в якому ключі це букви у слові, а значення – кількість їх повторень.
+
