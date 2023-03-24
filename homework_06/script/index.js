@@ -185,4 +185,16 @@ getNamesOutput.textContent = `Імена стужентів у алфавітн�
 
 // 6. Створіть функцію getBestStudent(students) => "Anton" – яка повертає кращого студента зі списку по показнику середньої оцінки.
 
+const getBestStudent = ( arr ) => {
+    let bestStudent = '';
+    for (let i = 1; i < arr.length; i++) {
+        if (getAverageMark(arr[i].name, arr) > getAverageMark(arr[i - 1].name, arr)) {
+            bestStudent = arr[i].name
+        } else {
+            bestStudent = arr[i - 1].name
+        }
+    }
+    return bestStudent
+}
+
 const bestOutput = document.querySelector("#bestOutput");
