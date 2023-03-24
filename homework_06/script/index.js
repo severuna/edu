@@ -46,6 +46,7 @@ const showProp = ( propName, prop, marginLeft ) => {
     propItem.textContent = `${ propName } : ${ prop } ,`;
     return propItem
 }
+
 const showSub = ( subName, sub ) => {
     const subContainer = document.createElement("div");
     const subTitle = document.createElement("p");
@@ -181,7 +182,7 @@ const getStudentsNames = ( arr ) => {
 }
 
 const getNamesOutput = document.querySelector("#getNamesOutput");
-getNamesOutput.textContent = `Імена стужентів у алфавітному порядку - ${ getStudentsNames( students ) }`;
+getNamesOutput.textContent = `Імена студентів у алфавітному порядку - ${ getStudentsNames( students ) }`;
 
 // 6. Створіть функцію getBestStudent(students) => "Anton" – яка повертає кращого студента зі списку по показнику середньої оцінки.
 
