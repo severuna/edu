@@ -118,3 +118,4 @@ subjectsForm.addEventListener("submit", ( e ) => {
 
 
 const markForm = document.forms.markForm;
+const markOutput = document.querySelector("#markOutput");
