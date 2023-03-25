@@ -91,3 +91,17 @@ function getTotalTaxes ( ) {
 const totalTaxesForm = document.forms.totalTaxesForm;
 const totalTaxesOutput = document.querySelector("#totalTaxesOutput");
 
+totalTaxesForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const country = totalTaxesForm[0].value;
+    if ( country === 'ukraine' ) {
+        console.log(`В країні ${ country} всього платять податків ${getTotalTaxes.call(ukraine)}`);
+        totalTaxesOutput.innerHTML = `<p>В країні <span>${ country}</span>  всього платять податків <span>${getTotalTaxes.call(ukraine)}</span></p>`;
+    } else if ( country === 'latvia' )  {
+        console.log(`В країні ${ country}  всього платять податків ${getTotalTaxes.call(latvia)}`);
+        totalTaxesOutput.innerHTML = `<p>В країні <span>${ country}</span>  всього платять податків <span>${getTotalTaxes.call(latvia)}</span></p>`;
+    } else if ( country === 'litva' ) {
+        console.log(`В країні ${ country}  всього платять податків ${getTotalTaxes.call(litva)}`);
+        totalTaxesOutput.innerHTML = `<p>В країні <span>${ country}</span>  всього платять податків <span>${getTotalTaxes.call(litva)}</span></p>`;
+    }
+});
