@@ -89,3 +89,5 @@ function getTotalTaxes ( ) {
 }
 
 const totalTaxesForm = document.forms.totalTaxesForm;
+const totalTaxesOutput = document.querySelector("#totalTaxesOutput");
+
