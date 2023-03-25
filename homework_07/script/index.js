@@ -65,3 +65,4 @@ function getMiddleTaxes ( ) {
 }
 
 const middleTaxesForm = document.forms.middleTaxesForm;
+const middleTaxesOutput = document.querySelector("#middleTaxesOutput");
