@@ -64,3 +64,4 @@ function getMiddleTaxes ( ) {
     return (this.tax * this.middleSalary).toFixed(2);
 }
 
+const middleTaxesForm = document.forms.middleTaxesForm;
