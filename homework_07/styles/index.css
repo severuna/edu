@@ -34,7 +34,8 @@ html {
     --text-decor: underline;
     --font-size: 2rem;
     --font-weight: 500;
-    --par-padding: 1rem;
+    --btn-fs: 1.8rem;
+    --par-padding: .5rem 1rem;
 }
 
 .main {
@@ -100,4 +101,13 @@ span {
 
 .form, .field {
     gap: var(--gap);
+}
+
+.btn {
+    padding: var(--par-padding);
+    font-size: var(--btn-fs);
+    font-weight: var(--font-weight);
+    color: var(--color-light);
+    background-color: var(--color-black);
+    width: 17rem;
 }
