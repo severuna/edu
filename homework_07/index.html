@@ -60,7 +60,23 @@
             </div>
             <div class="item flex-column">
                 <h2 class="task"><span>4.</span> Створіть функцію <span>getTotalTaxes.call(country) -> number;</span> – яка рахує, скільки всього податків платять IT-спеціалісти у кожній країні. <span>(tax * middleSalary * vacancies)</span>. Функція повинна викликатись через <span>call</span> та працювати з даними через <span>this</span></h2>
-                <div class="answer flex-column"></div>
+                <div class="answer flex-column">
+                    <form class="form flex-column" id="totalTaxesForm">
+                        <div class="field flex-row">
+                            <p>Оберіть країну:</p>
+                            <select name="totalTaxesForm" id="totalTaxesForm">
+                                <option value="ukraine" selected>ukraine</option>
+                                <option value="latvia">latvia</option>
+                                <option value="litva">litva</option>
+                            </select>
+                        </div>
+                        <div class="field flex-row">
+                            <button type="reset" class="btn">Скинути</button>
+                            <button type="submit" class="btn">Підтвердити</button>
+                        </div>
+                    </form>
+                    <div id="totalTaxesOutput" class="output"></div>
+                </div>
             </div>
             <div class="item flex-column">
                 <h2 class="task"><span>5.</span> Створіть функцію <span>getMySalary(country)</span> – яка буде писати в консоль об'єкт виду: <span>{ salary: number, taxes: number, profit: number }</span> кожні 10 секунд. Значення salary – генеруйте випадковим чином у діапазоні 1500-2000. taxes – розраховується в залежності від вибраної країни та значення <span>salary</span>. <span>profit = salary - taxes;</span> для виводу в консоль кожні 10 секунд використайте setInterval</h2>
