@@ -49,3 +49,9 @@ html {
     font-weight: var(--title-weight);
     text-decoration: var(--text-decor);
 }
+
+.container {
+    padding: var(--container-padding);
+    gap: var(--gap);
+    width: 100%;
+}
