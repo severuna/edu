@@ -97,3 +97,7 @@ span {
     color: var(--color-light);
     border-radius: var(--border-radius);
 }
+
+.form {
+    gap: var(--gap);
+}
