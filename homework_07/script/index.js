@@ -17,3 +17,18 @@ const litva = {
     middleSalary: 1509, 
     vacancies: 1114 
 };
+
+const showObj = ( obj, objName ) => {
+    const container = document.createElement("p");
+    container.innerHTML = `const <span>${ objName }</span> = {
+        <span>tax</span> : ${ obj.tax },
+        <span>middleSalary</span> : ${ obj.middleSalary },
+        <span>vacancies</span> : ${ obj.vacancies }
+    }`;
+    return container
+}
+
+const outputObj = document.querySelector("#outputObj");
+outputObj.append(showObj(ukraine, 'ukraine'));
+outputObj.append(showObj(latvia, 'latvia'));
+outputObj.append(showObj(litva, 'litva'));
