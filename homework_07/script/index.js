@@ -88,3 +88,4 @@ function getTotalTaxes ( ) {
     return (this.tax * this.middleSalary * this.vacancies);
 }
 
+const totalTaxesForm = document.forms.totalTaxesForm;
