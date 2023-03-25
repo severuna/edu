@@ -66,3 +66,18 @@ function getMiddleTaxes ( ) {
 
 const middleTaxesForm = document.forms.middleTaxesForm;
 const middleTaxesOutput = document.querySelector("#middleTaxesOutput");
+
+middleTaxesForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const country = middleTaxesForm[0].value;
+    if ( country === 'ukraine' ) {
+        console.log(`В країні ${ country} в середньому платять податків ${getMiddleTaxes.call(ukraine)}`);
+        middleTaxesOutput.innerHTML = `<p>В країні <span>${ country}</span>  в середньому платять податків <span>${getMiddleTaxes.call(ukraine)}</span></p>`;
+    } else if ( country === 'latvia' )  {
+        console.log(`В країні ${ country}  в середньому платять податків ${getMiddleTaxes.call(latvia)}`);
+        middleTaxesOutput.innerHTML = `<p>В країні <span>${ country}</span>  в середньому платять податків <span>${getMiddleTaxes.call(latvia)}</span></p>`;
+    } else if ( country === 'litva' ) {
+        console.log(`В країні ${ country}  в середньому платять податків ${getMiddleTaxes.call(litva)}`);
+        middleTaxesOutput.innerHTML = `<p>В країні <span>${ country}</span>  в середньому платять податків <span>${getMiddleTaxes.call(litva)}</span></p>`;
+    }
+});
