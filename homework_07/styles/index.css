@@ -89,7 +89,7 @@ span {
     font-weight: var(--font-weight);
 }
 
-.answer p {
+#outputObj p {
     background-color: var(--color-black);
     padding: var(--par-padding);
     width: max-content;
