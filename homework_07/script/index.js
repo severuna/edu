@@ -36,7 +36,20 @@ outputObj.append(showObj(litva, 'litva'));
 // 2. Створіть функцію getMyTaxes.call(country, salary) -> number; – яка рахує скільки податків ви заплатите як IT-спеціаліст в якійсь з країн. Функція повинна викликатись через call та працювати з даними через this 
 
 function getMyTaxes ( salary ) {
-    return this.tax * salary
+    return (this.tax * salary).toFixed(2);
 }
 
 const myTaxesForm = document.forms.myTaxesForm;
+
+myTaxesForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const country = myTaxesForm[0].value;
+    const salary = Number(myTaxesForm[1].value);
+    if ( country === 'ukraine' ) {
+        console.log(`В країні ${ country} з зарплатні ${ salary } податок становитиме ${getMyTaxes.call(ukraine, salary)}`);
+    } else if ( country === 'latvia' )  {
+        console.log(`В країні ${ country} з зарплатні ${ salary } податок становитиме ${getMyTaxes.call(latvia, salary)}`);
+    } else if ( country === 'litva' ) {
+        console.log(`В країні ${ country} з зарплатні ${ salary } податок становитиме ${getMyTaxes.call(litva, salary)}`);
+    }
+});
