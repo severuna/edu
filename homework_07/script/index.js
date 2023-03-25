@@ -40,6 +40,7 @@ function getMyTaxes ( salary ) {
 }
 
 const myTaxesForm = document.forms.myTaxesForm;
+const myTaxesOutput = document.querySelector("#myTaxesOutput");
 
 myTaxesForm.addEventListener("submit", ( e ) => {
     e.preventDefault();
@@ -47,9 +48,12 @@ myTaxesForm.addEventListener("submit", ( e ) => {
     const salary = Number(myTaxesForm[1].value);
     if ( country === 'ukraine' ) {
         console.log(`В країні ${ country} з зарплатні ${ salary } податок становитиме ${getMyTaxes.call(ukraine, salary)}`);
+        myTaxesOutput.innerHTML = `<p>В країні <span>${ country}</span> з зарплатні <span>${ salary }</span> податок становитиме <span>${getMyTaxes.call(ukraine, salary)}</span></p>`;
     } else if ( country === 'latvia' )  {
         console.log(`В країні ${ country} з зарплатні ${ salary } податок становитиме ${getMyTaxes.call(latvia, salary)}`);
+        myTaxesOutput.innerHTML = `<p>В країні <span>${ country}</span> з зарплатні <span>${ salary }</span> податок становитиме <span>${getMyTaxes.call(latvia, salary)}</span></p>`;
     } else if ( country === 'litva' ) {
         console.log(`В країні ${ country} з зарплатні ${ salary } податок становитиме ${getMyTaxes.call(litva, salary)}`);
+        myTaxesOutput.innerHTML = `<p>В країні <span>${ country}</span> з зарплатні <span>${ salary }</span> податок становитиме <span>${getMyTaxes.call(litva, salary)}</span></p>`;
     }
 });

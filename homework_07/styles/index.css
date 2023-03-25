@@ -90,7 +90,7 @@ span {
     font-weight: var(--font-weight);
 }
 
-#outputObj p {
+#outputObj p , #myTaxesOutput p {
     background-color: var(--color-black);
     padding: var(--par-padding);
     width: max-content;
