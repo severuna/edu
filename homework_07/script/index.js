@@ -59,3 +59,8 @@ myTaxesForm.addEventListener("submit", ( e ) => {
 });
 
 // 3. Створіть функцію getMiddleTaxes.call(country) -> number; – яка рахує скільки у середньому податків платятт IT-спеціалісти у кожній країні. (tax * middleSalary). Функція повинна викликатись через call та працювати з даними через this
+
+function getMiddleTaxes ( ) {
+    return (this.tax * this.middleSalary).toFixed(2);
+}
+
