@@ -32,6 +32,8 @@ html {
     --title-size: 3.5rem;
     --title-weight: 900;
     --text-decor: underline;
+    --font-size: 2rem;
+    --font-weight: 500;
 }
 
 .main {
@@ -61,4 +63,18 @@ html {
     border-radius: var(--border-radius);
     background-color: var(--color-light);
     gap: var(--gap);
+}
+
+.task {
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--color-black);
+    color: var(--color-light);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+}
+
+span {
+    color: var(--color-blue);
+    font-weight: var(--title-weight);
 }
