@@ -17,7 +17,26 @@
             </div>
             <div class="item flex-column">
                 <h2 class="task"><span>2.</span> Створіть функцію <span>getMyTaxes.call(country, salary) -> number;</span> – яка рахує скільки податків ви заплатите як IT-спеціаліст в якійсь з країн. Функція повинна викликатись через <span>call</span> та працювати з даними через <span>this</span></h2>
-                <div class="answer flex-column"></div>
+                <div class="answer flex-column">
+                    <form class="form flex-column" id="myTaxesForm">
+                        <div class="field flex-row">
+                            <p>Оберіть країну:</p>
+                            <select name="myTaxesForm" id="myTaxesForm">
+                                <option value="ukraine" selected>ukraine</option>
+                                <option value="latvia">latvia</option>
+                                <option value="litva">litva</option>
+                            </select>
+                        </div>
+                        <div class="field flex-row">
+                            <label for="salary">Введіть вашу зарплатню:</label><input type="number" min="0" step="1" id="salary">
+                        </div>
+                        <div class="field flex-row">
+                            <button type="reset">Скинути</button>
+                            <button type="submit">Підтвердити</button>
+                        </div>
+                    </form>
+                    <div id="myTaxesOutput"></div>
+                </div>
             </div>
             <div class="item flex-column">
                 <h2 class="task"><span>3.</span> Створіть функцію <span>getMiddleTaxes.call(country)</span> -> number; – яка рахує скільки у середньому податків платятт IT-спеціалісти у кожній країні. <span>(tax * middleSalary)</span>. Функція повинна викликатись через <span>call</span> та працювати з даними через <span>this</span></h2>
