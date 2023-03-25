@@ -29,6 +29,9 @@ html {
     --border-radius: 1.5rem;
     --gap: 2.5rem;
     --center: center;
+    --title-size: 3.5rem;
+    --title-weight: 900;
+    --text-decor: underline;
 }
 
 .main {
@@ -40,3 +43,9 @@ html {
     align-items: var(--center);
 }
 
+.title {
+    color: var(--color-blue);
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
+    text-decoration: var(--text-decor);
+}
