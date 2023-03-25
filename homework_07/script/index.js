@@ -57,3 +57,5 @@ myTaxesForm.addEventListener("submit", ( e ) => {
         myTaxesOutput.innerHTML = `<p>В країні <span>${ country}</span> з зарплатні <span>${ salary }</span> податок становитиме <span>${getMyTaxes.call(litva, salary)}</span></p>`;
     }
 });
+
+// 3. Створіть функцію getMiddleTaxes.call(country) -> number; – яка рахує скільки у середньому податків платятт IT-спеціалісти у кожній країні. (tax * middleSalary). Функція повинна викликатись через call та працювати з даними через this
