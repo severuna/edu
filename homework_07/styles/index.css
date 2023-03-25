@@ -98,6 +98,6 @@ span {
     border-radius: var(--border-radius);
 }
 
-.form {
+.form, .field {
     gap: var(--gap);
 }
