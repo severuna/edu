@@ -84,5 +84,7 @@ span {
     border-radius: var(--border-radius);
     gap: var(--gap);
     border: 2px dashed var(--color-black);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
 }
 
