@@ -32,3 +32,5 @@ const outputObj = document.querySelector("#outputObj");
 outputObj.append(showObj(ukraine, 'ukraine'));
 outputObj.append(showObj(latvia, 'latvia'));
 outputObj.append(showObj(litva, 'litva'));
+
+// 2. Створіть функцію getMyTaxes.call(country, salary) -> number; – яка рахує скільки податків ви заплатите як IT-спеціаліст в якійсь з країн. Функція повинна викликатись через call та працювати з даними через this 
