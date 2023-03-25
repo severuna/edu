@@ -38,3 +38,5 @@ outputObj.append(showObj(litva, 'litva'));
 function getMyTaxes ( salary ) {
     return this.tax * salary
 }
+
+const myTaxesForm = document.forms.myTaxesForm;
