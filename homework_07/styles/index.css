@@ -28,4 +28,15 @@ html {
     --color-light: azure;
     --border-radius: 1.5rem;
     --gap: 2.5rem;
+    --center: center;
 }
+
+.main {
+    margin: var(--main-margin);
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--color-black);
+    gap: var(--gap);
+    align-items: var(--center);
+}
+
