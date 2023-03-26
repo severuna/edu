@@ -114,7 +114,21 @@ function getMySalary ( country ) {
     randomSalaryObj.salary = randomNumber;
     randomSalaryObj.taxes = Number((randomSalaryObj.salary - randomSalaryObj.salary * country.tax).toFixed(2));
     randomSalaryObj.profit = Number((randomSalaryObj.salary - randomSalaryObj.taxes).toFixed(2));
+    console.log(randomSalaryObj);
     return randomSalaryObj;
 }
 const mySalaryForm = document.forms.mySalaryForm;
 const mySalaryOutput = document.querySelector("#mySalaryOutput");
+
+mySalaryForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const country = totalTaxesForm[0].value;
+    mySalaryOutput.innerHTML = `<p> Ви обрали країну  <span>${ country}</span>. Результат роботи фукції можете переглянути в <span>консолі</span>.`;
+    if ( country === 'ukraine' ) {
+        setInterval(getMySalary, 10000, ukraine);
+    } else if ( country === 'latvia' )  {
+        setInterval(getMySalary, 10000, latvia);
+    } else if ( country === 'litva' ) {
+        setInterval(getMySalary, 10000, litva);
+    }
+});
