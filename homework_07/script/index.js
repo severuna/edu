@@ -116,5 +116,5 @@ function getMySalary ( country ) {
     randomSalaryObj.profit = Number((randomSalaryObj.salary - randomSalaryObj.taxes).toFixed(2));
     return randomSalaryObj;
 }
-
+const mySalaryForm = document.forms.mySalaryForm;
 const mySalaryOutput = document.querySelector("#mySalaryOutput");
