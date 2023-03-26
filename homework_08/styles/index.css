@@ -87,3 +87,11 @@ span {
     font-size: var(--font-size);
     font-weight: var(--font-weight);
 }
+
+.answer p {
+    background-color: var(--color-black);
+    padding: var(--container-padding);
+    width: max-content;
+    color: var(--color-light);
+    border-radius: var(--border-radius);
+}
