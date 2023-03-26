@@ -35,3 +35,55 @@ html {
     --font-weight: 500;
     --center: center;
 }
+
+.main {
+    margin: var(--main-margin);
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--color-black);
+    gap: var(--gap);
+    align-items: var(--center);
+}
+
+.title {
+    color: var(--color-blue);
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
+    text-decoration: var(--text-decor);
+}
+
+.container {
+    padding: var(--container-padding);
+    gap: var(--gap);
+    width: 100%;
+}
+
+.item {
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--color-light);
+    gap: var(--gap);
+}
+
+.task {
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--color-black);
+    color: var(--color-light);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+}
+
+span {
+    color: var(--color-blue);
+    font-weight: var(--title-weight);
+}
+
+.answer {
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    gap: var(--gap);
+    border: 2px dashed var(--color-black);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+}
