@@ -81,6 +81,20 @@
             <div class="item flex-column">
                 <h2 class="task"><span>5.</span> Створіть функцію <span>getMySalary(country)</span> – яка буде писати в консоль об'єкт виду: <span>{ salary: number, taxes: number, profit: number }</span> кожні 10 секунд. Значення salary – генеруйте випадковим чином у діапазоні 1500-2000. taxes – розраховується в залежності від вибраної країни та значення <span>salary</span>. <span>profit = salary - taxes;</span> для виводу в консоль кожні 10 секунд використайте setInterval</h2>
                 <div class="answer flex-column">
+                    <form class="form flex-column" id="mySalaryForm">
+                        <div class="field flex-row">
+                            <p>Оберіть країну:</p>
+                            <select name="mySalaryForm" id="mySalaryForm">
+                                <option value="ukraine" selected>ukraine</option>
+                                <option value="latvia">latvia</option>
+                                <option value="litva">litva</option>
+                            </select>
+                        </div>
+                        <div class="field flex-row">
+                            <button type="reset" class="btn">Скинути</button>
+                            <button type="submit" class="btn">Підтвердити</button>
+                        </div>
+                    </form>
                     <div id="mySalaryOutput" class="output"></div>
                 </div>
             </div>
