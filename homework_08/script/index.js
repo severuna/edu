@@ -7,5 +7,22 @@ class Student {
         this.course = course;
         this.fullName = fullName;
     }
-    
+
 }
+
+const showClass = ( ) => {
+    const container = document.createElement("p");
+    container.innerHTML = `<pre>class <span>Student</span> {
+        
+        constructor( <span>university</span>, <span>course</span>, <span>fullName</span> ) {
+            this.<span>university</span> = <span>university</span>;
+            this.<span>course</span> = <span>course</span>;
+            this.<span>fullName</span> = <span>fullName</span>;
+        }
+    
+    }</pre>`
+    return container
+}
+
+const studentOutput = document.querySelector("#studentOutput");
+studentOutput.append(showClass());
