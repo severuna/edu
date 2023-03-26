@@ -108,4 +108,13 @@ totalTaxesForm.addEventListener("submit", ( e ) => {
 
 // 5. Створіть функцію getMySalary(country) – яка буде писати в консоль об'єкт виду: { salary: number, taxes: number, profit: number } кожні 10 секунд. Значення salary – генеруйте випадковим чином у діапазоні 1500-2000. taxes – розраховується в залежності від вибраної країни та значення salary. profit = salary - taxes; для виводу в консоль кожні 10 секунд використайте setInterval
 
+function getMySalary ( country ) {
+    const randomSalaryObj = {};
+    const randomNumber = Math.floor( Math.random() * ( 2000 - 1500 ) + 1500 );
+    randomSalaryObj.salary = randomNumber;
+    randomSalaryObj.taxes = Number((randomSalaryObj.salary - randomSalaryObj.salary * country.tax).toFixed(2));
+    randomSalaryObj.profit = Number((randomSalaryObj.salary - randomSalaryObj.taxes).toFixed(2));
+    return randomSalaryObj;
+}
+
 const mySalaryOutput = document.querySelector("#mySalaryOutput");
