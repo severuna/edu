@@ -8,6 +8,11 @@ class Student {
         this.fullName = fullName;
     }
 
+    getInfo() {
+        const info = `Студент ${ this.course }го курсу ${ this.university }, ${ this.fullName }`;
+        return info
+    }
+
 }
 
 const showClass = ( ) => {
@@ -28,3 +33,4 @@ const studentOutput = document.querySelector("#studentOutput");
 studentOutput.append(showClass());
 
 // 2. Створіть метод this.getInfo() -> "Студент 1го курсу Вищої Школи Психотерапії м.Одеса, Остап Родоманський Бендер", метод повертає сукупну інформацію про курс, учбовий заклад та імені студента.
+// див. рядок 11-14
