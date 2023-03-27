@@ -17,7 +17,27 @@
             </div>
             <div class="item flex-column">
                 <h2 class="task"><span>2.</span>  Створіть метод <span>this.getInfo() -> "Студент 1го курсу Вищої Школи Психотерапії м.Одеса, Остап Родоманський Бендер"</span>, метод повертає сукупну інформацію про курс, учбовий заклад та імені студента.</h2>
-                <div class="answer"></div>
+                <div class="answer flex-column">
+                    <form class="form flex-column" id="infoForm">
+                        <div class="field flex-row">
+                            <label for="fullName">Введіть повне і'я студента:</label>
+                            <input type="text" id="fullName">
+                        </div>
+                        <div class="field flex-row">
+                            <label for="course">Введіть курс студента:</label>
+                            <input type="number" id="course" min="1" step="1">
+                        </div>
+                        <div class="field flex-row">
+                            <label for="university">Введіть університет студента:</label>
+                            <input type="text" id="university">
+                        </div>
+                        <div class="field flex-row">
+                            <button type="reset" class="btn">Скинути</button>
+                            <button type="submit" class="btn">Підтвердити</button>
+                        </div>
+                    </form>
+                    <div class="output" id="infoOutput"></div>
+                </div>
             </div>
             <div class="item flex-column">
                 <h2 class="task"><span>3.</span> Створіть геттер оцінок <span>this.marks</span>, який повертає масив оцінок студента <span>[5, 4, 4, 5]</span></h2>
