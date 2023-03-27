@@ -37,3 +37,12 @@ studentOutput.append(showClass());
 const userStudent = new Student();
 
 const infoForm = document.forms.infoForm;
+const infoOutput = document.querySelector("#infoOutput");
+
+infoForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    userStudent.fullName = infoForm[0].value;
+    userStudent.course = infoForm[1].value;
+    userStudent.university = infoForm[2].value;
+    infoOutput.innerHTML = `<p>${userStudent.getInfo()}</p>`;
+});
