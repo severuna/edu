@@ -35,3 +35,5 @@ const studentOutput = document.querySelector("#studentOutput");
 studentOutput.append(showClass());
 
 const userStudent = new Student();
+
+const infoForm = document.forms.infoForm;
