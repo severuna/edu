@@ -95,3 +95,16 @@ span {
     color: var(--color-light);
     border-radius: var(--border-radius);
 }
+
+.form, .field {
+    gap: var(--gap);
+}
+
+.btn {
+    padding: var(--par-padding);
+    font-size: var(--btn-fs);
+    font-weight: var(--font-weight);
+    color: var(--color-light);
+    background-color: var(--color-black);
+    width: 17rem;
+}
