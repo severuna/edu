@@ -19,7 +19,7 @@ class Student {
     
     get marks() {
         if ( this._marks.length == 0) {
-            return `<p>Наразі оцінки відсутні. Ви можете додати їх в <span>формі</span> нижче.</p>`;
+            return `Наразі оцінки відсутні. Ви можете додати їх в формі нижче.`;
         } else {
             return this._marks;
         }
