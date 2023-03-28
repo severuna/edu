@@ -75,3 +75,6 @@ setMarkForm.addEventListener("submit", ( e ) => {
     userStudent.marks = Number(addedMark);
     setMarkOutput.innerHTML = `<p>Оцінку <span>${ addedMark }</span> додано.</p>`;
 });
+
+const getMarksBtn = document.querySelector("#getMarks");
+const getMarksOutput = document.querySelector("#getMarksOutput");
