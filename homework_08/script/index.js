@@ -6,7 +6,7 @@ class Student {
         this.university = university;
         this.course = course;
         this.fullName = fullName;
-        this.marks = []
+        this._marks = []
     }
 
     // 2. Створіть метод this.getInfo() -> "Студент 1го курсу Вищої Школи Психотерапії м.Одеса, Остап Родоманський Бендер", метод повертає сукупну інформацію про курс, учбовий заклад та імені студента.
@@ -14,6 +14,18 @@ class Student {
     getInfo() {
         const info = `Студент <span>${ this.course }го</span> курсу <span>${ this.university }</span>, <span>${ this.fullName }</span>`;
         return info
+    }
+    // 3. Створіть геттер оцінок this.marks, який повертає масив оцінок студента [5, 4, 4, 5]
+    
+    get marks() {
+        return this._marks;
+    }
+
+    // 4. Створіть сеттер оцінок this.marks = 5, який дозволяє поставити оцінку студенту. Після того, як оцінка поставлена, геттер повинен повернути масив this.marks -> [5, 4, 4, 5, 5]
+
+    set marks( value ) {
+        this._marks.push(value);
+        return [...this._marks]
     }
 
 }
@@ -48,7 +60,3 @@ infoForm.addEventListener("submit", ( e ) => {
     infoOutput.innerHTML = `<p>${userStudent.getInfo()}</p>`;
 });
 
-// Object.defineProperty(userStudent, 'marks', {
-//     marks: []
-// });
-console.log(userStudent)
