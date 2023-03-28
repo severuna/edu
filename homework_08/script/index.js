@@ -78,3 +78,10 @@ setMarkForm.addEventListener("submit", ( e ) => {
 
 const getMarksBtn = document.querySelector("#getMarks");
 const getMarksOutput = document.querySelector("#getMarksOutput");
+
+getMarksBtn.addEventListener("click", ( e ) => {
+    e.preventDefault();
+    const getMarksMessage = document.createElement("p");
+    getMarksMessage.textContent = userStudent.marks;
+    getMarksOutput.append(getMarksMessage);
+});
