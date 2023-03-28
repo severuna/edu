@@ -60,3 +60,6 @@ infoForm.addEventListener("submit", ( e ) => {
     infoOutput.innerHTML = `<p>${userStudent.getInfo()}</p>`;
 });
 
+
+const setMarkForm = document.forms.setMarkForm;
+const setMarkOutput = document.querySelector("#setMarkOutput");
