@@ -21,7 +21,7 @@ class Student {
         if ( this._marks.length == 0) {
             return `<p>Наразі оцінки відсутні. Ви можете додати їх в <span>формі</span> нижче.</p>`;
         } else {
-            return `<p>${this._marks}</p>`;
+            return this._marks;
         }
     }
 
@@ -72,5 +72,6 @@ const setMarkOutput = document.querySelector("#setMarkOutput");
 setMarkForm.addEventListener("submit", ( e ) => {
     e.preventDefault();
     const addedMark = setMarkForm[0].value;
+    userStudent.marks = Number(addedMark);
     setMarkOutput.innerHTML = `<p>Оцінку <span>${ addedMark }</span> додано.</p>`;
 });
