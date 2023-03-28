@@ -6,6 +6,7 @@ class Student {
         this.university = university;
         this.course = course;
         this.fullName = fullName;
+        this.marks = []
     }
 
     // 2. Створіть метод this.getInfo() -> "Студент 1го курсу Вищої Школи Психотерапії м.Одеса, Остап Родоманський Бендер", метод повертає сукупну інформацію про курс, учбовий заклад та імені студента.
@@ -50,3 +51,4 @@ infoForm.addEventListener("submit", ( e ) => {
 // Object.defineProperty(userStudent, 'marks', {
 //     marks: []
 // });
+console.log(userStudent)
