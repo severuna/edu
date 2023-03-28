@@ -63,3 +63,10 @@ infoForm.addEventListener("submit", ( e ) => {
 
 const setMarkForm = document.forms.setMarkForm;
 const setMarkOutput = document.querySelector("#setMarkOutput");
+
+
+setMarkForm.addEventListener("submit", ( e ) => {
+    e.preventDefault();
+    const addedMark = setMarkForm[0].value;
+    setMarkOutput.innerHTML = `<p>Оцінку <span>${ addedMark }</span> додано.</p>`;
+});
