@@ -47,6 +47,6 @@ infoForm.addEventListener("submit", ( e ) => {
     infoOutput.innerHTML = `<p>${userStudent.getInfo()}</p>`;
 });
 
-Object.defineProperty(userStudent, 'marks', {
-    marks: []
-});
+// Object.defineProperty(userStudent, 'marks', {
+//     marks: []
+// });
