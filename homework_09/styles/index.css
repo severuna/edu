@@ -9,3 +9,19 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    width: 25rem;
+    margin: 10% auto;
+    outline: 1px solid black;
+}
+
+.item {
+    border: 1px solid black;
+    width: 5rem;
+    height: 5rem;
+}
