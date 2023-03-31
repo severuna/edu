@@ -134,3 +134,6 @@ getAverageBtn.addEventListener("click", ( e ) => {
         averageMarkOutput.innerHTML = `<p>Середня <span>оцінка</span> - <span>${ userStudent.getAverageMark() }</span></p>`;
     }
 });
+
+const setDismissBtn = document.querySelector("#setDismissBtn");
+const dismissOutput = document.querySelector("#dismissOutput");
