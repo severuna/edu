@@ -137,3 +137,10 @@ getAverageBtn.addEventListener("click", ( e ) => {
 
 const setDismissBtn = document.querySelector("#setDismissBtn");
 const dismissOutput = document.querySelector("#dismissOutput");
+
+setDismissBtn.addEventListener("click", ( e ) => {
+    e.preventDefault();
+    userStudent.dismiss();
+    dismissOutput.innerHTML = `<p>Студента виключено</p>`;
+});
+
