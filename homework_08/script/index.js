@@ -146,3 +146,9 @@ setDismissBtn.addEventListener("click", ( e ) => {
 
 const setRecoverBtn = document.querySelector("#setRecoverBtn");
 const recoverOutput = document.querySelector("#recoverOutput");
+
+setRecoverBtn.addEventListener("click", ( e ) => {
+    e.preventDefault();
+    userStudent.recover();
+    recoverOutput.innerHTML = `<p>Студента повернуто</p>`;
+});
