@@ -99,3 +99,6 @@ getMarksBtn.addEventListener("click", ( e ) => {
     getMarksMessage.textContent = userStudent.marks;
     getMarksOutput.append(getMarksMessage);
 });
+
+const getAverageBtn = document.querySelector("#getAverage");
+const averageMarkOutput =  document.querySelector("#averageMarkOutput");
