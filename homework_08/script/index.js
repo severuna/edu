@@ -15,6 +15,20 @@ class Student {
         const info = `Студент <span>${ this.course }го</span> курсу <span>${ this.university }</span>, <span>${ this.fullName }</span>`;
         return info
     }
+
+    // 4. Створіть метод отримання середнього балу this.getAverageMark() -> 4.6
+
+    getAverageMark() {
+        let count = 0;
+        let sum = 0;
+        this.marks.forEach(el => {
+            sum += el;
+            count++
+        });
+        let averageMark = sum / count;
+        return averageMark
+    }
+
     // 3. Створіть геттер оцінок this.marks, який повертає масив оцінок студента [5, 4, 4, 5]
     
     get marks() {
