@@ -19,9 +19,12 @@ class Student {
     // 4. Створіть метод отримання середнього балу this.getAverageMark() -> 4.6
 
     getAverageMark() {
+        if(this._marks.length === 0) {
+            return this._marks
+        }
         let count = 0;
         let sum = 0;
-        this.marks.forEach(el => {
+        this._marks.forEach(el => {
             sum += el;
             count++
         });
@@ -102,3 +105,13 @@ getMarksBtn.addEventListener("click", ( e ) => {
 
 const getAverageBtn = document.querySelector("#getAverage");
 const averageMarkOutput =  document.querySelector("#averageMarkOutput");
+
+
+getAverageBtn.addEventListener("click", ( e ) => {
+    e.preventDefault();
+    if (userStudent.getAverageMark().length == 0) {
+        averageMarkOutput.innerHTML = `<p>Bам потрібно додати вище хоча б <span>одну оцінку</span></p>`;
+    } else {
+        averageMarkOutput.innerHTML = `<p>Середня <span>оцінка</span> - <span>${ userStudent.getAverageMark() }</span></p>`;
+    }
+});
