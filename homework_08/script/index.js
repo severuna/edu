@@ -144,3 +144,5 @@ setDismissBtn.addEventListener("click", ( e ) => {
     dismissOutput.innerHTML = `<p>Студента виключено</p>`;
 });
 
+const setRecoverBtn = document.querySelector("#setRecoverBtn");
+const recoverOutput = document.querySelector("#recoverOutput");
