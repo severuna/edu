@@ -5,6 +5,7 @@ class Student {
     constructor( university, course, fullName ) {
         this.university = university;
         this.course = course;
+        this.dismissing = false;
         this.fullName = fullName;
         this._marks = []
     }
@@ -32,21 +33,39 @@ class Student {
         return averageMark
     }
 
+    // 6. Створіть метод this.dismiss, який "виключить" студента. Після виклику цього методу – ставити студенту оцінки та отримувати їх більше не можна. (Ніяких помилок, просто повертається завжди null замість масиву оцінок)
+
+    dismiss() {
+        return this.dismissing = true
+    }
+
+    // 7. Створіть метод this.recover, який дозволить поновити студента
+
+    recover() {
+        return this.dismissing = false
+    }
+
     // 3. Створіть геттер оцінок this.marks, який повертає масив оцінок студента [5, 4, 4, 5]
     
     get marks() {
-        if ( this._marks.length == 0) {
-            return `Наразі оцінки відсутні. Ви можете додати їх в формі нижче.`;
+        if(this.dismissing) {
+            return null
         } else {
-            return this._marks;
+            if ( this._marks.length == 0) {
+                return `Наразі оцінки відсутні. Ви можете додати їх в формі нижче.`;
+            } else {
+                return this._marks;
+            }
         }
     }
 
     // 4. Створіть сеттер оцінок this.marks = 5, який дозволяє поставити оцінку студенту. Після того, як оцінка поставлена, геттер повинен повернути масив this.marks -> [5, 4, 4, 5, 5]
 
-    set marks( value ) {
-        this._marks.push(value);
-        return [...this._marks]
+    set marks(value) {
+        if(!this.dismissing) {
+            this._marks.push(value);
+            return this._marks
+        }
     }
 
 }
