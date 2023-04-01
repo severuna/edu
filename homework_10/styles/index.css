@@ -30,6 +30,7 @@ html {
     --border-radius: 1rem;
     --color-light: azure;
     --color-black: black;
+    --gap: 4rem;
 }
 
 .main {
@@ -66,4 +67,9 @@ html {
     to {
         transform: scale(1);
     }
+}
+
+.container {
+    gap: var(--gap);
+    align-items: center;
 }
