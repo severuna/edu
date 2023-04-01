@@ -22,6 +22,14 @@ html {
 
 :root {
     --container-padding: 3rem;
+    --title-size: 4rem;
+    --title-ff: 'Rubik One', sans-serif;
+    --title-fw: 900;
+    --title-spacing: 1rem;
+    --title-padding: 1.5rem 3rem;
+    --border-radius: 1rem;
+    --color-light: azure;
+    --color-black: black;
 }
 
 .main {
@@ -32,4 +40,29 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
+}
+
+.title {
+    font-size: var(--title-size);
+    text-transform: uppercase;
+    background: var(--color-black);
+    word-spacing: var(--title-spacing);
+    letter-spacing: var(--title-spacing);
+    display: table;
+    color: var(--color-light);
+    border-radius: var(--border-radius);
+    mix-blend-mode: multiply;
+    padding: var(--title-padding);
+    font-family: var(--title-ff);
+    font-weight: var(--title-fw);
+    animation: 1s linear 0s infinite alternate titleAnimation;
+}
+
+@keyframes titleAnimation {
+    from {
+        transform: scale(1.2);
+    } 
+    to {
+        transform: scale(1);
+    }
 }
