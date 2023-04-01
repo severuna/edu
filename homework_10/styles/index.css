@@ -40,6 +40,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
+    justify-content: space-around;
 }
 
 .title {
