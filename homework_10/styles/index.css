@@ -19,3 +19,8 @@ html {
     display: flex;
     flex-direction: column;
 }
+
+:root {
+    --container-padding: 3rem;
+}
+
