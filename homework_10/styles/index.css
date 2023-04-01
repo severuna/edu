@@ -71,8 +71,11 @@ html {
 }
 
 .container {
-    gap: var(--gap);
+    gap: calc(var(--gap) * 1.5);
     align-items: center;
+    width: 80rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .item {
