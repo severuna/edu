@@ -74,3 +74,13 @@ html {
     gap: var(--gap);
     align-items: center;
 }
+
+.item {
+    background-color: var(--color-black);
+    color: var(--color-gold);
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--gap) / 2);
+    width: 10rem;
+    height: 10rem;
+}
