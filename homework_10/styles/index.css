@@ -24,3 +24,12 @@ html {
     --container-padding: 3rem;
 }
 
+.main {
+    width: 100vw;
+    height: 100vh;
+    padding: var(--container-padding);
+    background-image: url('../src/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+}
