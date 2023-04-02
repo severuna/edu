@@ -91,18 +91,30 @@ html {
     height: 10rem;
     border: 2px solid var(--color-gold);
     outline: 2px solid var(--color-black);
+    transition: all .6s ease;
 }
 
 .kbd {
     font-size: var(--kbd-fs);
     font-weight: var(--title-fw);
-    animation: 1s linear 0s infinite alternate titleAnimation;
 }
 
 .sound {
     letter-spacing: calc(var(--title-spacing) / 2);
     font-family: var(--sound-ff);
     font-size: var(--sound-fs);
-    animation: 1s linear 0s infinite alternate-reverse titleAnimation;
 }
 
+.play {
+    transform: scale(1.2);
+    box-shadow: 0 0 1rem 1rem var(--color-gold);
+}
+
+.play > .kbd {
+    animation: 1s linear 0s infinite alternate titleAnimation;
+}
+
+.play > .sound {
+    animation: 1s linear 0s infinite alternate titleAnimation;
+    animation: 1s linear 0s infinite alternate-reverse titleAnimation;
+}
