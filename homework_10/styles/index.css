@@ -89,16 +89,20 @@ html {
     gap: calc(var(--gap) / 2);
     width: 10rem;
     height: 10rem;
+    border: 2px solid var(--color-gold);
+    outline: 2px solid var(--color-black);
 }
 
 .kbd {
     font-size: var(--kbd-fs);
     font-weight: var(--title-fw);
+    animation: 1s linear 0s infinite alternate titleAnimation;
 }
 
 .sound {
     letter-spacing: calc(var(--title-spacing) / 2);
     font-family: var(--sound-ff);
     font-size: var(--sound-fs);
+    animation: 1s linear 0s infinite alternate-reverse titleAnimation;
 }
 
