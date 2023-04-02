@@ -32,6 +32,9 @@ html {
     --color-black: black;
     --color-gold: greenyellow;
     --gap: 4rem;
+    --kbd-fs: 3rem;
+    --sound-fs: 1.8rem;
+    --sound-ff: Comic Sans MS, Comic Sans, cursive;
 }
 
 .main {
@@ -87,3 +90,15 @@ html {
     width: 10rem;
     height: 10rem;
 }
+
+.kbd {
+    font-size: var(--kbd-fs);
+    font-weight: var(--title-fw);
+}
+
+.sound {
+    letter-spacing: calc(var(--title-spacing) / 2);
+    font-family: var(--sound-ff);
+    font-size: var(--sound-fs);
+}
+
