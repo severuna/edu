@@ -12,6 +12,16 @@ html {
     box-sizing: border-box;
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 :root {
     --logo-ff: 'Monoton', cursive;
     --title-ff: 'Fredericka the Great', cursive;
