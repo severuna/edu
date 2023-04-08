@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gruppo&family=Monoton&display=swap');
+
 html {
     font-size: 10px;
 }
@@ -8,4 +10,10 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --logo-ff: 'Monoton', cursive;
+    --title-ff: 'Fredericka the Great', cursive;
+    --main-ff: 'Gruppo', cursive;
 }
