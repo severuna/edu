@@ -33,4 +33,15 @@ html {
     --color-green: mediumspringgreen;
     --color-black: black;
     --color-light: floralwhite;
+    --gap: 3rem;
+    --center: center;
+    --padding: 3rem;
+}
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--color-black);
+    align-items: var(--center);
+    padding: var(--padding);
 }
