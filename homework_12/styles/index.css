@@ -24,18 +24,19 @@ html {
 
 :root {
     --logo-ff: 'Monoton', cursive;
-    --logo-fs: 3rem;
-    --font-weight: 400;
+    --logo-fs: 4rem;
+    --font-weight: 700;
     --title-ff: 'Fredericka the Great', cursive;
     --title-fs: 2.4rem;
     --main-ff: 'Gruppo', cursive;
     --main-fs: 1.8rem;
     --color-green: mediumspringgreen;
-    --color-black: black;
+    --color-black: rgb(26, 24, 24);
     --color-light: floralwhite;
     --gap: 3rem;
     --center: center;
     --padding: 3rem;
+    --spacing: 2rem;
 }
 
 .main {
@@ -44,4 +45,15 @@ html {
     background-color: var(--color-black);
     align-items: var(--center);
     padding: var(--padding);
+}
+
+.title {
+    font-size: var(--logo-fs);
+    font-weight: var(--font-weight);
+    font-family: var(--logo-ff);
+    letter-spacing: var(--spacing);
+    color: transparent;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 5%, rgb(210, 255, 10) 50%, rgba(94,252,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
