@@ -8,7 +8,29 @@
     <title>Homework 12. Робота з сервером</title>
 </head>
 <body>
-    
+    <main class="main flex-column">
+        <h1 class="title">STAR WARS</h1>
+        <form id="showFilms" class="form flex-column">
+            <div class="field flex-row">
+                <label for="filmInput">Enter the movie number:</label>
+                <input type="number" id="filmInput" min="1" max="6" step="1">
+            </div>
+            <div class="field flex-row">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        <form id="showPlanets" class="form flex-column">
+            <div class="field flex-row">
+                <label for="planetInput">Enter the movie number:</label>
+                <input type="number" id="planetInput" min="1" max="6" step="1">
+            </div>
+            <div class="field flex-row">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
     <script src="./script/index.js"></script>
 </body>
 </html>
