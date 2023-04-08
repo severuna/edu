@@ -57,3 +57,9 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.container {
+    padding: var(--padding);
+    width: 100%;
+    justify-content: space-around;
+}
