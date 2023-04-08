@@ -9,3 +9,24 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.title {
+    color: transparent;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, azure 0%, rgb(58, 236, 34) 35%, rgba(0,212,255,1) 100%);
+    color: rgba(0,212,255,1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    font-family: Bradley Hand, cursive;
+    max-width: 70vw;
+}
