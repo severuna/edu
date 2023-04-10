@@ -48,6 +48,7 @@ html {
     --spacing: 2rem;
     --border-radius: 1rem;
 	--angle: 90deg;
+    --btn-padding: 1rem 3rem;
 }
 
 .main {
@@ -123,3 +124,16 @@ html {
     font-family: var(--main-ff);
     color: var(--color-blue);
 }
+
+
+.btn {
+    padding: var(--btn-padding);
+    width: 40%;
+    background-color: var(--color-black-alpha);
+    border: 2px solid var(--color-green);
+    font-family: var(--main-ff);
+    font-weight: var(--font-weight);
+    font-size: var(--main-fs);
+    color: var(--color-green);
+}
+
