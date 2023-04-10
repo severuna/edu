@@ -33,7 +33,7 @@ html {
     --logo-fs: 4rem;
     --font-weight: 700;
     --title-ff: 'Fredericka the Great', cursive;
-    --title-fs: 2.4rem;
+    --title-fs: 3rem;
     --main-ff: 'Gruppo', cursive;
     --main-fs: 1.8rem;
     --color-green: rgb(0, 250, 154);
@@ -80,10 +80,20 @@ html {
     border: 3px solid;
     border-image: conic-gradient(from var(--angle), var(--color-blue), var(--color-blue) 0.1turn, var(--color-blue) 0.15turn, var(--color-black-alpha) 0.25turn) 30;
 	animation: borderRotate 2s linear infinite forwards;
+    width: 38vw;
 }
 
 @keyframes borderRotate {
 	100% {
 		--angle: 420deg;
 	}
+}
+
+.subtitle {
+    font-size: var(--title-fs);
+    font-weight: var(--font-weight);
+    font-family: var(--title-ff);
+    letter-spacing: calc(var(--spacing) / 2);
+    text-align: center;
+    color: var(--color-green);
 }
