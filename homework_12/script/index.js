@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", ( ) => {
 
-    // init mess
-    console.log('+');
+    const charactersForm = document.forms.showCharacters;
+    
+    const planetsForm = document.forms.showPlanets;
     
 });
