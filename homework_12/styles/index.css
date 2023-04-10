@@ -36,10 +36,11 @@ html {
     --title-fs: 3rem;
     --main-ff: 'Gruppo', cursive;
     --main-fs: 1.8rem;
-    --color-green: rgb(0, 250, 154);
+    --color-green: rgba(94,252,69,1);
     --color-black: rgb(26, 24, 24);
     --color-black-alpha: rgba(168, 239, 255, 0.1);
     --color-blue: rgba(168, 239, 255, 1);
+    --color-gold: rgb(248, 244, 0);
     --color-light: floralwhite;
     --gap: 3rem;
     --center: center;
@@ -102,4 +103,11 @@ html {
     align-items: center;
     justify-content: space-between;
     gap: var(--gap);
+}
+
+.field-label {
+    font-size: var(--main-fs);
+    font-weight: var(--font-weight);
+    font-family: var(--main-ff);
+    color: var(--color-green);
 }
