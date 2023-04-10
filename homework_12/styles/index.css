@@ -95,7 +95,7 @@ html {
     font-family: var(--title-ff);
     letter-spacing: calc(var(--spacing) / 2);
     text-align: center;
-    color: var(--color-green);
+    color: var(--color-blue);
 }
 
 .field {
