@@ -147,3 +147,8 @@ html {
     background: var(--color-black-alpha);
     color: var(--color-gold);
 }
+
+.output {
+    padding: var(--padding);
+    align-items: var(--center);
+}
