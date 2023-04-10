@@ -152,3 +152,19 @@ html {
     padding: var(--padding);
     align-items: var(--center);
 }
+
+@media screen and (max-width: 1000px) {
+    
+    .main {
+        max-width: 99.9rem;
+        width: 100%;
+    }
+    .container {
+        gap: var(--gap);
+        flex-wrap: wrap;
+    }
+
+    .form {
+        width: 80%;
+    }
+}
