@@ -76,7 +76,7 @@ html {
 
 .form {
     padding: calc(var(--padding) * 2);
-    gap: calc(var(--gap) / 1.5);
+    gap: var(--gap);
     border: 3px solid;
     border-image: conic-gradient(from var(--angle), var(--color-blue), var(--color-blue) 0.1turn, var(--color-blue) 0.15turn, var(--color-black-alpha) 0.25turn) 30;
 	animation: borderRotate 2s linear infinite forwards;
@@ -96,4 +96,10 @@ html {
     letter-spacing: calc(var(--spacing) / 2);
     text-align: center;
     color: var(--color-green);
+}
+
+.field {
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap);
 }
