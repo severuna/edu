@@ -111,3 +111,15 @@ html {
     font-family: var(--main-ff);
     color: var(--color-green);
 }
+
+.field-input {
+    width: 50%;
+    height: 2.4rem;
+    border-radius: calc(var(--border-radius) / 2);
+    background-color: var(--color-black-alpha);
+    border: 1px solid var(--color-green);
+    font-size: var(--main-fs);
+    font-weight: var(--font-weight);
+    font-family: var(--main-ff);
+    color: var(--color-blue);
+}
