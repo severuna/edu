@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", ( ) => {
 
         const characterInput = charactersForm[0].value;
 
+        getData(characterInput);
+
         console.log(`You have chosen movie number ${ characterInput }`);
 
     });
@@ -26,32 +28,33 @@ document.addEventListener("DOMContentLoaded", ( ) => {
 
         const planetInput = planetsForm[0].value;
 
+        getData(planetInput);
+
         console.log(`You have chosen movie number ${ planetInput }`);
         
     });
     
     
+    function getData ( num ) {
 
-    const req = async url => {
+        const req = async url => {
 
-        const data = await fetch(url);
+            const data = await fetch(url);
 
-        return data.json();
+            return data.json();
 
+        }
+
+        let swapiLink = `https://swapi.dev/api/films/${ num }/`;
+
+        req(swapiLink)
+            .then(d => show(d))
+            .catch(info => console.error(info));
+        
+
+            function show ( data ) {
+                console.log(data)
+            }
     }
 
-    const swapiLink = 'https://swapi.dev/api/films/';
-
-    req(swapiLink)
-        .then(d => show(d))
-        .catch(info => console.error(info));
-    
-
-    function show ( data ) {
-        console.log(data)
-        console.log(data.results)
-        data.results.forEach( el => {
-            console.log(el.title)
-        })
-    }
 });
