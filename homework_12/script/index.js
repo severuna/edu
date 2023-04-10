@@ -30,4 +30,20 @@ document.addEventListener("DOMContentLoaded", ( ) => {
         
     });
     
+    
+
+    const req = async url => {
+
+        const data = await fetch(url);
+
+        return data.json();
+
+    }
+
+    const swapiLink = 'https://swapi.dev/api/films/';
+
+    req(swapiLink)
+        .then(d => console.log(d, swapiLink))
+        .catch(info => console.error(info));
+    
 });
