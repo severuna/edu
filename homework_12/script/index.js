@@ -43,7 +43,15 @@ document.addEventListener("DOMContentLoaded", ( ) => {
     const swapiLink = 'https://swapi.dev/api/films/';
 
     req(swapiLink)
-        .then(d => console.log(d, swapiLink))
+        .then(d => show(d))
         .catch(info => console.error(info));
     
+
+    function show ( data ) {
+        console.log(data)
+        console.log(data.results)
+        data.results.forEach( el => {
+            console.log(el.title)
+        })
+    }
 });
