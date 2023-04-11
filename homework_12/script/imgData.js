@@ -1,0 +1,8 @@
+const imgData = [
+
+    {
+        name: '',
+        src: ''
+    }
+
+];
