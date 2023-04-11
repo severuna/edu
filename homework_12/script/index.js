@@ -34,6 +34,24 @@ document.addEventListener("DOMContentLoaded", ( ) => {
         
     });
 
+    function showItem ( character ) {
+
+        const item = document.createElement("div");
+
+        item.className = "item flex-column";
+
+        const itemName = document.createElement("h2");
+
+        itemName.className = "subtitle";
+
+        itemName.textContent = character.name;
+        
+        item.append(itemName);
+
+        output.append(item);
+
+    }
+
     function getDetails ( data ) {
 
         const req = async url => {
@@ -44,13 +62,14 @@ document.addEventListener("DOMContentLoaded", ( ) => {
 
         }
 
-        req(data).then(res => console.log(res))
+        req(data).then(showItem)
     }
     
     function showData ( data, selector ) {
         const title = document.querySelector("#title");
         title.classList.add("title");
         title.textContent = data.title;
+        output.innerHTML = '';
         data[selector].forEach( el => {
             getDetails(el)
         });
