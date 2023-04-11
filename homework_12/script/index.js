@@ -34,6 +34,15 @@ document.addEventListener("DOMContentLoaded", ( ) => {
         
     });
     
+    function showData ( data ) {
+        const title = document.querySelector("#title");
+        title.classList.add("title");
+        title.textContent = data.title;
+        data.characters.forEach( el => {
+            console.log(el)
+        });
+        return title
+    }
     
     function getData ( num ) {
 
@@ -47,14 +56,7 @@ document.addEventListener("DOMContentLoaded", ( ) => {
 
         let swapiLink = `https://swapi.dev/api/films/${ num }/`;
 
-        req(swapiLink)
-            .then(d => show(d))
-            .catch(info => console.error(info));
-        
-
-            function show ( data ) {
-                console.log(data)
-            }
+        req(swapiLink).then(showData)
     }
 
 });
