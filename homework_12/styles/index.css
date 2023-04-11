@@ -161,6 +161,14 @@ html {
     gap: var(--gap);
 }
 
+.item {
+    padding: var(--padding);
+    gap: var(--gap);
+    border: 3px solid;
+    border-image: conic-gradient(from var(--angle), var(--color-blue), var(--color-blue) 0.1turn, var(--color-blue) 0.15turn, var(--color-black-alpha) 0.25turn) 30;
+	animation: borderRotate 2s linear infinite forwards;
+}
+
 @media screen and (max-width: 1000px) {
     
     .main {
