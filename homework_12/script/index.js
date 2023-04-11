@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", ( ) => {
     function showData ( data, selector ) {
         const title = document.querySelector("#title");
         title.classList.add("title");
-        title.textContent = data.title;
+        title.textContent = `${ data.title }. ${ selector }`;
         output.innerHTML = '';
         data[selector].forEach( el => {
             getDetails(el)
