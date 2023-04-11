@@ -33,14 +33,26 @@ document.addEventListener("DOMContentLoaded", ( ) => {
         console.log(`You have chosen movie number ${ planetInput }`);
         
     });
+
+    function getDetails ( data ) {
+
+        const req = async url => {
+
+            const data = await fetch(url);
+
+            return data.json();
+
+        }
+
+        req(data).then(res => console.log(res))
+    }
     
     function showData ( data, selector ) {
         const title = document.querySelector("#title");
-        console.log(selector)
         title.classList.add("title");
         title.textContent = data.title;
         data[selector].forEach( el => {
-            console.log(el)
+            getDetails(el)
         });
         return title
     }
