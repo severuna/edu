@@ -152,6 +152,13 @@ html {
 .output {
     padding: var(--padding);
     align-items: var(--center);
+    gap: var(--gap);
+}
+
+.output-container {
+    justify-content: space-between;
+    align-items: var(--center);
+    gap: var(--gap);
 }
 
 @media screen and (max-width: 1000px) {
