@@ -156,7 +156,7 @@ html {
 }
 
 .output-container {
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: var(--center);
     gap: var(--gap);
     flex-wrap: wrap;
