@@ -410,8 +410,308 @@ const imgData = [
     {
         name: 'Tion Medon',
         src: 'https://static.wikia.nocookie.net/headhuntersholosuite/images/9/9a/Tion_Medon_002.jpg/'
-    }
+    },
 
     // planets list
+    
+    {
+        name: 'Tatooine',
+        src: 'https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png/'
+    },
+    
+    {
+        name: 'Alderaan',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/4/4a/Alderaan.jpg/'
+    },
+    
+    {
+        name: 'Yavin IV',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/a/a0/Eaw_Yavin4.jpg/'
+    },
+    
+    {
+        name: 'Hoth',
+        src: 'https://static.wikia.nocookie.net/starwars/images/1/1d/Hoth_SWCT.png/'
+    },
+    
+    {
+        name: 'Dagobah',
+        src: 'https://static.wikia.nocookie.net/starwars/images/4/48/Dagobah_ep3.jpg/'
+    },
+    
+    {
+        name: 'Bespin',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/2/2c/Bespin_EotECR.png/'
+    },
+    
+    {
+        name: 'Endor',
+        src: 'https://static.wikia.nocookie.net/starwars/images/5/50/Endor_FFGRebellion.png/'
+    },
+    
+    {
+        name: 'Naboo',
+        src: 'https://static.wikia.nocookie.net/starwars/images/f/f0/Naboo_planet.png/'
+    },
+    
+    {
+        name: 'Coruscant',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/1/16/Coruscant-EotE.jpg/'
+    },
+    
+    {
+        name: 'Kamino',
+        src: 'https://static.wikia.nocookie.net/starwars/images/a/a9/Eaw_Kamino.jpg/'
+    },
+    
+    {
+        name: 'Geonosis',
+        src: 'https://pm1.narvii.com/6338/457966eab9d1f09aaa104b6c4ebde5af9ed0e237_00.jpg'
+    },
+    
+    {
+        name: 'Utapau',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/c/ce/UtapauRotS.png/'
+    },
+    
+    {
+        name: 'Mustafar',
+        src: 'https://static.wikia.nocookie.net/starwars/images/a/af/Mustafar_DB.png/'
+    },
+    
+    {
+        name: 'Kashyyyk',
+        src: 'https://static.wikia.nocookie.net/starwars/images/d/d0/Kashyyyk_FFGRebellion.png/'
+    },
+    
+    {
+        name: 'Polis Massa',
+        src: 'https://comicvine.gamespot.com/a/uploads/square_small/4/48250/901019-esseles.jpg'
+    },
+    
+    {
+        name: 'Mygeeto',
+        src: 'https://static.wikia.nocookie.net/starwars/images/e/e5/Mygeeto_GE2.jpg/'
+    },
+    
+    {
+        name: 'Felucia',
+        src: 'https://static.wikia.nocookie.net/starwars/images/a/a2/Felucia_SWCT.png/'
+    },
+    
+    {
+        name: 'Cato Neimoidia',
+        src: 'https://static.wikia.nocookie.net/starwars/images/f/fe/CatoNeimoidia-BTCG.png/'
+    },
+    
+    {
+        name: 'Saleucami',
+        src: 'https://static.wikia.nocookie.net/ptstarwars/images/7/75/Saleucami.jpg/'
+    },
+    
+    {
+        name: 'Stewjon',
+        src: 'https://static.wikia.nocookie.net/starwarscavalryofdarkness/images/b/bd/ImagesCA533VT4.jpg/'
+    },
+    
+    {
+        name: 'Eriadu',
+        src: 'https://static.wikia.nocookie.net/starwars/images/d/dc/Eriadu_TEA.jpg/'
+    },
+    
+    {
+        name: 'Corellia',
+        src: 'https://static.wikia.nocookie.net/starwars/images/d/d7/Corellia-SWCT.png/'
+    },
+    
+    {
+        name: 'Rodia',
+        src: 'https://static.wikia.nocookie.net/starwars/images/c/c3/Rodia_canon.png/'
+    },
+    
+    {
+        name: 'Nal Hutta',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/8/8d/Nal-hutta.png/'
+    },
+    
+    {
+        name: 'Dantooine',
+        src: 'https://static.wikia.nocookie.net/starwars/images/a/a5/Dantooine_Resistance.jpg/'
+    },
+    
+    {
+        name: 'Bestine IV',
+        src: 'https://static.wikia.nocookie.net/starwars/images/7/79/Bestine_TEA.png/'
+    },
+    
+    {
+        name: 'Ord Mantell',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/3/36/Ord_Mantell_EotECR.png/'
+    },
+    
+    {
+        name: 'unknown',
+        src: 'https://upload.wikimedia.org/wikipedia/en/f/f9/Death_star1.png'
+    },
+    
+    {
+        name: 'Trandosha',
+        src: 'https://static.wikia.nocookie.net/starwars/images/4/40/Trandosha-PL.png/'
+    },
+    
+    {
+        name: 'Socorro',
+        src: 'https://static.wikia.nocookie.net/star-wars-extended-universe/images/5/5f/Alderaan.png/'
+    },
+    
+    {
+        name: 'Mon Cala',
+        src: 'https://static.wikia.nocookie.net/starwars/images/0/04/Dac-AORCR.png/'
+    },
+    
+    {
+        name: 'Chandrila',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/9/9b/Chandrila_AoRCR.png/'
+    },
+    
+    {
+        name: 'Sullust',
+        src: 'https://static.wikia.nocookie.net/starwars/images/2/2d/SullustAoR.png/'
+    },
+    
+    {
+        name: 'Toydaria',
+        src: 'https://static.wikia.nocookie.net/starwars/images/d/d6/Toydaria-TCW.png/'
+    },
+    
+    {
+        name: 'Malastare',
+        src: 'https://static.wikia.nocookie.net/starwars/images/0/00/Malastare_TEA.jpg/'
+    },
+    
+    {
+        name: 'Dathomir',
+        src: 'https://static.wikia.nocookie.net/starwars/images/3/34/DathomirJFO.jpg/'
+    },
+    
+    {
+        name: 'Ryloth',
+        src: 'https://static.wikia.nocookie.net/starwars/images/9/96/Ryloth-Homecoming.png/'
+    },
+    
+    {
+        name: 'Aleen Minor',
+        src: 'https://static.wikia.nocookie.net/starwars/images/f/f6/Aleen_NEGAS.jpg/'
+    },
+    
+    {
+        name: 'Vulpter',
+        src: 'https://static.wikia.nocookie.net/starwars/images/b/be/Vulpter_FF7.jpg/'
+    },
+    
+    {
+        name: 'Troiken',
+        src: 'https://upload.wikimedia.org/wikipedia/en/f/f9/Death_star1.png'
+    },
+    
+    {
+        name: 'Tund',
+        src: 'https://static.wikia.nocookie.net/starwars/images/3/31/Tund_TEA.jpg/'
+    },
+    
+    {
+        name: 'Haruun Kal',
+        src: 'https://static.wikia.nocookie.net/starwars/images/7/75/HaruunKalCSWE.jpg/'
+    },
+    
+    {
+        name: 'Cerea',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/c/cc/Cerea-FDCR.png/'
+    },
+    
+    {
+        name: 'Glee Anselm',
+        src: 'https://static.wikia.nocookie.net/starwars/images/0/0c/GleeAnselm.jpg/'
+    },
+    
+    {
+        name: 'Iridonia',
+        src: 'https://static.wikia.nocookie.net/starwars/images/c/c5/Iridonia.jpg/'
+    },
+    
+    {
+        name: 'Tholoth',
+        src: 'https://upload.wikimedia.org/wikipedia/en/f/f9/Death_star1.png'
+    },
+    
+    {
+        name: 'Iktotch',
+        src: 'https://static.wikia.nocookie.net/starwars/images/f/f1/Iktotch_FDNP.png/'
+    },
+    
+    {
+        name: 'Quermia',
+        src: 'https://upload.wikimedia.org/wikipedia/en/f/f9/Death_star1.png'
+    },
+    
+    {
+        name: 'Dorin',
+        src: 'https://static.wikia.nocookie.net/starwars/images/8/8d/Dorin_NEGAS.jpg/'
+    },
+    
+    {
+        name: 'Champala',
+        src: 'https://static.wikia.nocookie.net/starwars/images/d/d7/Champala_NEGAS.jpg/'
+    },
+    
+    {
+        name: 'Mirial',
+        src: 'https://static.wikia.nocookie.net/star-wars-pathfinder/images/e/e0/Mirial.jpg/'
+    },
+    
+    {
+        name: 'Serenno',
+        src: 'https://static.wikia.nocookie.net/starwars/images/b/b2/Serenno-Massacre.png/'
+    },
+    
+    {
+        name: 'Concord Dawn',
+        src: 'https://static.wikia.nocookie.net/starwars/images/b/bc/Mandalorian_Gauntlet_Fighter_SWA.png/'
+    },
+    
+    {
+        name: 'Zolan',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/d/d3/Zolan_FF49.jpg/'
+    },
+    
+    {
+        name: 'Ojom',
+        src: 'https://static.wikia.nocookie.net/starwars/images/9/9f/Ojom.jpg/'
+    },
+    
+    {
+        name: 'Skako',
+        src: 'https://static.wikia.nocookie.net/starwars/images/c/cd/Skako.jpg/'
+    },
+    
+    {
+        name: 'Muunilinst',
+        src: 'https://static.wikia.nocookie.net/starwars/images/1/19/Muunilinst.jpg/'
+    },
+    
+    {
+        name: 'Shili',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/b/b8/ShiliNEGAS.jpg/'
+    },
+    
+    {
+        name: 'Kalee',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/0/08/KaleePlanet.jpg/'
+    },
+    
+    {
+        name: 'Umbara',
+        src: 'https://static.wikia.nocookie.net/starwars/images/8/82/Umbara_TVE.png/'
+    },
 
 ];
