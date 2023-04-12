@@ -30,6 +30,12 @@ function showItem ( element ) {
 
     item.className = "item flex-column";
 
+    const itemImg = document.createElement("img");
+
+    itemImg.classList.add("item-img");
+    
+    item.append(itemImg);
+
     const itemName = document.createElement("h2");
 
     itemName.className = "subtitle";
