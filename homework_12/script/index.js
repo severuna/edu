@@ -1,5 +1,3 @@
-
-
 const output = document.querySelector("#output");
 
 const charactersForm = document.forms.showCharacters;
