@@ -39,7 +39,7 @@ function getImg ( data, name ) {
     });
 
     return src
-    
+
 }
 
 function showItem ( element ) {
@@ -51,6 +51,8 @@ function showItem ( element ) {
     const itemImg = document.createElement("img");
 
     itemImg.classList.add("item-img");
+    
+    itemImg.src = getImg( imgData, element.name);
     
     item.append(itemImg);
 
