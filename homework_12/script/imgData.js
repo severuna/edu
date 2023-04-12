@@ -1,5 +1,7 @@
 const imgData = [
 
+    // characters list
+
     {
         name: 'Luke Skywalker',
         src: 'https://media.contentapi.ea.com/content/dam/star-wars-battlefront-2/images/2019/08/swbf2-refresh-hero-large-heroes-page-luke-skywalker-16x9-xl.jpg.adapt.crop1x1.320w.jpg'
@@ -409,5 +411,7 @@ const imgData = [
         name: 'Tion Medon',
         src: 'https://static.wikia.nocookie.net/headhuntersholosuite/images/9/9a/Tion_Medon_002.jpg/'
     }
-    
+
+    // planets list
+
 ];
