@@ -24,6 +24,24 @@ planetsForm.addEventListener("submit", ( e )=> {
         
 });
 
+function getImg ( data, name ) {
+
+    let src = '';
+
+    data.forEach( el => {
+
+        if ( el.name == name) {
+
+            src = el.src;
+
+        }
+
+    });
+
+    return src
+    
+}
+
 function showItem ( element ) {
 
     const item = document.createElement("div");
