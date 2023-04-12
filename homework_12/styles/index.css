@@ -155,6 +155,10 @@ html {
     gap: var(--gap);
 }
 
+.output .title {
+    margin-left: calc(var(--padding) * 2);
+}
+
 .output-container {
     justify-content: space-around;
     align-items: var(--center);
@@ -164,19 +168,33 @@ html {
 
 .item {
     padding: var(--padding);
-    gap: var(--gap);
+    gap: calc(var(--gap) / 2);
     border: 3px solid;
     border-image: conic-gradient(from var(--angle), var(--color-blue), var(--color-blue) 0.1turn, var(--color-blue) 0.15turn, var(--color-black-alpha) 0.25turn) 30;
 	animation: borderRotate 2s linear infinite forwards;
     width: 30rem;
-    height: 45rem;
+    height: 49rem;
     align-items: var(--center);
     justify-content: space-between;
 }
 
 .item-img {
-    width: 24rem;
-    max-height: 28rem;
+    width: 22rem;
+    max-height: 25rem;
+}
+
+.item-gender {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.item-gender__svg {
+    padding: calc(var(--padding) / 3);
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--color-black-alpha);
+    border: 2px solid var(--color-green);
 }
 
 @media screen and (max-width: 1000px) {
