@@ -349,19 +349,65 @@ const imgData = [
         name: 'Dexter Jettster',
         src: 'https://static.wikia.nocookie.net/swfanon/images/8/82/Dexter.jpg/'
     },
-
-    // stop
-    // next link - https://swapi.dev/api/people/?page=8
     
     {
-        name: '',
-        src: ''
+        name: 'Lama Su',
+        src: 'https://static.wikia.nocookie.net/star-wars-canon-extended/images/5/5b/Lama_Su1.jpg/'
     },
     
     {
-        name: '',
-        src: ''
+        name: 'Taun We',
+        src: 'https://static.wikia.nocookie.net/swfanon/images/9/9c/TaunWe.jpg/'
     },
-
-
+    
+    {
+        name: 'Jocasta Nu',
+        src: 'https://static.wikia.nocookie.net/starwars/images/4/44/Jocasta_Nu.jpg/'
+    },
+    
+    {
+        name: 'R4-P17',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/7/77/R4-G9.jpg/'
+    },
+    
+    {
+        name: 'Wat Tambor',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/e/e8/TamborBoomHeadshot.jpg/'
+    },
+    
+    {
+        name: 'San Hill',
+        src: 'https://static.wikia.nocookie.net/swfanon/images/8/8a/3429_plageuis.jpg/'
+    },
+    
+    {
+        name: 'Shaak Ti',
+        src: 'https://static.wikia.nocookie.net/starwars/images/2/20/Shaak_Ti_closeup-SWE.png/'
+    },
+    
+    {
+        name: 'Grievous',
+        src: 'https://upload.wikimedia.org/wikipedia/en/5/54/General_Grievous.png'
+    },
+    
+    {
+        name: 'Tarfful',
+        src: 'https://static.wikia.nocookie.net/starwars/images/d/d9/Tarfful-TSWB.png/'
+    },
+    
+    {
+        name: 'Raymus Antilles',
+        src: 'https://static.wikia.nocookie.net/rustarwars/images/d/d7/Antilles-SWE.png/'
+    },
+    
+    {
+        name: 'Sly Moore',
+        src: 'https://static.wikia.nocookie.net/starwars/images/b/b7/SlyMooreStare-OP.png/revision/latest?cb=20211214041804'
+    },
+    
+    {
+        name: 'Tion Medon',
+        src: 'https://static.wikia.nocookie.net/headhuntersholosuite/images/9/9a/Tion_Medon_002.jpg/'
+    }
+    
 ];
