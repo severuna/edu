@@ -51,7 +51,7 @@ function showItem ( element ) {
     const itemImg = document.createElement("img");
 
     itemImg.classList.add("item-img");
-    
+
     itemImg.src = getImg( imgData, element.name);
     
     item.append(itemImg);
@@ -63,6 +63,48 @@ function showItem ( element ) {
     itemName.textContent = element.name;
         
     item.append(itemName);
+
+    if( element.gender ) {
+
+        const itemGender = document.createElement("div");
+    
+        itemGender.className = "item-gender flex-row";
+    
+        const itemGenderText = document.createElement("p");
+    
+        itemGenderText.classList.add("field-label");
+    
+        itemGenderText.textContent = `Gender: `;
+    
+        itemGender.append(itemGenderText);
+
+        const itemGenderPic = document.createElement("img");
+
+        itemGenderPic.classList.add("item-gender__svg");
+
+        if( element.gender == 'male') {
+
+            itemGenderPic.src = './img/man-svg.svg';
+
+        } else if ( element.gender == 'female' ) {
+
+            itemGenderPic.src = './img/woman-svg.svg';
+
+        } else if (  element.gender == 'n/a' ) {
+
+            itemGenderPic.src = './img/unknown2-svg.svg';
+
+        } else {
+
+            itemGenderPic.src = './img/hermaphrodite-svg.svg';
+
+        }
+        
+        itemGender.append(itemGenderPic);
+
+        item.append(itemGender);
+
+    }
 
     output.append(item);
 
