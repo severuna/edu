@@ -169,8 +169,14 @@ html {
     border-image: conic-gradient(from var(--angle), var(--color-blue), var(--color-blue) 0.1turn, var(--color-blue) 0.15turn, var(--color-black-alpha) 0.25turn) 30;
 	animation: borderRotate 2s linear infinite forwards;
     width: 30rem;
-    height: 40rem;
+    height: 45rem;
     align-items: var(--center);
+    justify-content: space-between;
+}
+
+.item-img {
+    width: 24rem;
+    max-height: 28rem;
 }
 
 @media screen and (max-width: 1000px) {
