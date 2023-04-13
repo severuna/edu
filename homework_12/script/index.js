@@ -12,6 +12,16 @@ charactersForm.addEventListener("submit", ( e )=> {
 
 });
 
+charactersForm.addEventListener("reset", ( e )=> {
+
+    e.preventDefault();
+
+    const characterInput = charactersForm[0].value;
+
+    console.log(characterInput, 'characters Wookiee lang');
+
+});
+
 const planetsForm = document.forms.showPlanets;
 
 planetsForm.addEventListener("submit", ( e )=> {
@@ -22,6 +32,16 @@ planetsForm.addEventListener("submit", ( e )=> {
 
     getData(planetInput, 'planets');
         
+});
+
+planetsForm.addEventListener("reset", ( e )=> {
+
+    e.preventDefault();
+
+    const planetInput = planetsForm[0].value;
+
+    console.log(planetInput, 'planets Wookiee lang');
+
 });
 
 function getImg ( data, name ) {
