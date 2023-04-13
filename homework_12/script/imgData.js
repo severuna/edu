@@ -261,7 +261,7 @@ const imgData = [
     
     {
         name: 'Bib Fortuna',
-        whrascwo: 'Bahrh Foorcaohuwhra'
+        whrascwo: 'Bahrh Foorcaohuwhra',
         src: 'https://static.wikia.nocookie.net/awakening-of-the-rebellion/images/3/33/BibFortunaHS-ROTJ.png/'
     },
     
