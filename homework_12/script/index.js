@@ -8,7 +8,7 @@ charactersForm.addEventListener("submit", ( e )=> {
 
     const characterInput = charactersForm[0].value;
 
-    getData(characterInput, 'characters');
+    getData(characterInput, 'characters', '');
 
 });
 
@@ -18,7 +18,7 @@ charactersForm.addEventListener("reset", ( e )=> {
 
     const characterInput = charactersForm[0].value;
 
-    console.log(characterInput, 'characters Wookiee lang');
+    getData(characterInput, 'characters', 'W');
 
 });
 
@@ -30,7 +30,7 @@ planetsForm.addEventListener("submit", ( e )=> {
 
     const planetInput = planetsForm[0].value;
 
-    getData(planetInput, 'planets');
+    getData(planetInput, 'planets', '');
         
 });
 
@@ -40,7 +40,7 @@ planetsForm.addEventListener("reset", ( e )=> {
 
     const planetInput = planetsForm[0].value;
 
-    console.log(planetInput, 'planets Wookiee lang');
+    getData(planetInput, 'characters', 'W');
 
 });
 
@@ -162,7 +162,7 @@ function showData ( data, selector ) {
     return title
 }
     
-function getData ( num, selector ) {
+function getData ( num, selector, wookiee ) {
 
     const req = async url => {
 
@@ -172,7 +172,17 @@ function getData ( num, selector ) {
 
     }
 
-    let swapiLink = `https://swapi.dev/api/films/${ num }/`;
+    let swapiLink = '';
+
+    if ( wookiee == 'W') {
+
+        swapiLink = `https://swapi.dev/api/films/${ num }/?format=wookiee`;
+
+    } else {
+
+        swapiLink = `https://swapi.dev/api/films/${ num }/`;
+
+    }
 
     req(swapiLink).then(res => showData( res, selector ));
     
