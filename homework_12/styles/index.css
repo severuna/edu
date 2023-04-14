@@ -172,7 +172,7 @@ html {
     border: 3px solid;
     border-image: conic-gradient(from var(--angle), var(--color-blue), var(--color-blue) 0.1turn, var(--color-blue) 0.15turn, var(--color-black-alpha) 0.25turn) 30;
 	animation: borderRotate 2s linear infinite forwards;
-    width: 30rem;
+    width: 33rem;
     height: 49rem;
     align-items: var(--center);
     justify-content: space-between;
@@ -211,4 +211,10 @@ html {
     .form {
         width: 80%;
     }
+}
+
+.item .subtitle {
+    width: 30rem;
+    hyphens: manual;
+    font-size: calc(var(--main-fs) - .5rem);
 }
