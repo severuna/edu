@@ -19,3 +19,12 @@ html {
     display: flex;
     flex-direction: column;
 }
+
+:root {
+    --color-black: rgb(26, 24, 24);
+    --color-black-alpha: rgba(168, 239, 255, 0.1);
+    --color-blue: rgba(168, 239, 255, 1);
+    --color-gold: rgb(248, 244, 0);
+    --color-light: floralwhite;
+    --color-green: rgba(94,252,69,1);
+}
