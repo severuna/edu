@@ -18,7 +18,7 @@ charactersForm.addEventListener("reset", ( e )=> {
 
     const characterInput = charactersForm[0].value;
 
-    getData(characterInput, 'characters', 'W');
+    getData(characterInput, 'characters', '?format=wookiee');
 
 });
 
@@ -40,7 +40,7 @@ planetsForm.addEventListener("reset", ( e )=> {
 
     const planetInput = planetsForm[0].value;
 
-    getData(planetInput, 'characters', 'W');
+    getData(planetInput, 'planets', '?format=wookiee');
 
 });
 
@@ -50,7 +50,11 @@ function getImg ( data, name ) {
 
     data.forEach( el => {
 
-        if ( el.name == name) {
+        if ( el.name == name ) {
+
+            src = el.src;
+
+        } else if ( el.whrascwo == name) {
 
             src = el.src;
 
@@ -72,19 +76,35 @@ function showItem ( element ) {
 
     itemImg.classList.add("item-img");
 
-    itemImg.src = getImg( imgData, element.name);
+    if ( element.whrascwo != undefined) {
+
+        itemImg.src = getImg( imgData, element.whrascwo);
+
+    } else {
+
+        itemImg.src = getImg( imgData, element.name);
+
+    }
     
     item.append(itemImg);
 
     const itemName = document.createElement("h2");
 
     itemName.className = "subtitle";
+    
+    if ( element.whrascwo != undefined) {
 
-    itemName.textContent = element.name;
+        itemName.textContent = element.whrascwo;
+
+    } else {
+
+        itemName.textContent = element.name;
+
+    }
         
     item.append(itemName);
 
-    if( element.gender ) {
+    if( element.gender || element.rrwowhwaworc ) {
 
         const itemGender = document.createElement("div");
     
@@ -102,15 +122,15 @@ function showItem ( element ) {
 
         itemGenderPic.classList.add("item-gender__svg");
 
-        if( element.gender == 'male') {
+        if( element.gender == 'male' || element.rrwowhwaworc =='scraanwo') {
 
             itemGenderPic.src = './img/man-svg.svg';
 
-        } else if ( element.gender == 'female' ) {
+        } else if ( element.gender == 'female' || element.rrwowhwaworc == 'wwwoscraanwo' ) {
 
             itemGenderPic.src = './img/woman-svg.svg';
 
-        } else if (  element.gender == 'n/a' ) {
+        } else if (  element.gender == 'n/a' || element.rrwowhwaworc == 'wh/ra' ) {
 
             itemGenderPic.src = './img/unknown2-svg.svg';
 
@@ -143,7 +163,7 @@ function getDetails ( data ) {
     req(data).then(showItem)
 }
     
-function showData ( data, selector ) {
+function showData ( data, selector, wookiee ) {
 
     const title = document.querySelector("#title");
 
@@ -155,7 +175,15 @@ function showData ( data, selector ) {
 
     data[selector].forEach( el => {
 
-        getDetails(el)
+        let k = el;
+
+        if ( String(wookiee).includes('?format=wookiee') ) {
+
+            k += wookiee;
+
+        } 
+
+        getDetails(k)
 
     });
 
@@ -172,19 +200,9 @@ function getData ( num, selector, wookiee ) {
 
     }
 
-    let swapiLink = '';
+    let swapiLink = `https://swapi.dev/api/films/${ num }/`;
 
-    if ( wookiee == 'W') {
-
-        swapiLink = `https://swapi.dev/api/films/${ num }/?format=wookiee`;
-
-    } else {
-
-        swapiLink = `https://swapi.dev/api/films/${ num }/`;
-
-    }
-
-    req(swapiLink).then(res => showData( res, selector ));
+    req(swapiLink).then(res => showData( res, selector, wookiee ));
     
 }
 
