@@ -29,4 +29,11 @@ html {
     --color-gold: rgb(248, 244, 0);
     --color-light: floralwhite;
     --color-green: rgba(94,252,69,1);
+    --logo-ff: 'Monoton', cursive;
+    --logo-fs: 4rem;
+    --title-ff: 'Fredericka the Great', cursive;
+    --title-fs: 2.5rem;
+    --main-ff: 'Gruppo', cursive;
+    --main-fs: 1.8rem;
+    --font-weight: 700;
 }
