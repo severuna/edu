@@ -35,7 +35,7 @@ html {
     --title-fs: 2.5rem;
     --main-ff: 'Gruppo', cursive;
     --main-fs: 1.8rem;
-    --font-weight: 700;
+    --font-weight: 400;
     --gap: 3rem;
     --center: center;
     --padding: 3rem;
@@ -50,4 +50,13 @@ html {
     align-items: var(--center);
     padding: var(--padding);
     gap: var(--gap);
+}
+
+.title {
+    font-size: var(--logo-fs);
+    font-weight: var(--font-weight);
+    font-family: var(--logo-ff);
+    letter-spacing: var(--spacing);
+    color: var(--color-blue);
+    text-align: var(--center);
 }
