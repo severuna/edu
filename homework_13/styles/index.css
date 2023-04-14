@@ -42,3 +42,12 @@ html {
     --spacing: 2rem;
     --border-radius: 1rem;
 }
+
+.main {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--color-black);
+    align-items: var(--center);
+    padding: var(--padding);
+    gap: var(--gap);
+}
