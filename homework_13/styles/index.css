@@ -36,4 +36,9 @@ html {
     --main-ff: 'Gruppo', cursive;
     --main-fs: 1.8rem;
     --font-weight: 700;
+    --gap: 3rem;
+    --center: center;
+    --padding: 3rem;
+    --spacing: 2rem;
+    --border-radius: 1rem;
 }
