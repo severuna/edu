@@ -72,6 +72,8 @@ const upBtn = document.querySelector("#upBtn");
 
 const downBtn = document.querySelector("#downBtn");
 
+const valueBtn = document.querySelector("#valueBtn");
+
 const fontOutputValue = document.querySelector("#fontOutputValue");
 
 const fontOutputRes = document.querySelector("#fontOutputRes");
