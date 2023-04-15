@@ -49,3 +49,5 @@ nextBtn.addEventListener("click", ( e ) => {
 // fontGenerator.next().value -> 12
 
 const upBtn = document.querySelector("#upBtn");
+
+const downBtn = docunemt.querySelector("#downBtn");
