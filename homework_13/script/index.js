@@ -55,3 +55,19 @@ const downBtn = document.querySelector("#downBtn");
 const fontOutputValue = document.querySelector("#fontOutputValue");
 
 const fontOutputRes = document.querySelector("#fontOutputRes");
+
+upBtn.addEventListener("click", ( e ) => {
+    
+    e.preventDefault();
+
+    console.log('up');
+
+});
+
+downBtn.addEventListener("click", ( e ) => {
+    
+    e.preventDefault();
+
+    console.log('down');
+
+});
