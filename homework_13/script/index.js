@@ -90,6 +90,8 @@ upBtn.addEventListener("click", ( e ) => {
 
     showData(fontOutputValue, 'fontGenerator.next("up"). value', upValue);
 
+    fontOutputRes.style.fontSize = `${ upValue }px`;
+
 });
 
 downBtn.addEventListener("click", ( e ) => {
@@ -101,6 +103,8 @@ downBtn.addEventListener("click", ( e ) => {
     const downValue = fontGenerator.next("down").value;
 
     showData(fontOutputValue, 'fontGenerator.next("down"). value', downValue);
+
+    fontOutputRes.style.fontSize = `${ downValue }px`;
 
 });
 
