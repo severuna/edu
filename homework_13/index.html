@@ -13,6 +13,7 @@
         <div class="task flex-column">
             <h2 class="subtitle"><span>1.</span> Створіть нескінченний генератор ідентифікаторів. Повинен працювати наступним чином:</h2>
             <div class="example flex-column">
+                <span>const idGenerator = createIdGenerator()</span>
                 <span>idGenerator.next().value -> 1</span>
                 <span>idGenerator.next().value -> 2</span>
                 <span>idGenerator.next().value -> 3</span>
@@ -31,6 +32,7 @@
         <div class="task flex-column">
             <h2 class="subtitle"><span>2.</span> Створіть генератор, який буде регулювати розміри шрифту для вашого сайту. Працювати генератор буде наступним чином:</h2>
             <div class="example flex-column">
+                <span>const fontGenerator = newFontGenerator(14); <i>// 14 – стартове значення</i></span>
                 <span>fontGenerator.next("up").value -> 14</span>
                 <span>fontGenerator.next("up").value -> 16</span>
                 <span>fontGenerator.next("up").value -> 18</span>
