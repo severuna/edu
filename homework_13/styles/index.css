@@ -69,3 +69,14 @@ html {
     border-radius: var(--border-radius);
     border: 3px solid var(--color-black);
 }
+
+.subtitle {
+    font-size: var(--title-fs);
+    background-color: var(--color-black);
+    color: var(--color-light);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    font-weight: var(--font-weight);
+    font-family: var(--title-ff);
+    letter-spacing: calc(var(--spacing) / 2);
+}
