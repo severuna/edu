@@ -86,6 +86,10 @@ upBtn.addEventListener("click", ( e ) => {
 
     console.log('up');
 
+    const upValue = fontGenerator.next("up").value;
+
+    showData(fontOutputValue, 'fontGenerator.next("up").value', upValue);
+
 });
 
 downBtn.addEventListener("click", ( e ) => {
@@ -94,6 +98,10 @@ downBtn.addEventListener("click", ( e ) => {
 
     console.log('down');
 
+    const downValue = fontGenerator.next("down").value;
+
+    showData(fontOutputValue, 'fontGenerator.next("down").value', downValue);
+
 });
 
 valueBtn.addEventListener("click", ( e ) => {
@@ -101,5 +109,9 @@ valueBtn.addEventListener("click", ( e ) => {
     e.preventDefault();
 
     console.log('value');
+
+    const currencyValue = fontGenerator.next().value;
+
+    showData(fontOutputValue, 'fontGenerator.next().value', currencyValue);
 
 });
