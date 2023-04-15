@@ -70,7 +70,7 @@ html {
     border: 3px solid var(--color-black);
 }
 
-.subtitle {
+.subtitle, .example {
     font-size: var(--title-fs);
     background-color: var(--color-black);
     color: var(--color-light);
@@ -79,4 +79,14 @@ html {
     font-weight: var(--font-weight);
     font-family: var(--title-ff);
     letter-spacing: calc(var(--spacing) / 2);
+}
+
+span {
+    color: var(--color-blue);
+    font-family: var(--main-ff);
+    letter-spacing: calc(var(--spacing) / 1.5);
+}
+
+.example {
+    gap: calc(var(--gap) / 2);
 }
