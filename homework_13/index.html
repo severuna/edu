@@ -17,7 +17,16 @@
                 <span>idGenerator.next().value -> 2</span>
                 <span>idGenerator.next().value -> 3</span>
             </div>
-            <div class="answer flex-column"></div>
+            <div class="answer flex-column">
+                <div class="input flex-row">
+                    <label for="nextBtn" class="input-label">Натисність на кнопку: </label>
+                    <input type="button" id="nextBtn" value="dGenerator.next().value" class="btn">
+                </div>
+                <div class="output flex-column">
+                    <p class="output-sub">Згенеровані ідентифікатори:</p>
+                    <div class="output-details flex-column" id="nextOutput"></div>
+                </div>
+            </div>
         </div>
         <div class="task flex-column">
             <h2 class="subtitle"><span>2.</span> Створіть генератор, який буде регулювати розміри шрифту для вашого сайту. Працювати генератор буде наступним чином:</h2>
