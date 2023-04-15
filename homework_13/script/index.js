@@ -36,3 +36,16 @@ nextBtn.addEventListener("click", ( e ) => {
     showData(nextOutput, 'idGenerator.next().value', nextValue);
 
 });
+
+
+// 2. Створіть генератор, який буде регулювати розміри шрифту для вашого сайту. Працювати генератор буде наступним чином:
+// fontGenerator.next("up").value -> 14
+// fontGenerator.next("up").value -> 16
+// fontGenerator.next("up").value -> 18
+// fontGenerator.next().value -> 18
+// fontGenerator.next("down").value -> 16
+// fontGenerator.next("down").value -> 14
+// fontGenerator.next("down").value -> 12
+// fontGenerator.next().value -> 12
+
+const upBtn = document.querySelector("#upBtn");
