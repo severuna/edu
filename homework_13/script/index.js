@@ -93,3 +93,11 @@ downBtn.addEventListener("click", ( e ) => {
     console.log('down');
 
 });
+
+valueBtn.addEventListener("click", ( e ) => {
+    
+    e.preventDefault();
+
+    console.log('value');
+
+});
