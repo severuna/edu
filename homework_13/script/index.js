@@ -68,6 +68,8 @@ function newFontGenerator ( number ) {
     }
 }
 
+const fontGenerator = newFontGenerator(14); 
+
 const upBtn = document.querySelector("#upBtn");
 
 const downBtn = document.querySelector("#downBtn");
