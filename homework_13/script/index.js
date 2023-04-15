@@ -50,4 +50,6 @@ nextBtn.addEventListener("click", ( e ) => {
 
 const upBtn = document.querySelector("#upBtn");
 
-const downBtn = docunemt.querySelector("#downBtn");
+const downBtn = document.querySelector("#downBtn");
+
+const fontOutputValue = document.querySelector("#fontOutputValue");
