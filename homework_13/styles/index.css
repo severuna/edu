@@ -115,3 +115,13 @@ span {
     background-color: var(--color-blue);
     color: var(--color-black);
 }
+
+.output-sub {
+    text-align: var(--center);
+    color: var(--color-green);
+}
+
+.item {
+    width: 50%;
+    gap: var(--gap);
+}
