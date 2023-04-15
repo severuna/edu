@@ -48,6 +48,26 @@ nextBtn.addEventListener("click", ( e ) => {
 // fontGenerator.next("down").value -> 12
 // fontGenerator.next().value -> 12
 
+function newFontGenerator ( number ) {
+
+    return {
+
+        next: function ( iterator ) {
+
+            return iterator == 'up' 
+                ? 
+                { value: number += 2 }
+                : 
+                iterator == 'down' 
+                ? 
+                { value: number -= 2 } 
+                : 
+                { value: number }
+
+        }
+    }
+}
+
 const upBtn = document.querySelector("#upBtn");
 
 const downBtn = document.querySelector("#downBtn");
