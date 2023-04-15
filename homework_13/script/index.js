@@ -31,4 +31,8 @@ nextBtn.addEventListener("click", ( e ) => {
 
     e.preventDefault();
 
+    const nextValue = idGenerator.next().value;
+
+    showData(nextOutput, 'idGenerator.next().value', nextValue);
+
 });
