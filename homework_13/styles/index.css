@@ -93,6 +93,7 @@ span {
 
 .answer, .input, .output, .output-details {
     gap: var(--gap);
+    justify-content: space-between;
 }
 
 .input {
@@ -122,6 +123,13 @@ span {
 }
 
 .item {
-    width: 50%;
+    width: 45%;
     gap: var(--gap);
+    letter-spacing: normal;
+}
+
+.res {
+    padding: var(--padding); 
+    gap: var(--gap);
+    font-size: var(--main-fs);
 }
