@@ -70,7 +70,7 @@ html {
     border: 3px solid var(--color-black);
 }
 
-.subtitle, .example {
+.subtitle, .example, .answer {
     font-size: var(--title-fs);
     background-color: var(--color-black);
     color: var(--color-light);
@@ -89,4 +89,12 @@ span {
 
 .example {
     gap: calc(var(--gap) / 2);
+}
+
+.answer, .input, .output, .output-details {
+    gap: var(--gap);
+}
+
+.input {
+    align-items: var(--center);
 }
