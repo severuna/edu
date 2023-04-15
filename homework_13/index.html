@@ -40,7 +40,33 @@
                 <span>fontGenerator.next("down").value -> 12</span>
                 <span>fontGenerator.next().value -> 12</span>
             </div>
-            <div class="answer flex-column"></div>
+            <div class="answer flex-column">
+                <div class="input flex-row">
+                    <label for="upBtn" class="input-label">Натисність на кнопку для збільшення: </label>
+                    <input type="button" id="upBtn" value='fontGenerator.next("up").value' class="btn">
+                </div>
+                <div class="input flex-row">
+                    <label for="downBtn" class="input-label">Натисність на кнопку для зменшення: </label>
+                    <input type="button" id="downBtn" value='fontGenerator.next("down").value' class="btn">
+                </div>
+                <div class="output flex-column">
+                    <p class="output-sub">Результат:
+                    <div class="output-details flex-row">
+                        <div class="item flex-column">
+                            <p>Значення шрифту:</p>
+                            <div id="fontOutputValue"></div>
+                        </div>
+                        <div class="item flex-column">
+                            <p>Як виглядає:</p>
+                            <div id="fontOutputRes">
+                                <span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo at, provident animi corporis non accusamus distinctio facilis quaerat nihil quasi esse quod, illum dolores eius soluta ipsam. Officiis, unde quibusdam.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="./script/index.js"></script>
