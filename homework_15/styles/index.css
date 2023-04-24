@@ -27,9 +27,10 @@ html {
     --color-black-alpha: rgba(168, 239, 255, 0.1);
     --color-blue: rgba(168, 239, 255, 1);
     --color-gold: rgb(248, 244, 0);
-    --color-light: floralwhite;
+    --color-light: rgb(255, 255, 255);
     --color-green: rgba(94,252,69,1);
     --logo-ff: 'Monoton', cursive;
+    --logo-fs: 4rem;
     --title-ff: 'Fredericka the Great', cursive;
     --main-ff: 'Gruppo', cursive;
     --font-weight: 400;
@@ -44,4 +45,16 @@ html {
     background-color: var(--color-black);
     width: 100vw;
     min-height: 100vh;
+}
+
+.title {
+    font-size: var(--logo-fs);
+    font-weight: var(--font-weight);
+    font-family: var(--logo-ff);
+    color: transparent;
+    background: linear-gradient(120deg, var(--color-light) 5%, var(--color-blue) 50%, var(--color-gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    width: 70vw;
 }
