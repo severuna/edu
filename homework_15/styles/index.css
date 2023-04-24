@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gruppo&family=Monoton&display=swap');
+
 html {
     font-size: 10px;
 }
@@ -27,4 +29,8 @@ html {
     --color-gold: rgb(248, 244, 0);
     --color-light: floralwhite;
     --color-green: rgba(94,252,69,1);
+    --logo-ff: 'Monoton', cursive;
+    --title-ff: 'Fredericka the Great', cursive;
+    --main-ff: 'Gruppo', cursive;
+    --font-weight: 400;
 }
