@@ -40,6 +40,7 @@ html {
     --title-ff: 'Fredericka the Great', cursive;
     --title-fs: 3rem;
     --main-ff: 'Gruppo', cursive;
+    --main-fs: 2.5rem;
     --font-weight: 400;
     --padding: 3rem;
     --gap:3rem;
@@ -95,4 +96,27 @@ html {
     font-family: var(--title-ff);
     letter-spacing: calc(var(--spacing) / 2);
     color: var(--color-blue);
+}
+
+.btn {
+    padding: calc(var(--padding) / 1.5) var(--padding);
+    width: 40%;
+    background-color: var(--color-black-alpha);
+    border: 2px solid var(--color-green);
+    font-family: var(--main-ff);
+    font-weight: var(--font-weight);
+    font-size: var(--main-fs);
+    color: var(--color-green);
+    transition: all .7s ease;
+}
+
+.btn:hover {
+    color: var(--color-black);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 5%, var(--color-blue) 50%, rgba(94,252,69,1) 100%);
+    transform: scale(1.1);
+}
+
+.btn:active {
+    background: var(--color-black-alpha);
+    color: var(--color-gold);
 }
