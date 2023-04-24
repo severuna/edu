@@ -38,6 +38,7 @@ html {
     --logo-ff: 'Monoton', cursive;
     --logo-fs: 4rem;
     --title-ff: 'Fredericka the Great', cursive;
+    --title-fs: 3rem;
     --main-ff: 'Gruppo', cursive;
     --font-weight: 400;
     --padding: 3rem;
@@ -67,8 +68,8 @@ html {
 }
 
 .form {
-    padding: calc(var(--padding) * 3);
-    gap: var(--gap);
+    padding: calc(var(--padding) * 2) calc(var(--padding) * 4);
+    gap: calc(var(--gap) * 2.5);
     border: 3px solid;
     border-image: conic-gradient(from var(--angle), var(--color-green), var(--color-gold) 0.1turn, var(--color-blue) 0.15turn, var(--color-black-alpha) 0.25turn) 30;
 	animation: borderRotate 2s linear infinite forwards;
@@ -80,4 +81,18 @@ html {
 	100% {
 		--angle: 420deg;
 	}
+}
+
+.field {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.field-desc {
+    font-size: var(--title-fs);
+    font-weight: var(--font-weight);
+    font-family: var(--title-ff);
+    letter-spacing: calc(var(--spacing) / 2);
+    color: var(--color-blue);
 }
