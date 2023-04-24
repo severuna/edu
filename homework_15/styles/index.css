@@ -33,4 +33,15 @@ html {
     --title-ff: 'Fredericka the Great', cursive;
     --main-ff: 'Gruppo', cursive;
     --font-weight: 400;
+    --padding: 3rem;
+    --gap:3rem;
+}
+
+.main {
+    padding: var(--padding);
+    align-items: center;
+    gap: var(--gap);
+    background-color: var(--color-black);
+    width: 100vw;
+    min-height: 100vh;
 }
