@@ -22,6 +22,12 @@ html {
     flex-direction: column;
 }
 
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+}
+
 :root {
     --color-black: rgb(26, 24, 24);
     --color-black-alpha: rgba(168, 239, 255, 0.1);
@@ -36,6 +42,7 @@ html {
     --font-weight: 400;
     --padding: 3rem;
     --gap:3rem;
+	--angle: 90deg;
 }
 
 .main {
@@ -57,4 +64,20 @@ html {
     -webkit-text-fill-color: transparent;
     text-align: center;
     width: 70vw;
+}
+
+.form {
+    padding: calc(var(--padding) * 3);
+    gap: var(--gap);
+    border: 3px solid;
+    border-image: conic-gradient(from var(--angle), var(--color-green), var(--color-gold) 0.1turn, var(--color-blue) 0.15turn, var(--color-black-alpha) 0.25turn) 30;
+	animation: borderRotate 2s linear infinite forwards;
+    width: 70vw;
+    align-items: center;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
 }
