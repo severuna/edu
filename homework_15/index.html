@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Інструменти. Модульність коду та Webpack</title>
+    <title>Homework 15. СимволиІнструменти. Модульність коду та Webpack</title>
 </head>
 <body>
-    
+    <main class="main flex-column">
+        <h1 class="title">Homework 15. СимволиІнструменти. Модульність коду та Webpack</h1>
+        <div class="container flex-column">
+            <form class="form flex-column" id="worksForm">
+                <div class="field flex-row">
+                    <p class="field-desc">Оберіть роботу з переліку:</p>
+                    <select name="worksForm">
+                        <option value="hw_01" selected>Homework 01</option>
+                        <option value="hw_02">Homework 02</option>
+                        <option value="hw_03">Homework 03</option>
+                        <option value="hw_04">Homework 04</option>
+                        <option value="hw_05">Homework 05</option>
+                        <option value="hw_06">Homework 06</option>
+                        <option value="hw_07">Homework 07</option>
+                        <option value="hw_08">Homework 08</option>
+                        <option value="hw_09">Homework 09</option>
+                        <option value="hw_10">Homework 10</option>
+                        <option value="hw_11">Homework 11</option>
+                        <option value="hw_12">Homework 12</option>
+                        <option value="hw_13">Homework 13</option>
+                    </select>
+                </div>
+                <div class="field flex-row">
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="reset" class="btn">Reset</button>
+                </div>
+            </form>
+            <div class="output flex-column" id="output">
+                <!-- тут будуть роботи, обрані в фомі вище -->
+            </div>
+        </div>
+    </main>
 </body>
 </html>
