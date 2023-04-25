@@ -1,4 +1,4 @@
-const showWork = ( title, taskContainer, container ) => {
+export const showWork = ( title, taskContainer, container ) => {
 
     container.innerHTML = '';
 
@@ -13,5 +13,3 @@ const showWork = ( title, taskContainer, container ) => {
     return container;
 
 }
-
-export default showWork;
