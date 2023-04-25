@@ -11,6 +11,8 @@ import { taskDataNine } from "../workData/nine.js";
 import { taskDataTen } from "../workData/ten.js";
 import { taskDataEleven } from "../workData/eleven.js";
 
+import { showWork } from "../show/showWork.js";
+
 export const setWork = ( formValue ) => {
 
     if ( formValue === 'hw_01') {
