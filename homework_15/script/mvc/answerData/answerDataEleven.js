@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", ( ) => {
+const randomChinese = document.addEventListener("DOMContentLoaded", ( ) => {
     
     async function getRandomChinese(length) {
 
@@ -22,3 +22,16 @@ document.addEventListener("DOMContentLoaded", ( ) => {
     console.log(getRandomChinese(5));
     
 });
+
+const chinese = `The answer is in the console.`;
+
+const answerDataEleven =[
+    {
+        id: 1,
+        answer: [
+            chinese
+        ]
+    }
+];
+
+export default answerDataEleven;
