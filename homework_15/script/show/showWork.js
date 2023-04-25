@@ -1,5 +1,7 @@
 const showWork = ( title, taskContainer, container ) => {
 
+    container.innerHTML = '';
+
     const workTitle = document.createElement("h2");
 
     workTitle.classList.add("title");
