@@ -18,26 +18,26 @@ const output = document.querySelector("#output");
 export const setWork = ( formValue ) => {
 
     if ( formValue === 'hw_01') {
-        showWork(taskDataOne[0].title, output);
-    }  else if ( formValue === 'hw_02') {
-        showWork(`taskDataTwo[0].title`, output);
+        showWork(taskDataOne[0].title, output, taskDataOne);
+    // }  else if ( formValue === 'hw_02') {
+    //     showWork(`taskDataTwo[0].title`, output, taskDataTwo);
     } else if ( formValue === 'hw_03') {
-        showWork(taskDataThree[0].title, output);
+        showWork(taskDataThree[0].title, output, taskDataThree);
     } else if ( formValue === 'hw_04') {
-        showWork(taskDataFour[0].title, output);
+        showWork(taskDataFour[0].title, output, taskDataFour);
     } else if ( formValue === 'hw_05') {
-        showWork(taskDataFive[0].title, output);
+        showWork(taskDataFive[0].title, output, taskDataFive);
     } else if ( formValue === 'hw_06') {
-        showWork(taskDataSix[0].title, output);
+        showWork(taskDataSix[0].title, output, taskDataSix);
     } else if ( formValue === 'hw_07') {
-        showWork(taskDataSeven[0].title, output);
+        showWork(taskDataSeven[0].title, output, taskDataSeven);
     } else if ( formValue === 'hw_08') {
-        showWork(taskDataEight[0].title, output);
+        showWork(taskDataEight[0].title, output, taskDataEight);
     } else if ( formValue === 'hw_09') {
-        showWork(taskDataNine[0].title, output);
+        showWork(taskDataNine[0].title, output, taskDataNine);
     }else if ( formValue === 'hw_10') {
-        showWork(taskDataTen[0].title, output);
+        showWork(taskDataTen[0].title, output, taskDataTen);
     }else if ( formValue === 'hw_11') {
-        showWork(taskDataEleven[0].title, output);
+        showWork(taskDataEleven[0].title, output, taskDataTen);
     }
 };
