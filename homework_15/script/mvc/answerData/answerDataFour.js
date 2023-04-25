@@ -1,0 +1,130 @@
+// 1
+const students = ["Олександр", "Ігор", "Олена", "Іра", "Олексій", "Світлана"];
+const themes = ["Диференційне рівняння", "Теорія автоматів", "Алгоритми і структури даних"];
+const marks = [4, 5, 5, 3, 4, 5];
+
+// const arrsOutput = document.querySelector("#arrsOutput");
+
+// const showArr = (arr, arrName) => {
+//     const arrStr = document.createElement('p');
+//     arrStr.textContent = `const ${arrName} = [ ${arr} ]`;
+//     return arrStr
+// }
+
+// arrsOutput.append(showArr(students, 'students'));
+// arrsOutput.append(showArr(themes, 'themes'));
+// arrsOutput.append(showArr(marks, 'marks'));
+
+// 2
+const getPairs = (arr) => {
+    const women = [];
+    const men = [];
+    arr.forEach(element => {
+        element.endsWith("а") ? women.push(element) : men.push(element)
+    });
+    const sortArr = women.reduce((acc, el, i) => {
+        acc.push([el, men[i]]);
+        return acc;
+      }, []);
+    return sortArr
+}
+// temp val
+const pairs =  `pairs`;
+// const pairs = getPairs(students);
+// const pairOutput = document.querySelector("#pairOutput");
+
+// const showNestArr = (arr, arrName) => {
+//     const arrMain = document.createElement('p');
+//     arrMain.textContent = `const ${arrName} = [ `;
+//     arr.forEach(el => {
+//         arrMain.textContent += ` [ ${el} ], `
+//     });
+//     arrMain.textContent += ` ]`;
+//     return arrMain
+// }
+
+// 3
+const setProject = (arr, project) => {
+    let projectArr = arr;
+    let i = 0;
+    projectArr.forEach( el => {
+        el[0] = el[0] + ' i ' + el[1];
+        el.splice(1, 1);
+        el.push(project[i]);
+        i++;
+    });
+    return projectArr
+}
+// temp val
+const project = `project`;
+// const project = setProject(pairs, themes);
+// const projectOutput =  document.querySelector("#projectOutput");
+// projectOutput.append(showNestArr(project, 'project'));
+// console.log(`project - ${project}`);
+
+// 4
+const setMark = (student, mark) => {
+    const marks = student.reduce((acc, el, i) => {
+        acc.push([el, mark[i]]);
+        return acc;
+    }, []);
+    return marks;
+}
+// temp val
+const test = `test`;
+// const test = setMark(students, marks);
+
+// 5
+const randomMark = () => {
+    let rand = 1  + Math.random() * (5 - 1)
+    return Math.round(rand);
+}
+
+const setRandomMark = (arr) => {
+    const markArr = [];
+    arr.forEach(element => {
+        element.push(randomMark())
+        markArr.push(element)
+    });
+    return markArr
+}
+// temp val
+const group = `group;`
+// const group = setRandomMark(project);
+
+const answerDataFour = [
+    {
+        id: 1,
+        answer: [
+            students,
+            themes,
+            marks
+        ]
+    },
+    {
+        id: 2,
+        answer: [
+            pairs
+        ]
+    },
+    {
+        id: 3,
+        answer: [
+            project
+        ]
+    },
+    {
+        id: 4,
+        answer: [
+            test
+        ]
+    },
+    {
+        id: 5,
+        answer: [
+            group
+        ]
+    },
+];
+
+export default answerDataFour;
