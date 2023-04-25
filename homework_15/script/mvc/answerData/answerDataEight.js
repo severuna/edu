@@ -70,85 +70,82 @@ class Student {
 
 }
 
-const showClass = ( ) => {
-    const container = document.createElement("p");
-    container.innerHTML = `<pre>class <span>Student</span> {
+// 1
+const classStudent = `<pre>class <span>Student</span> {
         
-        constructor( <span>university</span>, <span>course</span>, <span>fullName</span> ) {
-            this.<span>university</span> = <span>university</span>;
-            this.<span>course</span> = <span>course</span>;
-            this.<span>fullName</span> = <span>fullName</span>;
-        }
-    
-    }</pre>`
-    return container
-}
+    constructor( <span>university</span>, <span>course</span>, <span>fullName</span> ) {
+        this.<span>university</span> = <span>university</span>;
+        this.<span>course</span> = <span>course</span>;
+        this.<span>fullName</span> = <span>fullName</span>;
+    }
 
-const studentOutput = document.querySelector("#studentOutput");
-studentOutput.append(showClass());
+}</pre>`;
 
+// create user student
 const userStudent = new Student();
 
-const infoForm = document.forms.infoForm;
-const infoOutput = document.querySelector("#infoOutput");
+// 2
+userStudent.fullName = `student name`;
+userStudent.course = `student course`;
+userStudent.university = `student university`;
 
-infoForm.addEventListener("submit", ( e ) => {
-    e.preventDefault();
-    userStudent.fullName = infoForm[0].value;
-    userStudent.course = infoForm[1].value;
-    userStudent.university = infoForm[2].value;
-    infoOutput.innerHTML = `<p>${userStudent.getInfo()}</p>`;
-});
+// 3, 4
+user.marks = `user marks`;
 
+// 5
+const averageMark = `середня оцінка`;
 
-const setMarkForm = document.forms.setMarkForm;
-const setMarkOutput = document.querySelector("#setMarkOutput");
+// 6
+const userStudentDismiss = `відраховано`;
 
+// 7
+const userStudentRecover = `поновлено`;
 
-setMarkForm.addEventListener("submit", ( e ) => {
-    e.preventDefault();
-    const addedMark = setMarkForm[0].value;
-    userStudent.marks = Number(addedMark);
-    setMarkOutput.innerHTML = `<p>Оцінку <span>${ addedMark }</span> додано.</p>`;
-});
-
-const getMarksBtn = document.querySelector("#getMarks");
-const getMarksOutput = document.querySelector("#getMarksOutput");
-
-getMarksBtn.addEventListener("click", ( e ) => {
-    e.preventDefault();
-    const getMarksMessage = document.createElement("p");
-    getMarksMessage.textContent = userStudent.marks;
-    getMarksOutput.append(getMarksMessage);
-});
-
-const getAverageBtn = document.querySelector("#getAverage");
-const averageMarkOutput =  document.querySelector("#averageMarkOutput");
-
-
-getAverageBtn.addEventListener("click", ( e ) => {
-    e.preventDefault();
-    if (userStudent.getAverageMark().length == 0) {
-        averageMarkOutput.innerHTML = `<p>Bам потрібно додати вище хоча б <span>одну оцінку</span></p>`;
-    } else {
-        averageMarkOutput.innerHTML = `<p>Середня <span>оцінка</span> - <span>${ userStudent.getAverageMark() }</span></p>`;
+const answerDataEight = [
+    {
+        id: 1,
+        answer: [
+            classStudent
+        ]
+    },
+    {
+        id: 2,
+        answer: [
+            userStudent.fullName,
+            userStudent.course,
+            userStudent.university
+        ]
+    },
+    {
+        id: 3,
+        answer: [
+            user.marks
+        ]
+    },
+    {
+        id: 4,
+        answer: [
+            user.marks
+        ]
+    },
+    {
+        id: 5,
+        answer: [
+            averageMark
+        ]
+    },
+    {
+        id: 6,
+        answer: [
+            userStudentDismiss
+        ]
+    },
+    {
+        id: 7,
+        answer: [
+            userStudentRecover
+        ]
     }
-});
+];
 
-const setDismissBtn = document.querySelector("#setDismissBtn");
-const dismissOutput = document.querySelector("#dismissOutput");
-
-setDismissBtn.addEventListener("click", ( e ) => {
-    e.preventDefault();
-    userStudent.dismiss();
-    dismissOutput.innerHTML = `<p>Студента виключено</p>`;
-});
-
-const setRecoverBtn = document.querySelector("#setRecoverBtn");
-const recoverOutput = document.querySelector("#recoverOutput");
-
-setRecoverBtn.addEventListener("click", ( e ) => {
-    e.preventDefault();
-    userStudent.recover();
-    recoverOutput.innerHTML = `<p>Студента повернуто</p>`;
-});
+export default answerDataEight;
