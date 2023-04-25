@@ -113,43 +113,49 @@ const sentence = `delete leters res`;
 //     console.log(`6. Результат роботи шостої функції -  ${ sixOutput.textContent }`);
 // });
 
-const answerDataThree = [
+const taskDataThree = [
     {
         id: 1,
+        txt: `Створити функцію getMaxDigit(number) – яка отримує будь-яке число та виводить найбільшу цифру в цьому числі.`,
         answer: [
             maxDigit
         ]
     },
     {
         id: 2,
+        txt: `Створити функцію, яка форматує ім'я, роблячи першу букву великою.`,
         answer: [
             correctName
         ]
     },
     {
         id: 3,
+        txt: `Створити функцію, яка повертає випадкове ціле число в діапазоні від N до M.`,
         answer: [
             randomNumber
         ]
     },
     {
         id: 4,
+        txt: `Створити функцію, яка вираховує суму, що залишається після оплати податку  від зарабітньої плати.`,
         answer: [
             salary
         ]
     },
     {
         id: 5,
+        txt: `Створіть функцію генерації випадкового паролю (тільки числа), довжина встановлюється користувачем або по замовчуванню = 8 символам.`,
         answer: [
             randomPass
         ]
     },
     {
         id: 6,
+        txt: `Створіть функцію, яка видаляє всі букви з речення.`,
         answer: [
             sentence
         ]
-    },
+    }
 ];
 
-export default answerDataThree;
+export default taskDataThree;
