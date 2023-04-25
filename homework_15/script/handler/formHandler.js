@@ -7,6 +7,10 @@ const formHandler = ( form ) => {
         const formValue = form[0].value;
 
         console.log(`значення обраного поля форми - ${ formValue }`);
+        
+        form.id === 'worksForm' ? console.log("+") : console.log("-")
+
+        return formValue;
 
     });
 
