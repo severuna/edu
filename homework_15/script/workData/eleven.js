@@ -32,19 +32,19 @@ export const taskDataEleven = [
     },
     {
         id: 1,
-        txt: `Створіть функцію, яка повертає проміс getRandomChinese(length).
+        txt: `Створіть функцію, яка повертає проміс <span>getRandomChinese(length)</span>.
         <br>
         Функція працює таким чином:
         <br>
-        Запускається цикл (підказка: можна використовувати while) length раз, кожен прохід циклу дивимось на останні 5 цифр результату виклику методу Date.now()
+        Запускається цикл (підказка: можна використовувати <span>while</span>) <span>length</span> раз, кожен прохід циклу дивимось на останні 5 цифр результату виклику методу <span>Date.now()</span>
         <br>
-        Наприклад отримали const sign = 16086;.
+        Наприклад отримали <span>const sign = 16086;</span>.
         <br>
-        Конвертуємо отриману цифу в рядок String.fromCharCode(sign); та чекаємо 50 ms
+        Конвертуємо отриману цифу в рядок <span>String.fromCharCode(sign);/<span> та чекаємо <span>50 ms</span>
         <br>
-        Функція gerRandomChinese(length) повинна повернути рядок довжиною (length) з китайськими ієрогліфами.
+        Функція <span>gerRandomChinese(length)</span> повинна повернути рядок довжиною (<span>length</span>) з китайськими ієрогліфами.
         <br>
-        Час роботи проміса має складати length * 50ms.
+        Час роботи проміса має складати <span>length * 50ms</span>.
         `,
         answer: [
             chinese
