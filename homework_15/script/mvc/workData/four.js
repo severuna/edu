@@ -92,9 +92,16 @@ const setRandomMark = (arr) => {
 const group = `group;`
 // const group = setRandomMark(project);
 
-const answerDataFour = [
+const taskDataFour = [
     {
         id: 1,
+        txt: `Перед виконанням цього домашнього завдання необхідно створити 3 масиви:
+        <br>
+        <span>const students = ["Олександр", "Ігор", "Олена", "Іра", "Олексій", "Світлана"];<span>
+        <br>
+        <span>const themes = ["Диференційне рівняння", "Теорія автоматів", "Алгоритми і структури даних"];</span>
+        <br>
+        <span>const marks = [4, 5, 5, 3, 4, 5];</span>`,
         answer: [
             students,
             themes,
@@ -103,28 +110,32 @@ const answerDataFour = [
     },
     {
         id: 2,
+        txt: `Розділіть студентів на пари(хлопець + дівчина) для работи над проєктом.`,
         answer: [
             pairs
         ]
     },
     {
         id: 3,
+        txt: `Зіставте пари з попереднього завдання та теми проєктів, над якими студенти будуть працювати.`,
         answer: [
             project
         ]
     },
     {
         id: 4,
+        txt: `Зіставте оцінки(marks) зі студентом(students):`,
         answer: [
             test
         ]
     },
     {
         id: 5,
+        txt: `Поставте кожній парі випадкову оцінку(від 1 до 5) за проєкт (тут функція буде не чистою, але не повинна мутувати массив):`,
         answer: [
             group
         ]
-    },
+    }
 ];
 
-export default answerDataFour;
+export default taskDataFour;
