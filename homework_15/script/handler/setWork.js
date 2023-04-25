@@ -13,31 +13,31 @@ import { taskDataEleven } from "../workData/eleven.js";
 
 import { showWork } from "../show/showWork.js";
 
+const output = document.querySelector("#output");
+
 export const setWork = ( formValue ) => {
 
     if ( formValue === 'hw_01') {
-        console.log(taskDataOne[0].txt);
-    } else if ( formValue === 'hw_01') {
-        console.log(taskDataOne[0].txt);
-    } else if ( formValue === 'hw_02') {
-        console.log(`taskDataTwo[0].txt`);
+        showWork(taskDataOne[0].title, output);
+    }  else if ( formValue === 'hw_02') {
+        showWork(`taskDataTwo[0].title`, output);
     } else if ( formValue === 'hw_03') {
-        console.log(taskDataThree[0].txt);
+        showWork(taskDataThree[0].title, output);
     } else if ( formValue === 'hw_04') {
-        console.log(taskDataFour[0].txt);
+        showWork(taskDataFour[0].title, output);
     } else if ( formValue === 'hw_05') {
-        console.log(taskDataFive[0].txt);
+        showWork(taskDataFive[0].title, output);
     } else if ( formValue === 'hw_06') {
-        console.log(taskDataSix[0].txt);
+        showWork(taskDataSix[0].title, output);
     } else if ( formValue === 'hw_07') {
-        console.log(taskDataSeven[0].txt);
+        showWork(taskDataSeven[0].title, output);
     } else if ( formValue === 'hw_08') {
-        console.log(taskDataEight[0].txt);
+        showWork(taskDataEight[0].title, output);
     } else if ( formValue === 'hw_09') {
-        console.log(taskDataNine[0].txt);
+        showWork(taskDataNine[0].title, output);
     }else if ( formValue === 'hw_10') {
-        console.log(taskDataTen[0].txt);
+        showWork(taskDataTen[0].title, output);
     }else if ( formValue === 'hw_11') {
-        console.log(taskDataEleven[0].txt);
+        showWork(taskDataEleven[0].title, output);
     }
 };

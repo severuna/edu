@@ -1,14 +1,14 @@
-export const showWork = ( title, taskContainer, container ) => {
+export const showWork = ( title, container ) => {
 
     container.innerHTML = '';
 
     const workTitle = document.createElement("h2");
 
-    workTitle.classList.add("title");
+    workTitle.className = "title";
 
-    container.append(title);
+    workTitle.textContent = title;
 
-    container.append(taskContainer);
+    container.append(workTitle);
 
     return container;
 

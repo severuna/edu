@@ -43,7 +43,7 @@ const patternString = `Шаблонний рядок з результатами
 export const taskDataOne = [
     {
         id: 0,
-        title: `Homework 01. Змінні та типи`;
+        title: `Homework 01. Змінні та типи`
     },
     {
         id: 1,
