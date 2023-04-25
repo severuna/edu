@@ -6,10 +6,7 @@ const setNumberType = (arr) => {
     return numberTypeArr
 }
 
-// 1. Створіть функцію filterEvenNumbers(...numbers) – яка фільтрує парні числа
-// передані як аргументи функції.
-
-
+// 1. 
 const filterEvenNumbers = (...numbers) => {
     return numbers.filter( el => el % 2 != 0 )
 }
@@ -26,8 +23,7 @@ filterEvenForm.addEventListener("submit", ( e ) => {
     filterOutput.textContent = `Результат роботи - ${filterResult}`;
 });
 
-// 2. Створіть функцію getAverage(...numbers) – яка рахує середнє арифметичне всіх переданих в неї аргументів
-
+// 2. 
 const getAverage = (...numbers) => {
     const numbersLength = numbers.length;
     let sum = 0;
@@ -52,9 +48,7 @@ getAverageForm.addEventListener("submit", ( e ) => {
 });
 
 
-// 3. . Створіть функцію getDividedByFive(...numbers) – яка відфільтрує усі елементи
-// в масиві та залишить тільки ті, які діляться на ціло на 5
-
+// 3. 
 const getDividedByFive = (...numbers) => {
     return numbers.filter( el => el % 5 == 0 )
 }
@@ -71,9 +65,7 @@ dividedByFiveForm.addEventListener("submit", ( e ) => {
     dividedOutput.textContent = `Результат роботи - ${dividedResult}`;
 });
 
-// 4. Створіть функцію countPositiveNumbers(...numbers) – яка порахує кількість
-// чисел більших
-
+// 4. 
 const countPositiveNumbers = (...numbers) => {
     return numbers.filter( el => el > 0 )
 }
@@ -90,10 +82,7 @@ positiveNumbersForm.addEventListener("submit", ( e ) => {
     positiveOutput.textContent = `Результат роботи - ${positiveResult}`;
 });
 
-// 5. Створіть функцію divideByThree(word), яка розбиває кожне слово на умовні
-// склади по 3 букви. Якщо букв менше трьох – не розбиває. Пробіли завжди
-// видаляються. Рядок приводится до нижнього регістру
-
+// 5. 
 const divideByThree = (word) => {
     const splitStr = word.join('');
     const dividedStr = [];
@@ -114,11 +103,7 @@ byThreeForm.addEventListener("submit", ( e ) => {
     byThreeOutput.textContent = `Результат роботи - ${byThreeResult}`;
 });
 
-// 6. Створіть функцію getRandomArray(length, min, max) – яка
-// повертає масив випадкових цілих чисел. У функції є параметри: length -
-// довжина масиву, min – мінімальне значення цілого числа, max – максимальне
-// значення цілого числа.
-
+// 6.
 const getRandomArray = (length, min, max) => {
     const randomArray = [];
     for (let i = 0; i < length; i++) {
