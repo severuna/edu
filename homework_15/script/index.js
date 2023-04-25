@@ -6,7 +6,6 @@ import showWork from "./show/showWork.js";
 import showTaskContainer from "./show/showTaskContainer.js";
 import showTask from "./show/showTask.js";
 import showAnswer from "./show/showAnswer.js";
-import { task_OneOne } from "./mvc/hw_01.js";
 
 
 const worksForm = document.forms.worksForm;
