@@ -1,3 +1,5 @@
+import { setWork } from "./setWork.js";
+
 const formHandler = ( form ) => {
 
     form.addEventListener("submit", ( e ) => {
@@ -8,7 +10,7 @@ const formHandler = ( form ) => {
 
         console.log(`значення обраного поля форми - ${ formValue }`);
         
-        form.id === 'worksForm' ? console.log("+") : console.log("-")
+        form.id === 'worksForm' ? setWork(formValue) : console.log("-");
 
         return formValue;
 
