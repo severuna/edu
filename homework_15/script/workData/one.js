@@ -40,12 +40,12 @@ const netProfit = ( totalCost / 2) -  ( totalCost * discount ) / 100;
 // 13
 const patternString = `Шаблонний рядок з результатами всіх обчислень з блоку Base: \n 1. Максимальна ціна: ${maxPrice}. \n 2. Мінімальна ціна: ${minPrice}. \n 3. Вартість всіх товарів: ${totalCost}. \n 4. Bартість всіх товарів (без урахування копійок у кожного товару) - ${wholePartsPrices}. \n 5. Bартість всіх товарів (округлену до сотень) - ${costToHundr}. \n 6. Округлена в меншу сторону сума всії товарів є ${floorTotalCost % 2 === 0}, тому можна сказати що сума є непарним числом. \n 7. Сума решти, якщо клієнт платить 500 - ${userRest} (без округлення). \n 8. Cереднє значення цін, округлене до другого знаку після коми - ${arifPrice}. \n`;
 
-const taskDataOne = [
+export const taskDataOne = [
     {
         id: 1,
         txt: `Створіть 3 змінних з наступими значеннями: 15.678, 123.965, 90.2345. Ці змінні зберігають ціни на товари`,
         answer: [
-            pantsprice,
+            pantsPrice,
             shortsPrice,
             shirtsPrice
         ]
@@ -135,5 +135,3 @@ const taskDataOne = [
         ]
     }
 ];
-
-export default taskDataOne;

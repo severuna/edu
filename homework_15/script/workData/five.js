@@ -123,7 +123,7 @@ const randomArr = `random arr`;
 //     randomArrayOutput.textContent = `Результат роботи - ${randomArrayResult}`
 // });
 
-const taskDataFive = [
+export const taskDataFive = [
     {
         id: 1,
         txt: `Створіть функцію filterEvenNumbers(...numbers) – яка фільтрує парні числа, передані як аргументи функції.`,
@@ -167,5 +167,3 @@ const taskDataFive = [
         ]
     }
 ];
-
-export default taskDataFive;

@@ -113,7 +113,7 @@ const sentence = `delete leters res`;
 //     console.log(`6. Результат роботи шостої функції -  ${ sixOutput.textContent }`);
 // });
 
-const taskDataThree = [
+export const taskDataThree = [
     {
         id: 1,
         txt: `Створити функцію getMaxDigit(number) – яка отримує будь-яке число та виводить найбільшу цифру в цьому числі.`,
@@ -157,5 +157,3 @@ const taskDataThree = [
         ]
     }
 ];
-
-export default taskDataThree;

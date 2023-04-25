@@ -51,7 +51,7 @@ function getMySalary ( country ) {
 // temp val
 const mySalary = `my salary`;
 
-const taskDataSeven = [
+export const taskDataSeven = [
     {
         id: 1,
         txt: `Створіть 3 об'єкти, що описують країни:
@@ -148,5 +148,3 @@ const taskDataSeven = [
         ]
     },
 ];
-
-export default taskDataSeven;

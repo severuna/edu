@@ -25,7 +25,7 @@ const randomChinese = document.addEventListener("DOMContentLoaded", ( ) => {
 
 const chinese = `The answer is in the console.`;
 
-const taskDataEleven = [
+export const taskDataEleven = [
     {
         id: 1,
         txt: `Створіть функцію, яка повертає проміс getRandomChinese(length).
@@ -47,5 +47,3 @@ const taskDataEleven = [
         ]
     }
 ];
-
-export default taskDataEleven;

@@ -124,7 +124,7 @@ const calculateWordLetters = ( word ) => {
 // temp val
 const wordLetters = `word res`;
 
-const taskDataSix = [
+export const taskDataSix = [
     {
         id: 1,
         txt: `Для початку необхідно створити наступний масив (ви можете його просто скопіювати):
@@ -233,5 +233,3 @@ const taskDataSix = [
         ]
     },
 ];
-
-export default taskDataSix;

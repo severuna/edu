@@ -90,7 +90,7 @@ userStudent.course = `student course`;
 userStudent.university = `student university`;
 
 // 3, 4
-user.marks = `user marks`;
+userStudent.marks = `user marks`;
 
 // 5
 const averageMark = `середня оцінка`;
@@ -101,7 +101,7 @@ const userStudentDismiss = `відраховано`;
 // 7
 const userStudentRecover = `поновлено`;
 
-const taskDataEight = [
+export const taskDataEight = [
     {
         id: 1,
         txt: `У цьому завданні вам необхідно створити клас <span>Student</span> та розробляти методи всередині цього класу. У стдентів повинні бути наступні властивості: <span>university, course, fullName</span>, вони передаються при створенні студента(в конструктор).`,
@@ -122,14 +122,14 @@ const taskDataEight = [
         id: 3,
         txt: `Створіть геттер оцінок <span>this.marks</span>, який повертає масив оцінок студента <span>[5, 4, 4, 5]</span>`,
         answer: [
-            user.marks
+            userStudent.marks
         ]
     },
     {
         id: 4,
         txt: `Створіть сеттер оцінок <span>this.marks = 5</span>, який дозволяє поставити оцінку студенту. Після того, як оцінка поставлена, геттер повинен повернути масив <span>this.marks -> [5, 4, 4, 5, 5]</span>`,
         answer: [
-            user.marks
+            userStudent.marks
         ]
     },
     {
@@ -154,5 +154,3 @@ const taskDataEight = [
         ]
     }
 ];
-
-export default taskDataEight;

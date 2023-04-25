@@ -92,7 +92,7 @@ const setRandomMark = (arr) => {
 const group = `group;`
 // const group = setRandomMark(project);
 
-const taskDataFour = [
+export const taskDataFour = [
     {
         id: 1,
         txt: `Перед виконанням цього домашнього завдання необхідно створити 3 масиви:
@@ -137,5 +137,3 @@ const taskDataFour = [
         ]
     }
 ];
-
-export default taskDataFour;

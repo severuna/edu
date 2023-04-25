@@ -20,7 +20,7 @@ const blocks = ( ) => {
 
 }
 
-const taskDataNine = [
+export const taskDataNine = [
     {
         id: 1,
         txt: `Зродіть 25 квадратів розміру 50х50 пікселів кожен, зафарбовані у випадковий колір. Квадрати мають розташовуватись по 5 в ряд.
@@ -36,5 +36,3 @@ const taskDataNine = [
         ]
     }
 ];
-
-export default taskDataNine;
