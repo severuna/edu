@@ -69,4 +69,6 @@ const answerDataTwo = [
             sum
         ]
     }
-]
+];
+
+export default answerDataTwo;
