@@ -1,5 +1,4 @@
-// Перед виконанням цього домашнього завдання необхідно
-// створити 3 масиви:
+// 1
 const students = ["Олександр", "Ігор", "Олена", "Іра", "Олексій", "Світлана"];
 const themes = ["Диференційне рівняння", "Теорія автоматів", "Алгоритми і структури даних"];
 const marks = [4, 5, 5, 3, 4, 5];
@@ -20,9 +19,7 @@ console.log(`students - ${students}`);
 console.log(`themes - ${themes}`);
 console.log(`marks - ${marks}`);
 
-// Розділіть студентів на пари(хлопець + дівчина) для работи над
-// проєктом.
-
+// 2
 const getPairs = (arr) => {
     const women = [];
     const men = [];
@@ -52,9 +49,7 @@ const showNestArr = (arr, arrName) => {
 pairOutput.append(showNestArr(pairs, 'pairs'))
 console.log(`pairs - ${pairs}`);
 
-// Зіставте пари з попереднього завдання та теми проєктів, над
-// якими студенти будуть працювати.
-
+// 3
 const setProject = (arr, project) => {
     let projectArr = arr;
     let i = 0;
@@ -73,7 +68,7 @@ const projectOutput =  document.querySelector("#projectOutput");
 projectOutput.append(showNestArr(project, 'project'));
 console.log(`project - ${project}`);
 
-// Зіставте пари з попереднього завдання та теми проєктів, над якими студенти будуть працювати
+// 4
 const setMark = (student, mark) => {
     const marks = student.reduce((acc, el, i) => {
         acc.push([el, mark[i]]);
@@ -89,9 +84,7 @@ const testOutput = document.querySelector("#testOutput");
 testOutput.append(showNestArr(test, 'test'));
 console.log(`test - ${test}`);
 
-// Поставте кожній парі випадкову оцінку(від 1 до 5) за проєкт
-// (тут функція буде не чистою, але не повинна мутувати массив):
-
+// 5
 const randomMark = () => {
     let rand = 1  + Math.random() * (5 - 1)
     return Math.round(rand);
