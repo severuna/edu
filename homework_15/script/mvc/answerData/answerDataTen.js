@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", ( ) => {
+const play = document.addEventListener("DOMContentLoaded", ( ) => {
 
     window.addEventListener("keydown", ( e ) => {
     
@@ -21,3 +21,14 @@ document.addEventListener("DOMContentLoaded", ( ) => {
     });
     
 });
+
+const answerDataTen = [
+    {
+        id: 1,
+        answer: [
+            play
+        ]
+    }
+];
+
+export default answerDataTen;
