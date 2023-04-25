@@ -1,6 +1,4 @@
-// 1. Створити функцію getMaxDigit(number) – яка отримує будь-яке
-// число та виводить найбільшу цифру в цьому числі.
-
+// 1. 
 const getMaxDigit = ( number ) => {
     const splitNumArr = String( number ).split('');
     return splitNumArr.sort()[ splitNumArr.length - 1 ];
@@ -15,9 +13,7 @@ firstInput.addEventListener("input", ( e ) => {
     console.log(`1. Результат роботи першої функції -  ${ firstOutput.textContent }`);
 });
 
-// 2. Створити функцію, яка форматує ім'я, роблячи першу букву
-// великою
-
+// 2.
 const getCorrectName = ( name ) => {
     const correctName = name[ 0 ].toUpperCase() + name.slice( 1 ).toLowerCase();
     return correctName;
@@ -32,9 +28,7 @@ secondInput.addEventListener("input", ( e ) => {
     console.log(`2. Результат роботи другої функції -  ${ secondOutput.textContent }`);
 });
 
-// 3. Створити функцію, яка повертає випадкове ціле число в
-// діапазоні від N до M.
-
+// 3.
 const getRandomNumber = ( firstNum, secondNum ) => {
     const randomNumber = Math.floor( Math.random() * ( secondNum - firstNum ) + firstNum );
     return randomNumber;
@@ -57,8 +51,7 @@ randomForm.addEventListener("submit", ( e ) => {
 });
 
 
-// 4. Створити функцію, яка вираховує суму, що залишається після оплати податку  від зарабітньої плати.
-
+// 4. 
 const getSalary = ( salary ) => {
     const tax = ( 18 + 1.5 ) / 100;
     return salary - salary * tax;
@@ -73,8 +66,7 @@ fourInput.addEventListener("input", ( e ) => {
     console.log(`4. Результат роботи четвертої функції -  ${ fourOutput.textContent }`);
 });
 
-// 5. Створіть функцію генерації випадкового паролю (тільки числа), довжина встановлюється користувачем або по замовчуванню = 8 символам.
-
+// 5. 
 const  getRandomPassword = ( amount ) => {
     amount = !amount ? 8 : amount;
     const numArr = [ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' ];
@@ -95,8 +87,7 @@ fiveInput.addEventListener("input", ( e ) => {
     console.log(`5. Результат роботи п"ятої функції -  ${ fiveOutput.textContent }`);
 });
 
-// 6. Створіть функцію, яка видаляє всі букви з речення.
-
+// 6. 
 const deleteLetters = ( letter, sentence ) => {
     const splitSentence = sentence.split('');
     let correctSentence = '';
