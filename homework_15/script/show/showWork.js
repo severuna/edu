@@ -20,7 +20,9 @@ export const showWork = ( title, container, dataArr ) => {
 
         const taskTxt = dataArr[i].txt;
 
-        const task = document.createElement("subtitle");
+        const task = document.createElement("h3");
+
+        task.className = "subtitle";
 
         task.innerHTML = `<span>${ taskNum }.</span> ${ taskTxt}`;
 

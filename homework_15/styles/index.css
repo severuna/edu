@@ -141,9 +141,23 @@ html {
 
 .item {
     padding: var(--padding);
+    background-color: var(--color-light);
     gap: var(--gap);
-    border: 3px solid;
-    border-image: conic-gradient(from var(--angle), var(--color-green), var(--color-gold) 0.1turn, var(--color-blue) 0.15turn, var(--color-black-alpha) 0.25turn) 30;
-	animation: borderRotate 2s linear infinite forwards;
     width: 100%;
+    border-radius: 1.5rem;
+}
+
+.subtitle {
+    background-color: var(--color-black);
+    color: var(--color-light);
+    font-size: var(--main-fs);
+    padding: var(--padding);
+    border-radius: 1.5rem;
+    font-family: var(--main-ff);
+    font-weight: var(--font-weight);
+}
+
+span {
+    color: var(--color-green);
+    font-size: calc(var(--main-fs) + .3rem);
 }
