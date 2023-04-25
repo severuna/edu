@@ -137,3 +137,12 @@ html {
     text-align: center;
     filter: contrast(200%);
 }
+
+.item {
+    padding: var(--padding);
+    gap: var(--gap);
+    border: 3px solid;
+    border-image: conic-gradient(from var(--angle), var(--color-green), var(--color-gold) 0.1turn, var(--color-blue) 0.15turn, var(--color-black-alpha) 0.25turn) 30;
+	animation: borderRotate 2s linear infinite forwards;
+    width: 100%;
+}
