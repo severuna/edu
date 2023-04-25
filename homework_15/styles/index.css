@@ -160,5 +160,4 @@ html {
 span {
     color: var(--color-green);
     font-size: calc(var(--main-fs) + .3rem);
-    letter-spacing: 1rem;
 }
