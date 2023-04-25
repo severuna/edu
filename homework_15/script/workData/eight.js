@@ -103,6 +103,10 @@ const userStudentRecover = `поновлено`;
 
 export const taskDataEight = [
     {
+        id: 0,
+        title: `Homework 08. Прототипи. ES6 класи`
+    },
+    {
         id: 1,
         txt: `У цьому завданні вам необхідно створити клас <span>Student</span> та розробляти методи всередині цього класу. У стдентів повинні бути наступні властивості: <span>university, course, fullName</span>, вони передаються при створенні студента(в конструктор).`,
         answer: [

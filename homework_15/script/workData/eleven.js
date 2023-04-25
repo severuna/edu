@@ -27,6 +27,10 @@ const chinese = `The answer is in the console.`;
 
 export const taskDataEleven = [
     {
+        id: 0,
+        title: `Homework 11. Асинхронність та Date. Проміси`
+    },
+    {
         id: 1,
         txt: `Створіть функцію, яка повертає проміс getRandomChinese(length).
         <br>

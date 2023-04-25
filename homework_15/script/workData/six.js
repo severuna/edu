@@ -126,6 +126,10 @@ const wordLetters = `word res`;
 
 export const taskDataSix = [
     {
+        id: 0,
+        title: `Homework 06. Об'єкти. Операції rest та spread`
+    },
+    {
         id: 1,
         txt: `Для початку необхідно створити наступний масив (ви можете його просто скопіювати):
         <br>

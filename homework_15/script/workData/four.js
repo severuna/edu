@@ -94,6 +94,10 @@ const group = `group;`
 
 export const taskDataFour = [
     {
+        id: 0,
+        title: `Homework 04. Масиви`
+    },
+    {
         id: 1,
         txt: `Перед виконанням цього домашнього завдання необхідно створити 3 масиви:
         <br>

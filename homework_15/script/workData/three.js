@@ -115,6 +115,10 @@ const sentence = `delete leters res`;
 
 export const taskDataThree = [
     {
+        id: 0,
+        title: `Homework 03. Функції`
+    },
+    {
         id: 1,
         txt: `Створити функцію getMaxDigit(number) – яка отримує будь-яке число та виводить найбільшу цифру в цьому числі.`,
         answer: [

@@ -125,6 +125,10 @@ const randomArr = `random arr`;
 
 export const taskDataFive = [
     {
+        id: 0,
+        title: `Homework 05. Перебираючі методи масивів`
+    },
+    {
         id: 1,
         txt: `Створіть функцію filterEvenNumbers(...numbers) – яка фільтрує парні числа, передані як аргументи функції.`,
         answer: [

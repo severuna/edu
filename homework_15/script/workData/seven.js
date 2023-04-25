@@ -53,6 +53,10 @@ const mySalary = `my salary`;
 
 export const taskDataSeven = [
     {
+        id: 0,
+        title: `Homework 07. Функціональне програмування в javascript`
+    },
+    {
         id: 1,
         txt: `Створіть 3 об'єкти, що описують країни:
         <br>
