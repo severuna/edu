@@ -35,6 +35,8 @@ html {
     --color-gold: rgb(248, 244, 0);
     --color-light: rgb(255, 255, 255);
     --color-green: rgba(94,252,69,1);
+    --color-pink: rgb(245, 99, 123);
+    --color-purple: rgb(241, 105, 241);
     --logo-ff: 'Monoton', cursive;
     --logo-fs: 4rem;
     --title-ff: 'Fredericka the Great', cursive;
@@ -119,4 +121,19 @@ html {
 .btn:active {
     background: var(--color-black-alpha);
     color: var(--color-gold);
+}
+
+.output {
+    align-items: center;
+    gap: var(--gap);
+}
+
+.output .title {
+    font-size: calc(var(--logo-fs) / 1.2);
+    background: linear-gradient(120deg, var(--color-light) 0%, var(--color-pink) 80%, var(--color-purple) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    filter: contrast(200%);
 }
