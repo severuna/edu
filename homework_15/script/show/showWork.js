@@ -28,6 +28,14 @@ export const showWork = ( title, container, dataArr ) => {
 
         item.append(task);
 
+        const answer = document.createElement("p");
+
+        answer.className = "subtitle";
+
+        answer.innerHTML = dataArr[i].answer;
+
+        item.append(answer);
+
         container.append(item);
 
     }
