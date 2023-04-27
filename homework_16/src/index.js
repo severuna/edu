@@ -14,7 +14,7 @@ const user = {
   nickname: "dart_vader",
   posts: {
     date: "26.02.2019",
-    content: "WTF? Who is Ray? Why she is Skywalker? Luke...?"",
+    content: "WTF? Who is Ray? Why she is Skywalker? Luke...?",
     media: ray_skywalker
   }
 }
