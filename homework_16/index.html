@@ -2,10 +2,101 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Hello World</title>
+        <title>Homework 16</title>
         <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
         <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <style>
+            html {
+                font-size: 10px;
+            }
+
+            *,
+            *::after,
+            *::before {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #252525;
+                max-width: 100vw;
+            }
+
+            .flex-row {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .flex-column {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .post {
+                max-width: 80vw;
+                padding: 3rem;
+                margin: 3rem auto;
+                gap: 3rem;
+                border: 1px solid rgb(209, 221, 221);
+                border-radius: 1.5rem;
+            }
+
+            .post-head {
+                gap: 3rem;
+                align-items: center;
+            }
+
+            .post-head__avatar {
+                width: 7rem;
+                height: 7rem;
+                border-radius: 50%;
+            }
+
+            .post-head__name{
+                color: rgb(209, 221, 221);
+                font-size: 3rem;
+                font-weight: 700;
+                font-family: Courier, monospace;
+            }
+
+            .post-head__nickname, .post-head__date {
+                font-size: 2.2rem;
+                color: rgb(193, 201, 201);
+                font-family: Snell Roundhand, cursive;
+            }
+
+            .post-main {
+                width: 80%;
+                gap: 2rem;
+                margin-left: 15%;
+            }
+
+            .post-main__content {
+                font-size: 3rem;
+                color: rgb(209, 221, 221);
+                font-family: URW Chancery L, cursive;
+            }
+
+            .post-head__media {
+                border-radius: 1.5rem;
+                width: 100%;
+            }
+
+            .post-main__reactions {
+                justify-content: space-around;
+            }
+
+            .post-main__reactions img {
+                width: 6rem;
+                height: 6rem;
+            }
+        </style>
     </head>
     <body>
         <div id="root"></div>
@@ -36,7 +127,7 @@
                             <img className="post-head__media" src={user.post.media} alt="media" />
                             <div className="post-main__reactions flex-row">
                                 <img src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="comment"/>
-                                <img src="https://static.vecteezy.com/system/resources/previews/008/302/404/original/eps10-grey-retweet-arrows-icon-or-logo-in-simple-flat-trendy-modern-style-isolated-on-white-background-free-vector.jpg" alt="retweet"/>
+                                <img src="https://cdn3.iconfinder.com/data/icons/social-1/100/retweet-512.png" alt="retweet"/>
                                 <img src="https://icons.veryicon.com/png/o/miscellaneous/ui-basic-linear-icon/like-106.png" alt="like"/>
                                 <img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="download"/>
                             </div>
